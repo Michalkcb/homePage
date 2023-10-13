@@ -6,7 +6,12 @@ body {
   place-content: center;
   overflow: hidden;
   background-color: var(--black-light);
+  a{
+    text-decoration: none;
+    color: white;
+  }
 }
+
 .orbit {
   --size: 12rem;
   --speed: 120s;
