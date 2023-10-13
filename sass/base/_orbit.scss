@@ -2,10 +2,11 @@
 body {
   font-family: system-ui;
   display: grid;
-  min-height: 100vh;
+  min-height: 100 vh;
   place-content: center;
   overflow: hidden;
-  background-color: var(--black-light);
+  background: linear-gradient(to right, #1D267D, #5C469C, #D4ADFC);
+
   a{
     text-decoration: none;
     color: white;
@@ -38,10 +39,7 @@ body {
     }
     .center_img1{
       transform: translateX(0%) translateY(-10%) rotate(0deg);
-
     }
-
-   
   }
 
   ul {
@@ -63,7 +61,7 @@ body {
   }
 
   li {
-    --icon-bg: pink;
+    --icon-bg: rgb(156, 52, 69, 0);
     --text-bg: blue;
 
     position: absolute;
@@ -120,7 +118,6 @@ body {
   }
 
   li:nth-child(1) {
-    --icon-bg: var(--blue-light);
     --text-bg: var(--blue-dark);
     transform: translate(15rem, 0rem);
   }

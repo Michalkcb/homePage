@@ -49,8 +49,6 @@ picture {
 :root {
   --blue-light: hsl(210, 47%, 74%);
   --blue-dark: #2e577f;
-  --pink-light: hsl(295, 42%, 72%);
-  --pink-dark: #6e2f74;
   --white-light: hsl(0, 0%, 100%);
   --white-dark: #999999;
   --black-light: hsl(250, 56%, 24%);
@@ -60,10 +58,10 @@ picture {
 body {
   font-family: system-ui;
   display: grid;
-  min-height: 100vh;
+  min-height: 100 vh;
   place-content: center;
   overflow: hidden;
-  background-color: var(--black-light);
+  background: linear-gradient(to right, #1D267D, #5C469C, #D4ADFC);
 }
 body a {
   text-decoration: none;
@@ -112,7 +110,7 @@ body a {
   --orbit-play-state: paused;
 }
 .orbit li {
-  --icon-bg: pink;
+  --icon-bg: rgb(156, 52, 69, 0);
   --text-bg: blue;
   position: absolute;
   width: 8rem;
@@ -177,7 +175,6 @@ body a {
   width: 70%;
 }
 .orbit li:nth-child(1) {
-  --icon-bg: var(--blue-light);
   --text-bg: var(--blue-dark);
   transform: translate(15rem, 0rem);
 }
