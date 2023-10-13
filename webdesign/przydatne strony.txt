@@ -1,0 +1,56 @@
+zdjęcia:
+    https://www.pexels.com/
+    https://pixabay.com/
+    https://unsplash.com/
+    https://foodshot.co/
+    http://startupstockphotos.com/
+    http://pickupimage.com/trip/
+    http://travelcoffeebook.com/
+    https://gratisography.com/
+    https://pixnio.com/
+    https://magdeleine.co/browse/
+    https://stocksnap.io/
+    http://piviso.com/
+    https://libreshot.com/
+    
+generatory:
+    https://css-generators.com/
+
+ikony:
+    https://remixicon.com/
+    https://fontello.com/
+    https://fontawesome.com/start
+    
+jQuery:
+    https://jquery.com/download/ - https://code.jquery.com/jquery-3.3.1.min.js
+
+sprite animation
+    https://www.google.com/search?q=sprite+animation&sxsrf=AJOqlzWutRW1WhPlHqQ8dJ0eqRkk6ft9Ng:1679680242989&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjbu-DBkPX9AhXk_7sIHWOFBoEQ_AUoAXoECAEQAw&biw=1366&bih=695&dpr=1
+
+Słowa kluczowe:
+    https://answerthepublic.com/
+    https://keywordtool.io/
+    https://chrome.google.com/webstore/detail/keywords-everywhere-keywo/hbapdpeemoojbophdfndmlgdhppljgmp
+    https://chrome.google.com/webstore/detail/keyword-surfer/bafijghppfhdpldihckdcadbcobikaca
+    https://lsigraph.com/
+    https://neilpatel.com/ubersuggest/
+
+Audyt strony:
+    https://www.semrush.com/navigator/
+    https://neilpatel.com/ubersuggest/
+    http://webpozycja.pl/
+    http://seoptimer.com/
+    https://cyberfolks.pl/audyt-strony/
+    https://www.hotjar.com/
+    https://search.google.com/search-console/about
+    https://search.google.com/test/mobile-friendly
+    https://gtmetrix.com/
+    https://sitecheck.sucuri.net/
+
+optymalizacja SEO strony
+    https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi
+    https://pl.wordpress.org/plugins/wordpress-seo/
+    https://yoast.com/seo-blog/
+
+
+
