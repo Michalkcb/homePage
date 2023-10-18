@@ -2,21 +2,51 @@
 body {
   font-family: system-ui;
   display: grid;
-  min-height: 100 vh;
+  min-height: 100vh;
   place-content: center;
-  overflow: hidden;
+  overflow-x:hidden;
   background: linear-gradient(to right, #1D267D, #5C469C, #D4ADFC);
-
+color: white;
   a{
     text-decoration: none;
     color: white;
   }
 }
 
+.certificates {
+  background-color: red;
+  height: 95vh;
+  width: 95vw;
+  color:aliceblue;
+  font-weight: 700;
+}
+
+.resume{
+  height: 95vh;
+}
+.javascript{
+  background-color: red;
+  height: 95vh;
+}
+.react{
+  // background-color: red;
+  height: 95vh;
+}
+.nodejs{
+  background-color: red;
+  height: 95vh;
+}
+.orbit-wrapper{
+  // background-color: pink;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+}
 .orbit {
   --size: 12rem;
   --speed: 120s;
-  transform: translateX(0%) translateY(-25%) rotate(0deg);
+  transform: translateX(45%) translateY(30%) rotate(0deg);
 
   .center-image {
     background-color: red;
