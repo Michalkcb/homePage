@@ -23,8 +23,9 @@ color: white;
       font-weight: 500;
       font-size: 16px;
       // --bg-dark: #000;
-      --box-width: calc(var(--box-height) / 1.3);
-      --box-height: 450px;
+      --img-height:90%;
+      --box-width: calc(var(--box-height) / .7);
+      --box-height:270px;
       --gradient-one: linear-gradient(45deg,#ffee02,#f30055); 
       --gradient-two: linear-gradient(315deg,#0077ff,#f30055); 
       --gradient-three: linear-gradient(45deg,#74ff03,#00e1ff); 
@@ -114,12 +115,18 @@ color: white;
       position: relative;
       z-index: 10;
       padding: 20px 40px;
+      overflow: hidden;
+
+      img{
+        height: var(--img-height);
+        width: var(--img-height);
+      }
   
   }
   .certificates-container .box .content h2 {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
       color: #fff;
-      margin-bottom: 10px; 
+      margin-bottom: 2px; 
   }
   .certificates-container .box .content p {
       font-size: 1.1rem;
