@@ -1,6 +1,43 @@
-.resume-wrapper{
-    border:2px solid red;
-    display:grid;
-    grid-template-columns: 10rem auto;
-    column-gap: 2rem;
+.resume {
+    font-family: roboto, sans-serif;
+    display:block;
+    
+    h1, h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: 0 3rem;
+      }
+      H2{
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin: 1rem 0 0 0;
+      }
+      h3{
+        text-align: center;
+      }
+
 }
+  .summary, .expirience, .education, .hobby{
+        padding: 0 2rem 1REM 2rem;
+    }
+.resume-wrapper {
+  display: grid;
+  grid-template-columns: 20vw 50vw;
+  column-gap: 2rem;
+  justify-content: center;
+  ul {
+    padding: 0 0 1rem 1rem;
+    list-style: none;
+  }
+
+.left-panel, .right-panel{
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+
+    :nth-child(1), :nth-child(2), :nth-child(3), :nth-child(4){
+        width: 60vw;
+    }
+  
+ }
+}
+ 
