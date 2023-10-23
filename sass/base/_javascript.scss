@@ -25,6 +25,8 @@
     display: flex; /* Dodaj flexbox do .project */
     flex-direction: column; /* Ustaw flexbox w kierunku kolumnowym */
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     
     img{
         border-bottom: 2px solid black;
