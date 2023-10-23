@@ -1,8 +1,34 @@
 .javascript{
     background-color: white;
     color: black;
-    height: 95vh;
+    height: auto;
     width: 100vw;
     text-align: center;
     font-weight: 700;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    align-items: center; /* Wyśrodkowanie w pionie */
+    h2{
+      grid-column: span 3;
+    }
+
+  }
+
+  .project{
+    width: 25vw;
+    border: .4rem solid rgb(9, 41, 248);
+    box-shadow: 0 0 2rem 0 black;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex; /* Dodaj flexbox do .project */
+    flex-direction: column; /* Ustaw flexbox w kierunku kolumnowym */
+    align-items: center;
+    
+    img{
+        border-bottom: 2px solid black;
+    }
+
+
   }
