@@ -1,12 +1,14 @@
 const javascriptDiv = document.querySelector('.javascript');
 
 const projectData = [
-  { imageSrc: './assets/paint1.jpg', description: 'Opis projektu 1' },
-  { imageSrc: './assets/paint1.jpg', description: 'Opis projektu 2' },
-  { imageSrc: './assets/paint1.jpg', description: 'Opis projektu 3' },
-  { imageSrc: './assets/paint1.jpg', description: 'Opis projektu 4' },
-  { imageSrc: './assets/paint1.jpg', description: 'Opis projektu 5' },
-  { imageSrc: './assets/paint1.jpg', description: 'Opis projektu 6' },
+  { imageSrc: './assets/paint1.jpg', description: 'JS Paint in canvas' },
+  { imageSrc: './assets/paint2.jpg', description: 'Another JS Paint in Canvas' },
+  { imageSrc: './assets/changeColorByBtn.jpg', description: 'Press button to change color' },
+  { imageSrc: './assets/toDoApp.jpg', description: 'Simple to do app' },
+  { imageSrc: './assets/toDoApp.jpg', description: 'To do App witt Arry' },
+  { imageSrc: './assets/wordCounter.jpg', description: 'Counting words in text' },
+  { imageSrc: './assets/darkModeByBtn.jpg', description: 'Press btn to switch to dark mode' },
+  { imageSrc: './assets/guessNumber.jpg', description: 'Game: guess number' },
 ];
 
 for (let i = 0; i < projectData.length; i++) {
