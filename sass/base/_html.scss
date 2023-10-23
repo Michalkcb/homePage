@@ -1,5 +1,7 @@
 .html{
+
 .recent{
+
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 20px repeat(2, 1fr);
@@ -13,15 +15,18 @@
     background-color: rgba($color: #000000, $alpha: .3);
     line-height: 2rem;
     text-align: justify;
+
     .egzample{
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
 }
 .recent h1{
     grid-area: 1/1/1/-1;
     text-align: center;
+    
 }
 .egzample img{
     width: 25vw;

@@ -2,6 +2,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: system-ui;
   display: grid;
@@ -10,6 +11,7 @@ body {
   overflow-x:hidden;
   background: linear-gradient(to right, #1D267D, #5C469C, #D4ADFC);
 color: white;
+
   a{
     text-decoration: none;
     color: white;
@@ -46,14 +48,17 @@ color: white;
   background-color: red;
   height: 95vh;
 }
+
 .react{
   // background-color: red;
   height: 95vh;
 }
+
 .nodejs{
   background-color: red;
   height: 95vh;
 }
+
 .orbit-wrapper{
   // background-color: pink;
   height: 100vh;
@@ -61,6 +66,7 @@ color: white;
   padding: 0;
 
 }
+
 .orbit {
   --size: 12rem;
   --speed: 120s;
@@ -85,6 +91,7 @@ color: white;
         opacity: 0;
       }
     }
+
     .center_img1{
       transform: translateX(0%) translateY(-10%) rotate(0deg);
     }
@@ -125,14 +132,17 @@ color: white;
 
     &:hover {
       --throb-play-state: paused;
+     
       
     }
 
     @for $i from 0 through 7 {
+
       &:nth-child(#{$i + 1}) {
         --throb-delay: #{500ms * $i};
       }
     }
+
     & > * {
       width: 100%;
       height: 100%;
