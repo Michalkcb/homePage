@@ -1,4 +1,82 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: #18191f;
+  display: flex;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+  row-gap: 4rem;
+  width: 50vw;
+  height: 50vh;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+#cv,
+#html,
+#js,
+#linkedin,
+#react,
+#mail,
+#github,
+#certificate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  padding: 10px 20px;
+  margin: 0 20px;
+  background: #18191f;
+  color: white;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px black, 10px 10px 12px black, inset 2px 2px 2px black,
+    inset 2px 2px 2px black, inset 2px 2px 2px black, inset 2px 2px 2px black,
+    inset 2px 2px 2px black, inset 2px 2px 2px black, inset 2px 2px 2px black,
+    inset 2px 2px 2px black;
+  text-shadow: 0px 0px 50px #0072ff, 0px 0px 75px #0072ff, 0px 0px 100px #0072ff,
+    0px 0px 125px #0072ff, 0px 0px 50px #0072ff, 0px 0px 100px #0072ff,
+    0px 0px 75px #0072ff, 0px 0px 125px #0072ff;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#cv {
+  animation-delay: 0.4s;
+}
+#html {
+  animation-delay: 0.8s;
+}
+#js {
+  animation-delay: 1.1s;
+}
+#linkedin {
+  animation-delay: 1.4s;
+}
+#react {
+  animation-delay: 1.8s;
+}
+#mail {
+  animation-delay: 2.1s;
+}
+#github {
+  animation-delay: 2.5s;
+}
+#certificate {
+  animation-delay: 2.9s;
 }
