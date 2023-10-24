@@ -1,6 +1,11 @@
 const javascriptDiv = document.querySelector('.javascript');
 
 const projectData = [
+  { imageSrc: './assets/passwordGenerator.jpg', description: 'JS Password Generator' },
+  { imageSrc: './assets/memoryGame.jpg', description: 'JS Memory Game' },
+  { imageSrc: './assets/fallingBall.jpg', description: 'JS Falling Ball Game' },
+  { imageSrc: './assets/dinoRun1.jpg', description: 'JS Dino Run on squares' },
+  { imageSrc: './assets/dinoRun2.jpg', description: 'JS Dino Run with graphic' },
   { imageSrc: './assets/paint1.jpg', description: 'JS Paint in canvas' },
   { imageSrc: './assets/paint2.jpg', description: 'Another JS Paint in Canvas' },
   { imageSrc: './assets/changeColorByBtn.jpg', description: 'Press button to change color' },
