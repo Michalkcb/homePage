@@ -9,8 +9,9 @@ body {
   min-height: 100vh;
   place-content: center;
   overflow-x:hidden;
-  background: linear-gradient(to right, #1D267D, #5C469C, #D4ADFC);
-color: white;
+  background: linear-gradient(to right, #27313a 60%, #3e5b79);
+  // background-color: #fff8e5;
+  color: white;
 
   a{
     text-decoration: none;
