@@ -393,7 +393,7 @@ hobbiesHeading.textContent = "HOBBYS";
 hobbiesSection.appendChild(hobbiesHeading);
 
 const hobbiesList = document.createElement("div");
-hobbiesList.textContent = "Coding, Books, Sailing, Swimming, Sailing, Scuba diving / Diving, City runs";
+hobbiesList.textContent = "Coding, Books, Sailing, Swimming, Scuba diving / Diving, City runs";
 hobbiesSection.appendChild(hobbiesList);
 
 document.body.appendChild(resume);
