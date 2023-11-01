@@ -53,3 +53,37 @@
 }
 
 }
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .resume-wrapper {
+    display: flex;
+    flex-direction: column;
+    // grid-template-columns: 1fr;
+
+    
+    justify-content: center;
+    ul {
+      padding: 0 0 1rem 1rem;
+      list-style: none;
+    }
+  
+    .left-panel,
+    .right-panel {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 1rem;
+      .me-resume{
+          border-radius: 1rem;
+      }
+    }
+  
+    .right-panel {
+      > :nth-child(4),
+      > :nth-child(2),
+      > :nth-child(3) {
+        width: 100%;
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+
+}
+
