@@ -311,6 +311,10 @@ width: 100vw;
   body {
 
     background: #27313a;
+    .orbit {
+
+      transform: translateX(35%) translateY(30%) rotate(0deg);
+    }
   }
 // // modified version of from Andy Bell's reset
 // // https://piccalil.li/blog/a-modern-css-reset/
