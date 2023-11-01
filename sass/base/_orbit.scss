@@ -9,9 +9,9 @@ body {
   min-height: 100vh;
   place-content: center;
   overflow-x:hidden;
-  // background: linear-gradint(to right, #27313a, #3e5b79);
-  background: #27313a;
-  
+  // background: linear-gradint(to right, #27313a 60%, #3e5b79);
+  background-color: #27313a;
+
   color: white;
 
   a{
@@ -307,6 +307,11 @@ width: 100vw;
   }
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
+
+  body {
+
+    background: #27313a;
+  }
 // // modified version of from Andy Bell's reset
 // // https://piccalil.li/blog/a-modern-css-reset/
 
