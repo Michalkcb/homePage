@@ -1,0 +1,41 @@
+*{
+margin: 0;    
+padding: 0;
+
+
+
+
+
+@media (min-width: 768px) {
+
+
+.container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  grid-template-areas: "header header header" "sidebar main main" "sidebar section content" "footer footer footer";
+  background-color: black;
+  color: white;
+  tex
+
+  header {
+    grid-area: header;
+  }
+  sidebar {
+    grid-area: sidebar;
+  }
+  main {
+    grid-area: main;
+  }
+  section {
+    grid-area: section;
+  }
+  content {
+    grid-area: content;
+  }
+  footer {
+    grid-area: footer;
+  }
+}}
+}
