@@ -5,7 +5,7 @@ header.appendChild(headerElement);
 
 const sidebar = document.querySelector('.sidebar');
 const sidebarElement = document.createElement('p');
-sidebarElement.innerHTML = 'Wyższa Szkoła Informatyki Stosowanej i zarządzania <br><br> English: C1 <br> HTML: mid <br> CSS: mid <br> JS: junior <br> GIT: junior<br><br> <a href="https://michalkcb.github.io/homePage/" target="blank">homePage</a><br><a href="https://github.com/Michalkcb/myProjects" target="blank">myProjects</a>';
+sidebarElement.innerHTML = '<b>Wyższa Szkoła Informatyki Stosowanej i Zarządzania</b> <br><br> English: C1 <br> HTML: mid <br> CSS: mid <br> JS: junior <br> GIT: junior<br><br> <a href="https://michalkcb.github.io/homePage/" target="blank">homePage</a><br><a href="https://github.com/Michalkcb/myProjects" target="blank">myProjects</a>';
 sidebar.classList.add('round-corners')
 sidebar.appendChild(sidebarElement);
 
@@ -17,7 +17,7 @@ main.appendChild(mainElement);
 
 const section = document.querySelector('.section');
 const sectionlement = document.createElement('p');
-sectionlement.innerHTML = 'Jeszcze na początku lat 2000 w trakcie studiow zacząłem twrzyć strony www aby dorobić trochę na studiach. Stworzyłem też własny serwis www.playstation2.pl który prowadziłem przez 2 lata. Po studiach w firmie Albertech zajmowałem sie tworzeniem i administracją firmowej strony www. A moja strona www została zapomniana. Potem moje drogi z programowaniem się rozeszły.<br> <br>Powróciłem jednak do mojej starej pasii. Ukończyłem w tym roku kilka kursów Front-End na studiuje.it, udemy oraz University of California: Davis.   ';
+sectionlement.innerHTML = 'Jeszcze na początku lat 2000 w trakcie studiow zacząłem twrzyć strony www aby dorobić trochę na studiach. Stworzyłem też własny serwis www.playstation2.pl który prowadziłem przez 2 lata. Po studiach w firmie Albertech zajmowałem sie tworzeniem i administracją firmowej strony www. A moja strona www została zapomniana. Potem moje drogi z programowaniem się rozeszły.<br> <br>Powróciłem jednak do mojej starej pasji. Ukończyłem w tym roku kilka kursów Front-End na studiuje.it, udemy oraz University of California: Davis.  ';
 section.classList.add('round-corners')
 
 section.appendChild(sectionlement);

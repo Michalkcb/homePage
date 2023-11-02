@@ -4,7 +4,8 @@
   padding: 0;
   text-decoration: none;
   font-family:'Courier New', Courier, monospace;
- 
+
+
   a:hover, a:active{
     text-decoration: underline;
     font-weight: 900;
@@ -12,10 +13,7 @@
   a:visited, a:link {
     color: white;
     font-size: 1.2rem;
-    font-weight: 700;
-
-
-    
+    font-weight: 700;    
   }
 
   .container {
@@ -40,6 +38,8 @@
       grid-area: sidebar;
       display: flex;
       align-items: center;
+    
+     
     }
     main {
       grid-area: main;
