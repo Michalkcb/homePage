@@ -130,6 +130,11 @@ const projectsData = [
     link: 'http://michalkcb.ct8.pl/page06/page06.html',
     imageSrc: 'http://michalkcb.ct8.pl/pic/page06.png',
     alt: 'page_pic6'
+  },
+  {
+    link: 'https://michalkcb.github.io/homePage/projectsHtml/semstorm/index.html',
+    imageSrc: './projectsHtml/semstorm/assets/semstorm.png',
+    alt: 'semstorm'
   }
 ];
 
@@ -153,21 +158,24 @@ projectsData.forEach(project => {
 });
 
 //React projects
-
 const reactData = [
-  
   {
-    link: 'http://michalkcb.ct8.pl/page06/page06.html',
+    link: 'https://github.com/Michalkcb/myProjects/tree/master/react/react01',
     imageSrc: './assets/reactPage01.png',
     alt: 'react01'
+  },
+  {
+    link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel3/react_calculator/src',
+    imageSrc: './assets/reactCalculator.png',
+    alt: 'reactCalculator'
   }
 ];
 
-const recentReact = document.querySelector('.react');
+const recentReact = document.querySelector('.recentReact');
 
-projectsData.forEach(project => {
-  const projectDiv = document.createElement('div');
-  projectDiv.classList.add('exampleReact');
+reactData.forEach(project => {
+  const reactDiv = document.createElement('div');
+  reactDiv.classList.add('exampleReact');
 
   const projectLink = document.createElement('a');
   projectLink.href = project.link;
@@ -178,8 +186,8 @@ projectsData.forEach(project => {
   projectImage.alt = project.alt;
 
   projectLink.appendChild(projectImage);
-  projectDiv.appendChild(projectLink);
-  recentReact.appendChild(projectDiv);
+  reactDiv.appendChild(projectLink);
+  recentReact.appendChild(reactDiv);
 });
 
 // Resume

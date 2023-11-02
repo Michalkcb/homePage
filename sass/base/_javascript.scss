@@ -1,5 +1,6 @@
 .javascript{
-    background-color: white;
+    background-color: #F0DB4F;
+    padding: 2rem;
     color: black;
     height: auto;
     width: 100vw;
@@ -8,8 +9,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
-    justify-content: center; /* Wyśrodkowanie w poziomie */
-    align-items: center; /* Wyśrodkowanie w pionie */
+    justify-content: center; 
+    align-items: center;
     h2{
       grid-column: span 3;
     }
@@ -22,8 +23,8 @@
     box-shadow: 0 0 2rem 0 black;
     border-radius: 1rem;
     overflow: hidden;
-    display: flex; /* Dodaj flexbox do .project */
-    flex-direction: column; /* Ustaw flexbox w kierunku kolumnowym */
+    display: flex; 
+    flex-direction: column; 
     align-items: center;
     margin-left: auto;
     margin-right: auto;
