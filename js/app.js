@@ -152,6 +152,36 @@ projectsData.forEach(project => {
   recent.appendChild(projectDiv);
 });
 
+//React projects
+
+const reactData = [
+  
+  {
+    link: 'http://michalkcb.ct8.pl/page06/page06.html',
+    imageSrc: 'http://michalkcb.ct8.pl/pic/page06.png',
+    alt: 'page_pic6'
+  }
+];
+
+const recentReact = document.querySelector('.react');
+
+projectsData.forEach(project => {
+  const projectDiv = document.createElement('div');
+  projectDiv.classList.add('example');
+
+  const projectLink = document.createElement('a');
+  projectLink.href = project.link;
+  projectLink.target = '_blank';
+
+  const projectImage = document.createElement('img');
+  projectImage.src = project.imageSrc;
+  projectImage.alt = project.alt;
+
+  projectLink.appendChild(projectImage);
+  projectDiv.appendChild(projectLink);
+  recentReact.appendChild(projectDiv);
+});
+
 // Resume
 const resume = document.createElement("div");
 resume.classList.add("resume");
