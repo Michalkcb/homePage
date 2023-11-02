@@ -24,7 +24,7 @@ section.appendChild(sectionlement);
 
 const content = document.querySelector('.content');
 const contentElement = document.createElement('h3');
-contentElement.textContent = 'Uważam, że moje umiejętności odpowiadają, tym które zostały umieszczone w ogłoszeniu na Front-end Developer na stronie https://theprotocol.it. Zachęcam do odwiedzenia linków po lewej stronie do mojej domowej strony oraz moich projektów na GitHub. Wszystkie te rzeczy zostały przeze mnie napisane przy użyciu VisualStudioCode i zacomitowane za pomocą Git do Github. ';
+contentElement.innerHTML = 'Uważam, że moje umiejętności odpowiadają, tym które zostały umieszczone w ogłoszeniu na Front-end Developer na stronie https://theprotocol.it. Zachęcam do odwiedzenia linków po lewej stronie do mojej domowej strony oraz moich projektów na GitHub. Wszystkie te rzeczy zostały przeze mnie napisane przy użyciu VisualStudioCode i zacomitowane za pomocą Git do Github. <br><br> Tą stronę zrobiłem  z zastosowaniem RWD i MobileFirst.';
 content.classList.add('round-corners')
 
 content.appendChild(contentElement);
