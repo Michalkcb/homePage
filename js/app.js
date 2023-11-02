@@ -133,7 +133,7 @@ const projectsData = [
   }
 ];
 
-const projectsContainer = document.querySelector('.recent');
+const recent = document.querySelector('.recent');
 
 projectsData.forEach(project => {
   const projectDiv = document.createElement('div');
@@ -149,7 +149,7 @@ projectsData.forEach(project => {
 
   projectLink.appendChild(projectImage);
   projectDiv.appendChild(projectLink);
-  projectsContainer.appendChild(projectDiv);
+  recent.appendChild(projectDiv);
 });
 
 // Resume
