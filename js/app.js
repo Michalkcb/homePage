@@ -135,6 +135,11 @@ const projectsData = [
     link: 'https://michalkcb.github.io/homePage/projectsHtml/semstorm/index.html',
     imageSrc: './projectsHtml/semstorm/assets/semstorm.png',
     alt: 'semstorm'
+  },
+  {
+    link: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind01/dist/index.html',
+    imageSrc: './tailwindCSS/tailwind01/assets/tailwind01.png',
+    alt: 'semstorm'
   }
 ];
 
