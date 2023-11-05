@@ -135,7 +135,32 @@ const projectsData = [
     link: 'https://michalkcb.github.io/homePage/projectsHtml/semstorm/index.html',
     imageSrc: './projectsHtml/semstorm/assets/semstorm.png',
     alt: 'semstorm'
-  },
+  }
+
+];
+
+const recent = document.querySelector('.recent');
+
+projectsData.forEach(project => {
+  const projectDiv = document.createElement('div');
+  projectDiv.classList.add('example');
+
+  const projectLink = document.createElement('a');
+  projectLink.href = project.link;
+  projectLink.target = '_blank';
+
+  const projectImage = document.createElement('img');
+  projectImage.src = project.imageSrc;
+  projectImage.alt = project.alt;
+
+  projectLink.appendChild(projectImage);
+  projectDiv.appendChild(projectLink);
+  recent.appendChild(projectDiv);
+});
+
+//tailwind projects
+
+const tailwindData = [
   {
     link: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind01/dist/index.html',
     imageSrc: './tailwindCSS/tailwind01/assets/tailwind01.png',
@@ -143,9 +168,9 @@ const projectsData = [
   }
 ];
 
-const recent = document.querySelector('.recent');
+const recentTailwind = document.querySelector('.tailwind');
 
-projectsData.forEach(project => {
+tailwindData.forEach(project => {
   const projectDiv = document.createElement('div');
   projectDiv.classList.add('example');
 
