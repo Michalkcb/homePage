@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  
 }
 
 body {
@@ -61,7 +62,7 @@ body {
 .orbit {
   --size: 12rem;
   --speed: 120s;
-  transform: translateX(45%) translateY(30%) rotate(0deg);
+  transform: translateX(45%) translateY(15%) rotate(0deg);
 
   .center-image {
     background-color: red;
