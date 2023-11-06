@@ -168,11 +168,11 @@ const tailwindData = [
   }
 ];
 
-const recentTailwind = document.querySelector('.tailwind');
+const recentTailwind = document.querySelector('.recentTailwind');
 
 tailwindData.forEach(project => {
-  const projectDiv = document.createElement('div');
-  projectDiv.classList.add('example');
+  const tailwindDiv = document.createElement('div');
+  tailwindDiv.classList.add('example');
 
   const projectLink = document.createElement('a');
   projectLink.href = project.link;
@@ -183,8 +183,8 @@ tailwindData.forEach(project => {
   projectImage.alt = project.alt;
 
   projectLink.appendChild(projectImage);
-  projectDiv.appendChild(projectLink);
-  recent.appendChild(projectDiv);
+  tailwindDiv.appendChild(projectLink);
+  recentTailwind.appendChild(tailwindDiv);
 });
 
 //React projects
