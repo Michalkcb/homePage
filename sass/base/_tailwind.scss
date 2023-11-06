@@ -1,11 +1,30 @@
-#tailwind {
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-img{
-    width: 40rem;
-}
 
-}
+    .recentTailwind {
+        background-color: #06b6d4;
+
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 4fr;
+      h2 {
+        grid-area: header;
+        text-align: center;
+      }
+      grid-template-areas: "header header header";
+      grid-column-gap: 1rem;
+      grid-row-gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 4rem;
+      line-height: 2rem;
+      text-align: justify;
+      h1 {
+          grid-area: header;
+          text-align: center;
+        }
+      img {
+        width: 40rem;
+        border-radius: .5rem;
+      }
+    }
+  
