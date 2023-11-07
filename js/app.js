@@ -164,7 +164,12 @@ const tailwindData = [
   {
     link: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind01/dist/index.html',
     imageSrc: './tailwindCSS/tailwind01/assets/tailwind01.png',
-    alt: 'semstorm'
+    alt: 'pizzeria'
+  },
+  {
+    link: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind02/dist/index.html',
+    imageSrc: './tailwindCSS/tailwind02/assets/aikido.png',
+    alt: 'aikido'
   }
 ];
 
