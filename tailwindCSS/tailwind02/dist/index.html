@@ -3,11 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
+  <link href="output.css" rel="stylesheet">
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <div class="container h-screen flex-col flex">
+        <nav class=" h-24 flex items-center justify-between flex-wrap bg-black grow-0" >
+            <div class="flex items-center flex-shrink-0 text-white ">
+              <img src="./../assets/logo.png" class="w-28 pl-10">
+            </div>
+        
+            <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto ">
+              <div class="text-lg sm:flex-grow flex items-end justify-end pr-28">
+                <a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-white hover:font-bold mr-4">Home</a>
+                <a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-white hover:font-bold mr-4">Aktualności</a>
+                <a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-white hover:font-bold mr-4">Informacje</a> 
+                <a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-white hover:font-bold mr-4">Kontakt</a>
+              </div>
+            </div>
+          </nav>
+
+          <main class="flex-grow text-black">
+            <div class="bg-fixed" style="bg-[./../assets/groupPhoto.jpg]"> </div>
+          </main>
+
+          <footer class="flex flex-col h-10items-center flex-wrap bg-black p-4 grow-0 justify-center content-center	">
+            <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto ">
+              <div class="text-lg sm:flex-grow flex items-center justify-center">
+                <a href="#"><img src="./../assets/instagram-logo-white-glyph.png" alt="" class="w-16 mx-8"></a>
+                <a href="#"><img src="./../assets/twitter.png" alt="" class="w-16 mx-8"></a>
+                <a href="https://www.facebook.com/profile.php?id=100057171891689"><img src="./../assets/facebook-logo.png" alt="" class="w-20 mx-8"></a> 
+                <a href="#" ><img src="./../assets/linkedin.png" alt="" class="w-12 m-8"></a>
+              </div>
+            </div>
+            <div class="flex items-center flex-shrink-0 text-white mx-8 justify-center">
+              <span class=" text-xs ">© 2023 yourwww.org</span>
+            </div>
+          </footer>
+    </div>
 </body>
 </html>
