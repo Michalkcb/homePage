@@ -2,8 +2,10 @@
 
 const javascriptDiv = document.querySelector('.javascript');
 
+//poprawić linki
+
 const projectData = [
-  { imageSrc: './assets/passwordGenerator.jpg', description: 'JS Password Generator' },
+  { imageSrc: './assets/passwordGenerator.jpg', description: 'JS Password Generator', link: './projectsHtml/glowingIcons/index.html', },
   { imageSrc: './assets/infinitePageScroll.png', description: 'JS Infinite Page Scroller' },
   { imageSrc: './assets/memoryGame.jpg', description: 'JS Memory Game' },
   { imageSrc: './assets/fallingBall.jpg', description: 'JS Falling Ball Game' },
@@ -19,7 +21,7 @@ const projectData = [
   { imageSrc: './assets/guessNumber.jpg', description: 'Game: guess number' },
 ];
 
-for (let i = 0; i < projectData.length; i++) {
+  projectData.forEach(project =>  {
   const projectDiv = document.createElement('div');
   projectDiv.classList.add('project');
 
@@ -27,18 +29,23 @@ for (let i = 0; i < projectData.length; i++) {
   projectImgDiv.classList.add('project-img');
 
   const image = document.createElement('img');
-  image.src = projectData[i].imageSrc;
+  image.src = project.imageSrc;
   projectImgDiv.appendChild(image);
 
   const projectDescriptionDiv = document.createElement('div');
   projectDescriptionDiv.classList.add('project-description');
-  projectDescriptionDiv.textContent = projectData[i].description;
+  projectDescriptionDiv.textContent = project.description;
 
-  projectDiv.appendChild(projectImgDiv);
+  const projectLink = document.createElement('a');
+  projectLink.href = project.link;
+  projectLink.target = '_blank';
+
+  projectLink.appendChild(projectImgDiv)
+  projectDiv.appendChild(projectLink);
   projectDiv.appendChild(projectDescriptionDiv);
 
   javascriptDiv.appendChild(projectDiv);
-}
+});
 
 // Certificates
 
@@ -72,7 +79,7 @@ const certificatesData = [
   { certificateSrc: './certificates/zarzadzanieProjektamiIT.jpg', description: 'Zarządzanie projektami w IT'},
 ]
 
-for (let i = 0; i < certificatesData.length; i++) {
+    certificatesData.forEach(certificate =>  {
     const boxDiv = document.createElement('div');
     boxDiv.classList.add('box');
 
@@ -82,25 +89,25 @@ for (let i = 0; i < certificatesData.length; i++) {
     contentDiv.classList.add('content');
 
     const image = document.createElement('img');
-    image.src = certificatesData[i].certificateSrc;
+    image.src = certificate.certificateSrc;
     contentDiv.appendChild(image);
 
     const certificateTitle = document.createElement('h2');
-    certificateTitle.textContent = certificatesData[i].description;
+    certificateTitle.textContent = certificate.description;
 
     contentDiv.appendChild(certificateTitle);
     contentDiv.appendChild(image);
     spanElem.appendChild(contentDiv)
     boxDiv.appendChild(spanElem);
     certificatesDiv.appendChild(boxDiv);
-}
+});
 //HTML projects
 
 const projectsData = [
   {
     link: './projectsHtml/glowingIcons/index.html',
     imageSrc: './assets/glowingItems.jpg',
-    alt: 'glowing_icons'
+    alt: 'glowing_icons',
   },
   {
     link: 'http://michalkcb.ct8.pl/new%20cruzeirosazuis/newTerminyPL.html',
@@ -154,8 +161,13 @@ projectsData.forEach(project => {
   projectImage.src = project.imageSrc;
   projectImage.alt = project.alt;
 
+  // const htmlProjectDescription = document.createElement('div');
+  // htmlProjectDescription.classList.add('project-description');
+  // htmlProjectDescription.textContent = project.description;
+
   projectLink.appendChild(projectImage);
   projectDiv.appendChild(projectLink);
+  // projectDiv.appendChild(htmlProjectDescription);
   recent.appendChild(projectDiv);
 });
 
