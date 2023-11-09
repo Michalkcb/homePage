@@ -5,20 +5,20 @@ const javascriptDiv = document.querySelector('.javascript');
 //poprawić linki
 
 const projectData = [
-  { imageSrc: './assets/passwordGenerator.jpg', description: 'JS Password Generator', link: './projectsHtml/glowingIcons/index.html', },
-  { imageSrc: './assets/infinitePageScroll.png', description: 'JS Infinite Page Scroller' },
-  { imageSrc: './assets/memoryGame.jpg', description: 'JS Memory Game' },
-  { imageSrc: './assets/fallingBall.jpg', description: 'JS Falling Ball Game' },
-  { imageSrc: './assets/dinoRun1.jpg', description: 'JS Dino Run on squares' },
-  { imageSrc: './assets/dinoRun2.jpg', description: 'JS Dino Run with graphic' },
-  { imageSrc: './assets/paint1.jpg', description: 'JS Paint in canvas' },
-  { imageSrc: './assets/paint2.jpg', description: 'Another JS Paint in Canvas' },
-  { imageSrc: './assets/changeColorByBtn.jpg', description: 'Press button to change color' },
-  { imageSrc: './assets/toDoApp.jpg', description: 'Simple to do app' },
-  { imageSrc: './assets/toDoApp.jpg', description: 'To do App witt Arry' },
-  { imageSrc: './assets/wordCounter.jpg', description: 'Counting words in text' },
-  { imageSrc: './assets/darkModeByBtn.jpg', description: 'Press btn to switch to dark mode' },
-  { imageSrc: './assets/guessNumber.jpg', description: 'Game: guess number' },
+  { imageSrc: './assets/passwordGenerator.jpg', description: 'JS Password Generator', link: '.https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/passwordGenerator', },
+  { imageSrc: './assets/infinitePageScroll.png', description: 'JS Infinite Page Scroller', link: 'https://github.com/Michalkcb/myProjects/blob/master/ProjectsLvl1/infiniteScroll/infiniteScroll.html', },
+  { imageSrc: './assets/memoryGame.jpg', description: 'JS Memory Game', link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/theSimplestMemoryGame', },
+  { imageSrc: './assets/fallingBall.jpg', description: 'JS Falling Ball Game', link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/fallingBall', },
+  { imageSrc: './assets/dinoRun1.jpg', description: 'JS Dino Run on squares', link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/dinoGoogleGame', },
+  { imageSrc: './assets/dinoRun2.jpg', description: 'JS Dino Run with graphic' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/chromeDinoClone',},
+  { imageSrc: './assets/paint1.jpg', description: 'JS Paint in canvas', link: 'https://github.com/Michalkcb/myProjects/blob/master/ProjectsLvl1/anotherPaint/index.html', },
+  { imageSrc: './assets/paint2.jpg', description: 'Another JS Paint in Canvas' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/yetAnotherPaintInCanvas',},
+  { imageSrc: './assets/changeColorByBtn.jpg', description: 'Press button to change color' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/bgColorChangeByBtn',},
+  { imageSrc: './assets/toDoApp.jpg', description: 'Simple to do app' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/toDoApp1',},
+  { imageSrc: './assets/toDoApp.jpg', description: 'To do App witt Arry' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/toDoApp2Array',},
+  { imageSrc: './assets/wordCounter.jpg', description: 'Counting words in text' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/wordsCounter',},
+  { imageSrc: './assets/darkModeByBtn.jpg', description: 'Press btn to switch to dark mode' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/darkMode',},
+  { imageSrc: './assets/guessNumber.jpg', description: 'Game: guess number' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/guessNumber',},
 ];
 
   projectData.forEach(project =>  {
