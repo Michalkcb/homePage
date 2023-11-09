@@ -4,6 +4,7 @@ const javascriptDiv = document.querySelector('.javascript');
 
 const projectData = [
   { imageSrc: './assets/passwordGenerator.jpg', description: 'JS Password Generator' },
+  { imageSrc: './assets/infinitePageScroll.png', description: 'JS Infinite Page Scroller' },
   { imageSrc: './assets/memoryGame.jpg', description: 'JS Memory Game' },
   { imageSrc: './assets/fallingBall.jpg', description: 'JS Falling Ball Game' },
   { imageSrc: './assets/dinoRun1.jpg', description: 'JS Dino Run on squares' },
