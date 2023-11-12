@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      body {
+        font-family: sans-serif;
+        color: azure;
+      }
+      .game-board {
+        width: 360px;
+        background: #a6a6a6;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 100px);
+        grid-gap: 0.5rem;
+        border: 1px solid #959191;
+        cursor: pointer;
+      }
+
+      .box {
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        color: #333;
+        color: #000000;
+      }
+      .box:hover {
+        background-color: #898888;
+      }
+      .X,
+      .O {
+        color: #000;
+      }
+
+      .O::before {
+        content: "O";
+        font-size: 2em;
+      }
+      .X::before {
+        content: "X";
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="game-board">
+      <div class="box fa" data-row="0" data-column="0"></div>
+      <div class="box fa" data-row="0" data-column="1"></div>
+      <div class="box fa" data-row="0" data-column="2"></div>
+      <div class="box fa" data-row="1" data-column="0"></div>
+      <div class="box fa" data-row="1" data-column="1"></div>
+      <div class="box fa" data-row="1" data-column="2"></div>
+      <div class="box fa" data-row="2" data-column="0"></div>
+      <div class="box fa" data-row="2" data-column="1"></div>
+      <div class="box fa" data-row="2" data-column="2"></div>
+    </div>
+
+    <script>
+      const player1 = "O";
+      const player2 = "X";
+      let round = 1;
+
+      const boxes = [...document.querySelectorAll(".box")];
+
+      boxes.forEach((box) => box.addEventListener("click", pick));
+
+      function pick(event) {
+        const turn = round % 2 === 0 ? player2 : player1;
+        event.target.classList.add(turn);
+        round++;
+      }
+    </script>
+  </body>
 </html>
