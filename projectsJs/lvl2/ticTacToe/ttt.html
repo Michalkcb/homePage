@@ -32,48 +32,74 @@
       .box:hover {
         background-color: #898888;
       }
-      .X,
-      .O {
-        color: #000;
-      }
 
-      .O::before {
-        content: "O";
-        font-size: 2em;
-      }
-      .X::before {
-        content: "X";
-        font-size: 2em;
-      }
     </style>
   </head>
   <body>
     <div class="game-board">
-      <div class="box fa" data-row="0" data-column="0"></div>
-      <div class="box fa" data-row="0" data-column="1"></div>
-      <div class="box fa" data-row="0" data-column="2"></div>
-      <div class="box fa" data-row="1" data-column="0"></div>
-      <div class="box fa" data-row="1" data-column="1"></div>
-      <div class="box fa" data-row="1" data-column="2"></div>
-      <div class="box fa" data-row="2" data-column="0"></div>
-      <div class="box fa" data-row="2" data-column="1"></div>
-      <div class="box fa" data-row="2" data-column="2"></div>
+      <div class="box" data-row="0" data-column="0"></div>
+      <div class="box" data-row="0" data-column="1"></div>
+      <div class="box " data-row="0" data-column="2"></div>
+      <div class="box " data-row="1" data-column="0"></div>
+      <div class="box " data-row="1" data-column="1"></div>
+      <div class="box " data-row="1" data-column="2"></div>
+      <div class="box " data-row="2" data-column="0"></div>
+      <div class="box " data-row="2" data-column="1"></div>
+      <div class="box " data-row="2" data-column="2"></div>
     </div>
 
     <script>
-      const player1 = "O";
-      const player2 = "X";
-      let round = 1;
+const PLAYER1 = 'O';
+const PLAYER2 = 'X';
+let round = 1;
+const board = [
+    ['', '', ''],
+    ['', '', ''],
+    ['', '', '']
+];
+const combinations = [
+    [0,1,2], [3,4,5], [6,7,8],
+    [0,3,6], [1,4,7], [2,5,8],
+    [0,4,8], [2,4,6]
+];
 
-      const boxes = [...document.querySelectorAll(".box")];
+const boxes = document.querySelectorAll('.box');
+arrBoxes = [...boxes];
 
-      boxes.forEach((box) => box.addEventListener("click", pick));
+const pick = (e)=> {
+    const { row, column } = e.target.dataset;
+    const turn = round % 2 === 0 ? PLAYER2 : PLAYER1;
+    if (board[row][column] !== '') return;
+    e.target.textContent = turn;
+    board[row][column] = turn;
+    round++;
 
-      function pick(event) {
-        const turn = round % 2 === 0 ? player2 : player1;
-        event.target.classList.add(turn);
-        round++;
-      }
+    console.log(check());
+}
+arrBoxes.forEach(box => box.addEventListener('click', pick));
+
+
+const check =() =>{
+    const result = board.reduce((total, row) => total.concat(row));
+    let winner = null;
+    let moves = {
+        'X': [],
+        'O': []
+    };
+    result.forEach((field, index) => moves[field] ? moves[field].push(index) : null);
+    combinations.forEach(combination => {
+        if (combination.every(index => moves[PLAYER1].indexOf(index) > -1)) {
+            winner = 'Winner: Player 1';
+        }
+        if (combination.every(index => moves[PLAYER2].indexOf(index) > -1)) {
+            winner = 'Winner: Player 2';
+        }
+    });
+
+    return winner;
+}
+
+
     </script>
   </body>
 </html>
