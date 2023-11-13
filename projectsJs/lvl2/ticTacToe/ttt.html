@@ -39,13 +39,13 @@
     <div class="game-board">
       <div class="box" data-row="0" data-column="0"></div>
       <div class="box" data-row="0" data-column="1"></div>
-      <div class="box " data-row="0" data-column="2"></div>
-      <div class="box " data-row="1" data-column="0"></div>
-      <div class="box " data-row="1" data-column="1"></div>
-      <div class="box " data-row="1" data-column="2"></div>
-      <div class="box " data-row="2" data-column="0"></div>
-      <div class="box " data-row="2" data-column="1"></div>
-      <div class="box " data-row="2" data-column="2"></div>
+      <div class="box" data-row="0" data-column="2"></div>
+      <div class="box" data-row="1" data-column="0"></div>
+      <div class="box" data-row="1" data-column="1"></div>
+      <div class="box" data-row="1" data-column="2"></div>
+      <div class="box" data-row="2" data-column="0"></div>
+      <div class="box" data-row="2" data-column="1"></div>
+      <div class="box" data-row="2" data-column="2"></div>
     </div>
 
     <script>
@@ -67,11 +67,11 @@ const boxes = document.querySelectorAll('.box');
 arrBoxes = [...boxes];
 
 const pick = (e)=> {
-    const { row, column } = e.target.dataset;
+    const { row, col } = e.target.dataset;
     const turn = round % 2 === 0 ? PLAYER2 : PLAYER1;
-    if (board[row][column] !== '') return;
+    if (board[row][col] !== '') return;
     e.target.textContent = turn;
-    board[row][column] = turn;
+    board[row][col] = turn;
     round++;
 
     console.log(check());
