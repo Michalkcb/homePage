@@ -1,10 +1,10 @@
 //JS projects
 
 const javascriptDiv = document.querySelector('.javascript');
-
-//poprawić linki
+homePage\projectsJs\lvl2\typeahead
 
 const projectData = [
+  { imageSrc: './assets/Countries Lookup.png', description: 'Countries Lookup JSON BOOTWATCH', link: '.https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/passwordGenerator', },
   { imageSrc: './assets/passwordGenerator.jpg', description: 'JS Password Generator', link: '.https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/passwordGenerator', },
   { imageSrc: './assets/infinitePageScroll.png', description: 'JS Infinite Page Scroller', link: 'https://github.com/Michalkcb/myProjects/blob/master/ProjectsLvl1/infiniteScroll/infiniteScroll.html', },
   { imageSrc: './assets/memoryGame.jpg', description: 'JS Memory Game', link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/theSimplestMemoryGame', },
