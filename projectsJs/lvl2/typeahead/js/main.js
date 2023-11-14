@@ -7,9 +7,11 @@ const searchCountry = async (searchText) => {
 
   //dopadowanie do input
   let matches = countries.filter(country => {
-    const regex = new RegExp(`^${searchText}`, 'g');
-    return state.name.match(regex) || state.abbr.match(regex);
+    const regex = new RegExp(`^${searchText}`, 'gi');
+    return country.country.match(regex) || country.alpha2.match(regex);
   });
+console.log(matches)
+
 };
 
 search.addEventListener("input", () => searchCountry(search.value));
