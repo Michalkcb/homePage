@@ -1,5 +1,4 @@
-{
-  "ref_country_codes" : [
+[
 {
       "country" : "Albania",
       "alpha2" : "AL",
@@ -1945,4 +1944,3 @@
       "longitude" : 65
     }
   ]
-}
