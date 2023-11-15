@@ -20,6 +20,7 @@ console.log(matches);
 };
 
 const outptHtml = matches => {
+ 
   if(matches.length > 0) {
     const html = matches.map(match => `
       <div class="card card-body mb-1">
@@ -31,6 +32,15 @@ const outptHtml = matches => {
 
     matchList.innerHTML = html;
   }
+
+
+//   (searchText != matches) {
+//     matchList.innerHTML = `
+//     <div class="card card-body mb-4">
+//     <p> ${searchText} not found in course list.</p>
+//     `;
+// }
+  
 }
 
 search.addEventListener("input", () => searchCountry(search.value));
