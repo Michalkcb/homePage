@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Face Generator</title>
+    <style>
+        img {
+            height: 500px;
+        }
+    </style>
+    <script src="./js/app.js" defer></script>
 </head>
 <body>
     <form action="" id="form">
-        <select name="" id="generator">
+        <select name="" id="gender">
             <option value="female">Female</option>
             <option value="male">Male</option>
         </select>
         <select name="" id="ethnicity">
-            <option value="European">European</option>
+            <option value="european">European</option>
             <option value="african">African</option>
-            <option value="asian">Asia</option>
+            <option value="west_asian">west_asian</option>
+            <option value="south_asian">south_asian</option>
+            <option value="east_asian">east_asian</option>
+            <option value="southeast_asian">southeast_asian</option>
+            <option value="latin_american">latin_american</option>
+
         </select>
-        <label for=""> <input type="text" id="age" required></label>
+        
+        <label for=""> <input type="text" id="age"  placeholder="Write age"></label>
         <button type="submit">Generate</button>
     </form>
 </body>
