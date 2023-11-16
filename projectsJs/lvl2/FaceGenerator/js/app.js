@@ -17,12 +17,15 @@ const ethnicity = document.querySelector('#ethnicity').value;
   };
   
   try {
+    const imgContainer = document.querySelector('.imgContainer');
     const response = await fetch(url, options);
     const result = await response.blob();
     const image = URL.createObjectURL(result)
     const imageDom = document.createElement('img');
+    imageDom.classList.add('rounded');
     imageDom.src = image;
-    document.body.appendChild(imageDom);
+
+    imgContainer.appendChild(imageDom);
 
 
     console.log(result);
