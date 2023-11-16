@@ -184,6 +184,12 @@ const tailwindData = [
     imageSrc: './tailwindCSS/tailwind02/assets/aikido.png',
     alt: 'aikido'
   }
+  ,
+  {
+    link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/FaceGenerator/dist/FaceGenerator.html',
+    imageSrc: './assets/faceGenerator.png',
+    alt: 'Face Generator'
+  }
 ];
 
 const recentTailwind = document.querySelector('.recentTailwind');
