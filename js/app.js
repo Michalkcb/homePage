@@ -4,6 +4,7 @@ const javascriptDiv = document.querySelector('.javascript');
 
 const projectData = [
   { imageSrc: './assets/Countries Lookup.png', description: 'Countries Lookup JSON BOOTWATCH', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/typeahead/typeahead.html', },
+  { imageSrc: './assets/faceGenerator.png', description: 'Face Generator JSON TailwindCSS', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/FaceGenerator/dist/FaceGenerator.html', },
   { imageSrc: './assets/passwordGenerator.jpg', description: 'JS Password Generator', link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/passwordGenerator', },
   { imageSrc: './assets/infinitePageScroll.png', description: 'JS Infinite Page Scroller', link: 'https://github.com/Michalkcb/myProjects/blob/master/ProjectsLvl1/infiniteScroll/infiniteScroll.html', },
   { imageSrc: './assets/memoryGame.jpg', description: 'JS Memory Game', link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/theSimplestMemoryGame', },
