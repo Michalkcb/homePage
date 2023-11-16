@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Face Generator</title>
-    <script src="https://kit.fontawesome.com/41a7298fa2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="output.css" rel="stylesheet">
     <style>
         img {
             height: 500px;
         }
     </style>
-    <script src="./js/app.js" defer></script>
+    <script src="./../js/app.js" defer></script>
 </head>
-<body>
-    <form action="" id="form">
-        <select name="" id="gender">
+<body class="bg-black font-bold">
+    <div class="bg-blue-500 text-white p-4 text-center font-">Face Generator</div>
+
+
+    <form action="" id="form" class="flex justify-evenly py-4">
+        <select name="" id="gender" class="rounded p-3">
             <option value="female">Female</option>
             <option value="male">Male</option>
         </select>
-        <select name="" id="ethnicity">
+        <select name="" id="ethnicity" class="rounded p-3">
             <option value="european">European</option>
             <option value="african">African</option>
             <option value="west_asian">west_asian</option>
@@ -30,8 +32,10 @@
 
         </select>
         
-        <label for=""> <input type="text" id="age"  placeholder="Write age"></label>
-        <button type="submit">Generate</button>
+        <label for=""> <input type="text" id="age"  placeholder="Write age" class="rounded p-3"></label>
+        <button type="submit" class="bg-white rounded p-3">Generate</button>
     </form>
+
+    <div class="container grid grid-cols-3	"></div>
 </body>
 </html>
