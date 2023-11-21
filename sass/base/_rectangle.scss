@@ -1,0 +1,18 @@
+.rectangle{
+
+    .navigation{
+        display: flex;
+        width: 100dvw;
+        .title{
+
+        }
+        ul{
+            li{
+                list-style-type: none;
+                display: flex;
+                margin: 0 2rem;
+                justify-content: space-between;
+            }
+        }
+    }
+}
