@@ -43,9 +43,12 @@ section {
     }
 }
 .sec-5 {
+    flex-direction: row;
+    flex-wrap: nowrap;
     .images {
+        display: flex;
         img {
-            max-width: 400px;
+            max-width: 300px;
             margin: 0 30px;
         }
     }
