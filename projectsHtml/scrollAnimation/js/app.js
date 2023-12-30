@@ -7,7 +7,7 @@ window.onscroll = () => {
         let top = window.scrollY;
 
         // Pobierz początkowe położenie aktualnej sekcji
-        let offset = section.offsetTop - 150;
+        let offset = section.offsetTop -150;
 
         // Pobierz wysokość aktualnej sekcji
         let height = section.offsetHeight;
