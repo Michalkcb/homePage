@@ -17,16 +17,26 @@ section {
   background: #1f242d;
   overflow-x: hidden;
   h1 {
+    position: relative;
     font-size: 90px;
     color: #fff;
   }
   p {
+    position: relative;
     font-size: 35px;
     color: #0ef;
     font-weight: 600;
   }
   .animate {
+    opacity: 0;
+    filter: blur(4px);
     transition: 1s;
+  }
+  &.show-animate  {
+    & .animate {
+        opacity: 1;
+      filter: blur(0);
+    }
   }
 }
 .sec-1 {
@@ -58,10 +68,33 @@ section {
   p {
     color: #e0f;
   }
+  & .animate {
+    transform: scale(0.6);
+  }
+  &.show-animate {
+    & .animate {
+      transform: scale(1);
+    }
+  }
 }
 .sec-4 {
   p {
     color: #ff0;
+  }
+  & .showR-animate {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height:100%;
+      background: #1f242d;
+      transition: 1s;
+      transition-delay: calc(.3s * var(--i));
+  }
+  &.show-animate{
+    .showR-animate{
+        width:0;
+    }
   }
 }
 .sec-5 {
@@ -72,6 +105,15 @@ section {
     img {
       max-width: 300px;
       margin: 0 30px;
+      transform: translateX(-100%);
+      transition-delay: calc(.3s * var(--i));
+    }
+  }
+  &.show-animate{
+    & .images{
+        img{
+            transform: translateX(0);
+        }
     }
   }
 }
