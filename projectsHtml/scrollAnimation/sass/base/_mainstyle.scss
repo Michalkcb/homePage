@@ -15,14 +15,30 @@ section {
     flex-direction: column;
     min-height: 100vh;
     background: #1f242d;
+    h1 {
+        font-size: 90px;
+        color: #fff;
+    }
+    p {
+        font-size: 35px;
+        color: #0ef;
+        font-weight: 600;
+    }
+    .sec-2 {
+        p {
+            color: #0f0;
+        }
+    }
+    .sec-3 {
+        p {
+            color: #e0f;
+        }
+    }
+    .sec-4 {
+        p {
+            color: #ff0;
+        }
+    }
 }
 
-h1 {
-    font-size: 90px;
-    color: #fff;
-}
-p{
-    font-size: 35px;
-    color: #0ef;
-    font-weight: 600;
-}
+
