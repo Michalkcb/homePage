@@ -1,0 +1,279 @@
+html {
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  font-family: system-ui;
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  overflow-x: hidden;
+  background-color: #27313a;
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.page-wrapper {
+  width: 95vw;
+}
+
+.certificates {
+  @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700;900&display=swap");
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: source code pro;
+  font-weight: 500;
+  font-size: 16px;
+  --img-height: 90%;
+  --box-width: calc(var(--box-height) / 0.7);
+  --box-height: 270px;
+  --gradient-one: linear-gradient(45deg, #ffee02, #f30055);
+  --gradient-two: linear-gradient(315deg, #0077ff, #f30055);
+  --gradient-three: linear-gradient(45deg, #74ff03, #00e1ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+  flex-direction: row;
+}
+
+
+.nodejs {
+  background-color: red;
+  height: 95vh;
+  padding: 2rem;
+}
+
+.orbit-wrapper {
+  height: 82vh;
+  margin: 0;
+  padding: 0;
+  width: 98vw;
+}
+
+.orbit {
+  --size: 12rem;
+  --speed: 120s;
+  transform: translateX(45%) translateY(15%) rotate(0deg);
+
+  .center-image {
+    background-color: red;
+    width: var(--size);
+    height: var(--size);
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    transform: translateX(0%) translateY(100%) rotate(0deg);
+    border-radius: 2rem;
+
+    img {
+      position: absolute;
+      transition: opacity 500ms;
+
+      &:not(:first-child):hover {
+        opacity: 0;
+      }
+    }
+
+    .center_img1 {
+      transform: translateX(0%) translateY(-10%) rotate(0deg);
+    }
+  }
+
+  ul {
+    display: grid;
+    place-items: center;
+    width: var(--size);
+    height: var(--size);
+    position: relative;
+    list-style: none;
+    --icon-bg: var(--green-light);
+    --text-bg: var(--green-dark);
+    transform-origin: center;
+    animation: orbit var(--speed) linear infinite;
+    &:hover {
+      animation-play-state: paused;
+      --orbit-play-state: paused;
+    }
+  }
+
+  li {
+    --icon-bg: rgb(156, 52, 69, 0);
+    --text-bg: #3e5b79;
+
+    position: absolute;
+    width: 8rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    font-weight: 500;
+    color: var(--white-light);
+    text-align: center;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+
+    &:hover {
+      --throb-play-state: paused;
+    }
+
+    @for $i from 0 through 7 {
+      &:nth-child(#{$i + 1}) {
+        --throb-delay: #{500ms * $i};
+      }
+    }
+
+    & > * {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      border-radius: inherit;
+
+      position: absolute;
+      animation: orbit var(--speed) linear reverse infinite,
+        throb 1s var(--throb-delay) ease-in-out infinite alternate;
+      animation-play-state: var(--orbit-play-state, running),
+        var(--throb-play-state, running);
+    }
+
+    > div {
+      background-color: var(--icon-bg);
+    }
+
+    > p {
+      background: var(--text-bg);
+      transition: opacity 500ms;
+      opacity: 0;
+    }
+
+    &:hover > p {
+      opacity: 1;
+    }
+    img {
+      width: 70%;
+    }
+  }
+
+  a {
+    --icon-bg: rgb(156, 52, 69, 0);
+    --text-bg: #3e5b79;
+
+    position: absolute;
+    width: 8rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    font-weight: 500;
+    color: var(--white-light);
+    text-align: center;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+
+    @for $i from 0 through 7 {
+      &:nth-child(#{$i + 1}) {
+        --throb-delay: #{500ms * $i};
+      }
+    }
+
+    & > * {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      border-radius: inherit;
+
+      position: absolute;
+    }
+
+    > p {
+      background: var(--text-bg);
+      transition: opacity 500ms;
+      opacity: 0;
+    }
+
+    &:hover > p {
+      opacity: 1;
+    }
+  }
+
+  li:nth-child(1) {
+    transform: translate(15rem, 0rem);
+  }
+
+  li:nth-child(2) {
+    transform: translate(10rem, 10rem);
+  }
+
+  li:nth-child(3) {
+    transform: translate(0rem, 15rem);
+  }
+  li:nth-child(4) {
+    transform: translate(-10rem, 10rem);
+  }
+
+  li:nth-child(5) {
+    transform: translate(-15rem, 0rem);
+  }
+
+  li:nth-child(6) {
+    transform: translate(-10rem, -10rem);
+  }
+
+  li:nth-child(7) {
+    transform: translate(0, -15rem);
+  }
+  li:nth-child(8) {
+    transform: translate(10rem, -10rem);
+  }
+}
+
+.techLogos {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #3e5b79;
+  align-content: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 2rem;
+
+  .logo {
+    width: auto;
+    height: 3.5rem;
+  }
+}
+
+@keyframes orbit {
+  100% {
+    rotate: 1turn;
+  }
+}
+
+@keyframes hold-position {
+  100% {
+    rotate: -1turn;
+  }
+}
+
+@keyframes throb {
+  100% {
+    scale: 1.05;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  body {
+    background: #27313a;
+    .orbit {
+      transform: translateX(35%) translateY(30%) rotate(0deg);
+    }
+  }
+  
+}
