@@ -1,0 +1,27 @@
+.sectionLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  
+    li {
+      list-style-type: none;
+      display: flex;
+    }
+  
+    a {
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 1rem;
+      display: flex;
+    }
+  
+    img {
+      max-height: 40px;
+      max-width: 40px;
+      background-color: #525252;
+      margin: 0.2rem;
+      padding: 0.1rem;
+      border-radius: 3px;
+    }
+  }
+  
