@@ -9,3 +9,11 @@
 @forward "react";
 @forward "tailwind";
 @forward "rectangle";
+body {
+    background-color: black;
+
+    .header {
+        text-align: center;
+        font-size: 3rem;
+    }
+}

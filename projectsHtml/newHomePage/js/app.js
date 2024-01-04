@@ -3,23 +3,23 @@
 const javascriptDiv = document.querySelector('.javascript');
 
 const projectData = [
-  { imageSrc: './projectsHtml/scrollAnimation/assets/scrollAnimate.png', description: 'JavaScript Animation on Scroll', link: './projectsHtml/scrollAnimation/index.html', },
-  { imageSrc: './assets/Countries Lookup.png', description: 'Countries Lookup JSON BOOTWATCH', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/typeahead/typeahead.html', },
-  { imageSrc: './assets/faceGenerator.png', description: 'Face Generator JSON TailwindCSS', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/FaceGenerator/dist/FaceGenerator.html', },
-  { imageSrc: './assets/passwordGenerator.jpg', description: 'JS Password Generator', link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/passwordGenerator', },
-  { imageSrc: './assets/infinitePageScroll.png', description: 'JS Infinite Page Scroller', link: 'https://github.com/Michalkcb/myProjects/blob/master/ProjectsLvl1/infiniteScroll/infiniteScroll.html', },
-  { imageSrc: './assets/memoryGame.jpg', description: 'JS Memory Game', link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/theSimplestMemoryGame', },
-  { imageSrc: './assets/fallingBall.jpg', description: 'JS Falling Ball Game', link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/fallingBall', },
-  { imageSrc: './assets/dinoRun1.jpg', description: 'JS Dino Run on squares', link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/dinoGoogleGame', },
-  { imageSrc: './assets/dinoRun2.jpg', description: 'JS Dino Run with graphic' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/chromeDinoClone',},
-  { imageSrc: './assets/paint1.jpg', description: 'JS Paint in canvas', link: 'https://github.com/Michalkcb/myProjects/blob/master/ProjectsLvl1/anotherPaint/index.html', },
-  { imageSrc: './assets/paint2.jpg', description: 'Another JS Paint in Canvas' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/yetAnotherPaintInCanvas',},
-  { imageSrc: './assets/changeColorByBtn.jpg', description: 'Press button to change color' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/bgColorChangeByBtn',},
-  { imageSrc: './assets/toDoApp.jpg', description: 'Simple to do app' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/toDoApp1',},
-  { imageSrc: './assets/toDoApp.jpg', description: 'To do App witt Arry' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/toDoApp2Array',},
-  { imageSrc: './assets/wordCounter.jpg', description: 'Counting words in text' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/wordsCounter',},
-  { imageSrc: './assets/darkModeByBtn.jpg', description: 'Press btn to switch to dark mode' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/darkMode',},
-  { imageSrc: './assets/guessNumber.jpg', description: 'Game: guess number' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/guessNumber',},
+  { imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/scrollAnimation/assets/scrollAnimate.png', description: 'JavaScript Animation on Scroll', link: './projectsHtml/scrollAnimation/index.html', },
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/Countries%20Lookup.png', description: 'Countries Lookup JSON BOOTWATCH', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/typeahead/typeahead.html', },
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/faceGenerator.png', description: 'Face Generator JSON TailwindCSS', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/FaceGenerator/dist/FaceGenerator.html', },
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/passwordGenerator.jpg', description: 'JS Password Generator', link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/passwordGenerator', },
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/infinitePageScroll.png', description: 'JS Infinite Page Scroller', link: 'https://github.com/Michalkcb/myProjects/blob/master/ProjectsLvl1/infiniteScroll/infiniteScroll.html', },
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/memoryGame.jpg', description: 'JS Memory Game', link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/theSimplestMemoryGame', },
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/fallingBall.jpg', description: 'JS Falling Ball Game', link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/fallingBall', },
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/dinoRun1.jpg', description: 'JS Dino Run on squares', link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/dinoGoogleGame', },
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/dinoRun2.jpg', description: 'JS Dino Run with graphic' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/chromeDinoClone',},
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/paint1.jpg', description: 'JS Paint in canvas', link: 'https://github.com/Michalkcb/myProjects/blob/master/ProjectsLvl1/anotherPaint/index.html', },
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/paint2.jpg', description: 'Another JS Paint in Canvas' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/yetAnotherPaintInCanvas',},
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/changeColorByBtn.jpg', description: 'Press button to change color' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/bgColorChangeByBtn',},
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/toDoApp.jpg', description: 'Simple to do app' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/toDoApp1',},
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/wordCounter.jpg', description: 'Counting words in text' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/wordsCounter',},
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/toDoApp.jpg', description: 'To do App witt Arry' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/toDoApp2Array',},
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/darkModeByBtn.jpg', description: 'Press btn to switch to dark mode' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/darkMode',},
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/guessNumber.jpg', description: 'Game: guess number' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/guessNumber',},
 ];
 
   projectData.forEach(project =>  {
@@ -53,31 +53,31 @@ const projectData = [
 const certificatesDiv = document.querySelector('.certificates-container');
 
 const certificatesData = [
-  { certificateSrc: './certificates/reactOdPodstaw.jpg', description: 'React od podstaw'},
-  { certificateSrc: './certificates/nodejsExpressMongoDB.jpg', description: 'Node.js Express MongoDB'},
-  { certificateSrc: './certificates/introductionToWebDevelopment.jpg', description: 'Univerytet of California, Davis'},
-  { certificateSrc: './certificates/zaawansowaneProjektyWCSSIJavascript.jpg', description: 'Zaawansowane projekty w CSS i JavaScript'},
-  { certificateSrc: './certificates/spaceplaning.jpeg', description: 'JDA Space Planning'},
-  { certificateSrc: './certificates/frontendSredniozaawansowany.jpg', description: 'Front-End średniozaawansowany'},
-  { certificateSrc: './certificates/7nawykow.jpeg', description: '7 nawyków'},
-  { certificateSrc: './certificates/arduinoPodstawy.jpg', description: 'Arduino podstawy'},
-  { certificateSrc: './certificates/czystaReka.jpeg', description: 'Czysta ręka'},
-  { certificateSrc: './certificates/fundamentyProgramowania.jpg', description: 'Fundamenty programowania'},
-  { certificateSrc: './certificates/javascriptOdPodstaw.jpg', description: 'JavaScript od podstaw'},
-  { certificateSrc: './certificates/matematykaPodstawy.jpg', description: 'Matematyka od podstaw'},
-  { certificateSrc: './certificates/MQL5Podstawy.jpg', description: 'MQL5 - podstawy'},
-  { certificateSrc: './certificates/podstawyWebDevelopmentu.jpg', description: 'Podstawy Web Developmentu'},
-  { certificateSrc: './certificates/prawoWIT.jpg', description: 'Prawo w IT'},
-  { certificateSrc: './certificates/samoorganizacja.jpeg', description: 'Samoorganizacja'},
-  { certificateSrc: './certificates/seo.jpg', description: 'SEO'},
-  { certificateSrc: './certificates/sieciKomputerowe.jpg', description: 'Sieci komputerowe'},
-  { certificateSrc: './certificates/storyboard.jpeg', description: 'Storyboard'},
-  { certificateSrc: './certificates/wizytowkaGoogle.jpg', description: 'Wizytówka Google'},
-  { certificateSrc: './certificates/wordpress.jpg', description: 'Wordpress'},
-  { certificateSrc: './certificates/wprowadzenieDoProgramowania.jpg', description: 'Wprowadzenie do programowania'},
-  { certificateSrc: './certificates/wstepDoInzynieriiOprogramowania.jpg', description: 'Wstęp do inżynierii oprogramowania'},
-  { certificateSrc: './certificates/wystapienia i prezentacje.jpeg', description: 'Wystąpienia i prezentacje'},
-  { certificateSrc: './certificates/zarzadzanieProjektamiIT.jpg', description: 'Zarządzanie projektami w IT'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/reactOdPodstaw.jpg', description: 'React od podstaw'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/nodejsExpressMongoDB.jpg', description: 'Node.js Express MongoDB'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/introductionToWebDevelopment.jpg', description: 'Univerytet of California, Davis'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/zaawansowaneProjektyWCSSIJavascript.jpg', description: 'Zaawansowane projekty w CSS i JavaScript'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/spaceplaning.jpeg', description: 'JDA Space Planning'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/frontendSredniozaawansowany.jpg', description: 'Front-End średniozaawansowany'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/7nawykow.jpeg', description: '7 nawyków'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/arduinoPodstawy.jpg', description: 'Arduino podstawy'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/czystaReka.jpeg', description: 'Czysta ręka'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/fundamentyProgramowania.jpg', description: 'Fundamenty programowania'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/javascriptOdPodstaw.jpg', description: 'JavaScript od podstaw'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/matematykaPodstawy.jpg', description: 'Matematyka od podstaw'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/MQL5Podstawy.jpg', description: 'MQL5 - podstawy'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/podstawyWebDevelopmentu.jpg', description: 'Podstawy Web Developmentu'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/prawoWIT.jpg', description: 'Prawo w IT'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/samoorganizacja.jpeg', description: 'Samoorganizacja'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/seo.jpg', description: 'SEO'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/sieciKomputerowe.jpg', description: 'Sieci komputerowe'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/storyboard.jpeg', description: 'Storyboard'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/wizytowkaGoogle.jpg', description: 'Wizytówka Google'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/wordpress.jpg', description: 'Wordpress'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/wprowadzenieDoProgramowania.jpg', description: 'Wprowadzenie do programowania'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/wstepDoInzynieriiOprogramowania.jpg', description: 'Wstęp do inżynierii oprogramowania'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/wystapienia i prezentacje.jpeg', description: 'Wystąpienia i prezentacje'},
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/zarzadzanieProjektamiIT.jpg', description: 'Zarządzanie projektami w IT'},
 ]
 
     certificatesData.forEach(certificate =>  {
@@ -105,14 +105,14 @@ const certificatesData = [
 //HTML projects
 
 const projectsData = [
-  {link: './projectsHtml/glowingIcons/index.html', imageSrc: './assets/glowingItems.jpg', alt: 'glowing_icons'},
+  {link: '/projectsHtml/glowingIcons/index.html', imageSrc: 'https://michalkcb.github.io/homePage/assets/glowingItems.jpg', alt: 'glowing_icons'},
   {link: 'http://michalkcb.ct8.pl/new%20cruzeirosazuis/newTerminyPL.html',imageSrc: 'http://michalkcb.ct8.pl/pic/cruseiro.jpg',alt: 'page_pic1'},
   {link: 'http://michalkcb.ct8.pl/glowingDiv/index.html',imageSrc: 'http://michalkcb.ct8.pl/glowingDiv/glowingDivs.png',alt: 'Glowing DIV'},
   {link: '../old/index.html',imageSrc: 'http://michalkcb.ct8.pl/pic/old.png',alt: 'old WD'},
   {link: 'http://michalkcb.ct8.pl/page07/page07.html',imageSrc: 'http://michalkcb.ct8.pl/pic/page07.png',alt: 'page_pic7'},
   {link: 'http://michalkcb.ct8.pl/EuroChina/index.html',imageSrc: 'http://michalkcb.ct8.pl/pic/page02.png',alt: 'page_pic2'},
   {link: 'http://michalkcb.ct8.pl/page06/page06.html',imageSrc: 'http://michalkcb.ct8.pl/pic/page06.png',alt: 'page_pic6'},
-  {link: 'https://michalkcb.github.io/homePage/projectsHtml/semstorm/index.html',imageSrc: './projectsHtml/semstorm/assets/semstorm.png',alt: 'semstorm'  }
+  {link: 'https://michalkcb.github.io/homePage/projectsHtml/semstorm/index.html',imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/semstorm/assets/semstorm.png',alt: 'semstorm'  }
 ];
 
 const recent = document.querySelector('.recent');
@@ -144,18 +144,18 @@ projectsData.forEach(project => {
 const tailwindData = [
   {
     link: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind01/dist/index.html',
-    imageSrc: './tailwindCSS/tailwind01/assets/tailwind01.png',
+    imageSrc: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind01/assets/tailwind01.png',
     alt: 'pizzeria'
   },
   {
     link: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind02/dist/index.html',
-    imageSrc: './tailwindCSS/tailwind02/assets/aikido.png',
+    imageSrc: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind02/assets/aikido.png',
     alt: 'aikido'
   }
   ,
   {
     link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/FaceGenerator/dist/FaceGenerator.html',
-    imageSrc: './assets/faceGenerator.png',
+    imageSrc: 'https://michalkcb.github.io/homePage/assets/faceGenerator.png',
     alt: 'Face Generator'
   }
 ];
@@ -183,12 +183,12 @@ tailwindData.forEach(project => {
 const reactData = [
   {
     link: 'https://github.com/Michalkcb/myProjects/tree/master/react/react01',
-    imageSrc: './assets/reactPage01.png',
+    imageSrc: 'https://michalkcb.github.io/homePage/assets/reactPage01.png',
     alt: 'react01'
   },
   {
     link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel3/react_calculator/src',
-    imageSrc: './assets/reactCalculator.png',
+    imageSrc: 'https://michalkcb.github.io/homePage/assets/reactCalculator.png',
     alt: 'reactCalculator'
   }
 ];
