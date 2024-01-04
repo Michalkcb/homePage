@@ -337,6 +337,11 @@ picture {
 .rectangle .header {
   min-height: 75dvh;
 }
+.rectangle .header a {
+  border: 2px solid #fff;
+  padding: 0.2rem;
+  background-color: #ea00ff;
+}
 
 .techLogos {
   display: flex;
@@ -377,7 +382,7 @@ picture {
 }
 
 body {
-  background-color: black;
+  background-color: #2C3E50;
 }
 body .page-wrapper {
   text-align: center;

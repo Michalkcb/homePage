@@ -24,5 +24,11 @@
     }
     .header{
         min-height: 75dvh;
+
+        a {
+            border: 2px solid #fff;
+            padding: 0.2rem;
+            background-color: #ea00ff;
+        }
     }
 }
