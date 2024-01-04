@@ -1,27 +1,40 @@
 .sectionLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-  
+
     li {
       list-style-type: none;
       display: flex;
-    }
-  
-    a {
-      text-decoration: none;
-      font-weight: 300;
-      font-size: 1rem;
-      display: flex;
-    }
-  
-    img {
-      max-height: 40px;
-      max-width: 40px;
-      background-color: #525252;
-      margin: 0.2rem;
-      padding: 0.1rem;
-      border-radius: 3px;
+
+      a {
+        text-decoration: none;
+        display: flex;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        padding: 0.1rem;
+        margin: 0.1rem;
+        align-items: center;
+        min-width: 295px;
+
+        img {
+          max-height: 40px;
+          max-width: 40px;
+          margin: 0.2rem;
+          padding: 0.1rem;
+          border-radius: 3px;
+        }
+
+        p {
+          font-weight: 300;
+          font-size: 0.9rem;
+        }
+      }
     }
   }
-  
+}

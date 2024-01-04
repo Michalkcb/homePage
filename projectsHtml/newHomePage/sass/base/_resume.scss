@@ -1,8 +1,5 @@
 .resume {
-  font-family: roboto, sans-serif;
   padding: 1rem;
-//   display: block;
-
   h1,
   h2,
   h3 {
@@ -20,6 +17,12 @@
   h3 {
     text-align: center;
     font-size: 3rem;
+  }
+  li,
+  span {
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: normal;
   }
 
   .left-panel,
@@ -42,26 +45,20 @@
     > :nth-child(2),
     > :nth-child(3) {
       width: 100%;
-      border-bottom: 1px solid white;
-    }}
-    ul {
-      padding: 0 0 1rem 1rem;
-      list-style: none;
+      border-bottom: 1px solid fff;
     }
+  }
+  ul {
+    padding: 0 0 1rem 1rem;
+    list-style: none;
+  }
 
-@media (min-width: 758px) {
-
-  .resume-wrapper {
-    display: grid;
-    grid-template-columns: 20vw 50vw;
-    column-gap: 2rem;
-    justify-content: center;
-
-
-
-
-
+  @media (min-width: 758px) {
+    .resume-wrapper {
+      display: grid;
+      grid-template-columns: 20vw 50vw;
+      column-gap: 2rem;
+      justify-content: center;
     }
-  
-}
+  }
 }
