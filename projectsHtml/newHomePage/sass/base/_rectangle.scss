@@ -1,3 +1,17 @@
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+:root {
+  --clr-1: #052b2f;
+  --clr-2: #073438;
+  --clr-3: #0e4b50;
+  --clr-4: #2d8f85;
+  --clr-5: #637c54;
+}
+
 .rectangle {
   .navigation {
     display: flex;
@@ -12,15 +26,53 @@
       flex-wrap: nowrap;
       margin: 1rem 3rem;
 
-            li{
-                list-style-type: none;
-                display: flex;
-                margin: 0 0 0 2rem;
-
-            }
-        }
-    }
-    .header{
-        min-height: 75dvh;
+      li {
+        list-style-type: none;
+        display: flex;
+        margin: 0 0 0 2rem;
+      }
     }
   }
+  .header {
+    min-height: 75dvh;
+    .center-image {
+      margin: 2rem auto 2rem auto;
+      width: 7rem;
+      height: 9.8rem;
+      border-radius: 3px;
+      position: relative;
+
+      img {
+        border-radius: 3px;
+      }
+    }
+    .center-image::before,
+    .center-image::after {
+      content: "";
+      position: absolute;
+      inset: -0.2rem;
+      background: conic-gradient(
+        from var(--gradient-angle),
+        var(--clr-3),
+        var(--clr-4),
+        var(--clr-5),
+        var(--clr-4),
+        var(--clr-3)
+      );
+      z-index: -1;
+      border-radius: inherit;
+      animation: rotation 5s linear infinite;
+    }
+    .center-image::after {
+      filter: blur(.2rem);
+    }
+  }
+}
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
