@@ -3,7 +3,6 @@
   initial-value: 0deg;
   inherits: false;
 }
-@forward "colors";
 
 
 .rectangle {
@@ -44,19 +43,19 @@
     .center-image::after {
       content: "";
       position: absolute;
-      transform: translate(1rem, 1rem);
+      transform: translate(.3rem, .3rem);
       inset: -0.01rem;
       background: conic-gradient(
         from var(--gradient-angle),
-        var(clr-6),
-        var(clr-8),
-        var(clr-7),
-        var(clr-8),
-        var(clr-6)
+        var(--clr-6),
+        var(--clr-8),
+        var(--clr-7),
+        var(--clr-8),
+        var(--clr-6)
       );
       z-index: -1;
       border-radius: inherit;
-      animation: rotation 15s linear infinite;
+      animation: rotation 10s linear infinite;
     }
     .center-image::after {
       filter: blur(.2rem);

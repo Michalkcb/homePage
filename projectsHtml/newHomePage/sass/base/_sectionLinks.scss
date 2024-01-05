@@ -11,8 +11,13 @@
     li {
       list-style-type: none;
       display: flex;
+      position: relative;
+      margin-top: 1rem;
+
+
 
       a {
+        background-color: var(--bgclr);
         text-decoration: none;
         display: flex;
         border: 1px solid #fff;
@@ -20,8 +25,32 @@
         padding: 0.1rem;
         margin: 0.1rem;
         align-items: center;
-        min-width: 295px;
+        width: 295px;
+        height: 60px;
+      }
 
+      a::before,
+      a::after {
+        content: "";
+        position: absolute;
+        transform: translate(.1rem, .1rem);
+        inset: -0.01rem;
+        background: conic-gradient(
+          from var(--gradient-angle),
+          var(--clr-6),
+          var(--clr-8),
+          var(--clr-7),
+          var(--clr-8),
+          var(--clr-6)
+        );
+        z-index: -1;
+        border-radius: inherit;
+        animation: rotation 1s linear infinite;
+      }
+      a::after {
+        filter: blur(.1rem);
+      }
+      
         img {
           max-height: 40px;
           max-width: 40px;
@@ -33,8 +62,9 @@
         p {
           font-weight: 300;
           font-size: 0.9rem;
+
         }
       }
+
     }
   }
-}
