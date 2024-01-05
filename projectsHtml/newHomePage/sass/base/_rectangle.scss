@@ -3,14 +3,8 @@
   initial-value: 0deg;
   inherits: false;
 }
+@forward "colors";
 
-:root {
-  --clr-1: #052b2f;
-  --clr-2: #073438;
-  --clr-3: #0e4b50;
-  --clr-4: #2d8f85;
-  --clr-5: #637c54;
-}
 
 .rectangle {
   .navigation {
@@ -50,18 +44,19 @@
     .center-image::after {
       content: "";
       position: absolute;
-      inset: -0.2rem;
+      transform: translate(1rem, 1rem);
+      inset: -0.01rem;
       background: conic-gradient(
         from var(--gradient-angle),
-        var(--clr-3),
-        var(--clr-4),
-        var(--clr-5),
-        var(--clr-4),
-        var(--clr-3)
+        var(clr-6),
+        var(clr-8),
+        var(clr-7),
+        var(clr-8),
+        var(clr-6)
       );
       z-index: -1;
       border-radius: inherit;
-      animation: rotation 5s linear infinite;
+      animation: rotation 15s linear infinite;
     }
     .center-image::after {
       filter: blur(.2rem);
