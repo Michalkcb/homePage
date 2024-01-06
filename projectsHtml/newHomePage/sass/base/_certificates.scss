@@ -6,6 +6,9 @@
   padding: 40px 0;
   flex-wrap: wrap;
 
+  min-height: 75vh;
+  background-color: red;
+
   .box {
     position: relative;
     width: var(--box-width);
