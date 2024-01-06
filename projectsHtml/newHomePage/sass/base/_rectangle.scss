@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height: 4rem;
+    height: 4rem;
 
     .title {
       img {
@@ -23,14 +23,21 @@
     ul {
       display: flex;
       flex-wrap: nowrap;
-      margin: 1rem 3rem;
 
       li {
         list-style-type: none;
         display: flex;
         margin: 0 0 0 2rem;
         a{
-          font-weight: 300;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          p {
+            font-weight: 300;
+            font-size: .8rem;
+
+          }
+
           img {
             height: 3rem;
             padding: .5rem 1.5rem;
