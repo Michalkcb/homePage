@@ -10,10 +10,14 @@
     background-color: #000;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     .title {
-      margin: 1rem 3rem;
-      padding: 0;
+      img {
+        min-height: 1rem;
+        max-height: 3rem;
+        padding: .5rem 1.5rem;
+      }
     }
     ul {
       display: flex;
@@ -24,6 +28,10 @@
         list-style-type: none;
         display: flex;
         margin: 0 0 0 2rem;
+        a{
+          font-weight: 300;
+
+        }
       }
     }
   }
