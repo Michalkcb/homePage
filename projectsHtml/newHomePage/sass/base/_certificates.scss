@@ -1,100 +1,122 @@
-.certificates-container {
-  position: relative;
+.certificates {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: source code pro;
+  font-weight: 500;
+  font-size: 16px;
+  --img-height: 90%;
+  --box-width: calc(var(--box-height) / 0.7);
+  --box-height: 270px;
+  --gradient-one: linear-gradient(45deg, #ffee02, #f30055);
+  --gradient-two: linear-gradient(315deg, #0077ff, #f30055);
+  --gradient-three: linear-gradient(45deg, #74ff03, #00e1ff);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
-  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+  flex-direction: row;
 
-  min-height: 75vh;
-  background-color: red;
-
-  .box {
+  .certificates-container {
     position: relative;
-    width: var(--box-width);
-    height: var(--box-height);
-    color: #fff;
-    background: var(--bg-dark);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 30px;
-    transition: 0.5s;
+    padding: 40px 0;
+    flex-wrap: wrap;
 
-    .content {
-      h2 {
-        font-size: 1.2rem;
-        color: #fff;
-        margin-bottom: 2px;
+    .box {
+      position: relative;
+      width: var(--box-width);
+      height: var(--box-height);
+      color: #fff;
+      background: var(--bg-dark);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 30px;
+      transition: 0.5s;
+
+      .content {
+        h2 {
+          font-size: 1.2rem;
+          color: #fff;
+          margin-bottom: 2px;
+        }
+      }
+
+      span::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 50%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        pointer-events: none;
+      }
+
+      span {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;
+        border-radius: 2%;
+
+        overflow: hidden;
+
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 2;
+      }
+      .content {
+        position: relative;
+        z-index: 10;
+        padding: 10px 40px;
+        overflow: hidden;
+
+        img {
+          // max-width: 90%;
+          // height: auto;
+
+          height: 10rem;
+          height: 8rem;
+          border: 2px solid black;
+        }
       }
     }
+    .box:hover {
+      transform: translateY(-20px);
+    }
+    .box::before {
+      content: "";
+      border-radius: 3%;
 
-    span::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--gradient-one);
+    }
+    .box::after {
       content: "";
       position: absolute;
-      top: 0px;
-      left: 0px;
-      width: 50%;
+      top: 0;
+      left: 0;
+      width: 100%;
       height: 100%;
-      background: rgba(255, 255, 255, 0.1);
-      pointer-events: none;
+      background: var(--gradient-one);
+      filter: blur(30px);
     }
-
-    span {
-      position: absolute;
-      top: 6px;
-      left: 6px;
-      right: 6px;
-      bottom: 6px;
-      border-radius: 2%;
-
-      overflow: hidden;
-
-      background: rgba(0, 0, 0, 0.6);
-      z-index: 2;
+    .box:nth-child(2)::before,
+    .box:nth-child(2)::after {
+      background: var(--gradient-two);
     }
-    .content {
-      position: relative;
-      z-index: 10;
-      padding: 10px 40px;
-      overflow: hidden;
-
-      img {
-        max-width: 90%;
-        height: auto;
-      }
+    .box:nth-child(3)::before,
+    .box:nth-child(3)::after {
+      background: var(--gradient-three);
     }
-  }
-  .box:hover {
-    transform: translateY(-20px);
-  }
-  .box::before {
-    content: "";
-    border-radius: 3%;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--gradient-one);
-  }
-  .box::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--gradient-one);
-    filter: blur(30px);
-  }
-  .box:nth-child(2)::before,
-  .box:nth-child(2)::after {
-    background: var(--gradient-two);
-  }
-  .box:nth-child(3)::before,
-  .box:nth-child(3)::after {
-    background: var(--gradient-three);
   }
 }
