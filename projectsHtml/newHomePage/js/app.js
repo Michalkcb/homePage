@@ -213,13 +213,13 @@ reactData.forEach(project => {
 });
 
 // Resume
-const resume = document.createElement("div");
-resume.classList.add("resume");
-resume.id = "resume";
+const resume = document.querySelector(".resume");
+// resume.classList.add("resume");
+// resume.id = "resume";
 
-const resumeWrapper = document.createElement("div");
-resumeWrapper.classList.add("resume-wrapper");
-resume.appendChild(resumeWrapper);
+const resumeWrapper = document.querySelector(".resume-wrapper");
+// resumeWrapper.classList.add("resume-wrapper");
+// resume.appendChild(resumeWrapper);
 
 
 // Left panel
