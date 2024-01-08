@@ -5,67 +5,90 @@
 }
 
 .rectangle {
+  // .navigation {
+  //   background-color: #000;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   height: 4rem;
+
+  //   .title {
+  //     img {
+  //       min-height: 1rem;
+  //       max-height: 3rem;
+  //       padding: 0.5rem 1.5rem;
+  //     }
+  //   }
+  //   ul {
+  //     list-style: none;
+  //     li:hover {
+  //       ul.sectionLink{
+  //         display: block;
+  //       }
+  //     }
+  //     li {
+  //       list-style-type: none;
+  //       display: inline-block;
+  //       position: relative;
+  //       margin-right: 1rem;
+
+  //       ul.sectionLinks {
+  //         width: 100%;
+  //         position: absolute;
+  //         z-index: 999;
+  //         display: none;
+
+  //         li {
+  //           display: block;
+  //         }
+  //       }
+
+  //       a:hover {
+  //         background: rgba($color: #fff, $alpha: .3);
+  //       }
+
+  //       a {
+  //         display: block;
+  //         text-align: center;
+  //         font-weight: 300;
+  //         font-size: 0.8rem;
+  //         border-radius: .5rem;
+  //         padding: .5rem;
+
+  //         p, a {
+  //           font-weight: 300;
+  //           font-size: 0.8rem;
+  //         }
+
+  //         img {
+  //           height: 2rem;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
   .navigation {
-    background-color: #000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 3rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
-    height: 4rem;
 
-    .title {
-      img {
-        min-height: 1rem;
-        max-height: 3rem;
-        padding: 0.5rem 1.5rem;
-      }
-    }
-    ul {
-      list-style: none;
-      li:hover {
-        ul.sectionLink{
-          display: block;
-        }
-      }
-      li {
-        list-style-type: none;
-        display: inline-block;
+    a {
+      margin: .1rem;
+      text-decoration: none;
+      padding: 1rem .5rem;
+
+      .sectionLinks (
         position: relative;
-        margin-right: 1rem;
-
-        ul.sectionLinks {
-          width: 100%;
-          position: absolute;
-          z-index: 999;
-          display: none;
-
-          li {
-            display: block;
-          }
-        }
-
-        a:hover {
-          background: rgba($color: #fff, $alpha: .3);
-        }
-
-        a {
-          display: block;
-          text-align: center;
-          font-weight: 300;
-          font-size: 0.8rem;
-          border-radius: .5rem;
-          padding: .5rem;
-
-          p, a {
-            font-weight: 300;
-            font-size: 0.8rem;
-          }
-
-          img {
-            height: 2rem;
-          }
-        }
-      }
+      )
     }
+
   }
   .header {
     min-height: 75dvh;
