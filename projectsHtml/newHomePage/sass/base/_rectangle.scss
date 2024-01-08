@@ -68,7 +68,7 @@
   //   }
   // }
 
-  .navigation {
+  .menu {
     width: 100%;
     position: fixed;
     top: 0;
@@ -79,16 +79,36 @@
     justify-content: flex-end;
     align-items: center;
 
-    a {
-      margin: .1rem;
-      text-decoration: none;
-      padding: 1rem .5rem;
-
-      .sectionLinks (
-        position: relative;
-      )
+    img {
+      height: 2rem;
     }
 
+    a {
+      margin: 0.1rem;
+      text-decoration: none;
+      padding: 1rem 0.5rem;
+    }
+    .dropdown {
+      position: relative;
+
+      ul {
+        width: 200px;
+        text-align: center;
+        position: absolute;
+        padding: 0;
+        list-style-type: none;
+        box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0, .25);
+        margin-top:  10px;
+        border-radius: .5rem;
+        li {
+          padding: 0.5rem;
+        }
+        li:hover {
+          background: rgba(0, 0, 0, 0, .25);
+          border-radius:  .5rem;
+        }
+       }
+    }
   }
   .header {
     min-height: 75dvh;
