@@ -5,68 +5,6 @@
 }
 
 .rectangle {
-  // .navigation {
-  //   background-color: #000;
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: center;
-  //   height: 4rem;
-
-  //   .title {
-  //     img {
-  //       min-height: 1rem;
-  //       max-height: 3rem;
-  //       padding: 0.5rem 1.5rem;
-  //     }
-  //   }
-  //   ul {
-  //     list-style: none;
-  //     li:hover {
-  //       ul.sectionLink{
-  //         display: block;
-  //       }
-  //     }
-  //     li {
-  //       list-style-type: none;
-  //       display: inline-block;
-  //       position: relative;
-  //       margin-right: 1rem;
-
-  //       ul.sectionLinks {
-  //         width: 100%;
-  //         position: absolute;
-  //         z-index: 999;
-  //         display: none;
-
-  //         li {
-  //           display: block;
-  //         }
-  //       }
-
-  //       a:hover {
-  //         background: rgba($color: #fff, $alpha: .3);
-  //       }
-
-  //       a {
-  //         display: block;
-  //         text-align: center;
-  //         font-weight: 300;
-  //         font-size: 0.8rem;
-  //         border-radius: .5rem;
-  //         padding: .5rem;
-
-  //         p, a {
-  //           font-weight: 300;
-  //           font-size: 0.8rem;
-  //         }
-
-  //         img {
-  //           height: 2rem;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
 
   .menu {
     width: 100%;
@@ -78,6 +16,12 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    background: #000;
+
+    &a:hover{
+      background-color: rgba(255, 255, 255, .25);;
+      border-radius: 7px;
+    }
 
     img {
       height: 2rem;
@@ -93,17 +37,22 @@
     .dropdown {
       position: relative;
 
-      a:focus{
+      a:hover, a:focus {
         + ul{
           display: block;
-
+          z-index: 999;
+          background: #000;
         }
         
       }
-      a:hover{
-          background-color: rgba(255, 255, 255, .25);;
-          border-radius: 7px;
-        }
+      
+      ul:hover {
+        display: block;
+        background: #000;
+        z-index: 1000;
+
+      }
+
 
       ul {
         width: 200px;
@@ -115,6 +64,7 @@
         margin-top: 10px;
         border-radius: 7px;
         display: none;
+
         li:hover{
           background-color: rgba(255, 255, 255, .25);;
           border-radius: 7px;
@@ -143,6 +93,8 @@
       height: 9.8rem;
       border-radius: 3px;
       position: relative;
+      top: 5rem;
+      z-index: 1;
 
       img {
         border-radius: 3px;
