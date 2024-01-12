@@ -28,7 +28,7 @@ nav {
     }
 
     img {
-      height: 2rem;
+      height: 1.2rem;
     }
 
     a {
@@ -40,6 +40,10 @@ nav {
     }
     .dropdown {
       position: relative;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      align-items: center;
 
       a:hover, a:focus {
         + ul{
