@@ -16,6 +16,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: #000;
+  z-index: 9999;
   
   .title {
     img {
@@ -35,6 +36,7 @@ nav {
 
     img {
       height: 1.2rem;
+      width: 1.2rem;
     }
 
     a {
@@ -45,6 +47,7 @@ nav {
       font-weight: 300;      
     }
     .dropdown {
+      display: flex;
       position: relative;
       height: 100%;
       margin: 0;
@@ -75,7 +78,7 @@ nav {
         padding: 0;
         list-style-type: none;
         box-shadow: 0 0 23px 0 rgba(255, 255, 255, .25);
-        margin-top: 10px;
+        margin-top: 20rem;
         border-radius: 7px;
         display: none;
 
