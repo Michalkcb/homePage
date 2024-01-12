@@ -16,6 +16,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: #000;
+  
+  .title {
+    img {
+      height: 2rem;
+    }
+  }
   .menu {
     display: flex;
     flex-direction: row;
