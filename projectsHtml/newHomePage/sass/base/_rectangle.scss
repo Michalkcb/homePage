@@ -55,10 +55,14 @@ nav {
       align-items: center;
 
       a:hover, a:focus {
+        background-color: rgb(255, 0, 0);
+        border-radius: 7px;
+
         + ul{
           display: block;
           z-index: 999;
           background: #000;
+
         }
         
       }
@@ -67,6 +71,7 @@ nav {
         display: block;
         background: #000;
         z-index: 1000;
+
 
       }
 
@@ -77,13 +82,13 @@ nav {
         position: absolute;
         padding: 0;
         list-style-type: none;
-        box-shadow: 0 0 23px 0 rgba(255, 255, 255, .25);
+        box-shadow: 0 0 23px 0 rgba(0, 255, 30, 1);
         margin-top: 20rem;
         border-radius: 7px;
         display: none;
 
         li:hover{
-          background-color: rgba(255, 255, 255, .25);;
+          background-color: rgb(0, 195, 255);
           border-radius: 7px;
         }
         li {
