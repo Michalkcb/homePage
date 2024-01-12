@@ -5,18 +5,22 @@
 }
 
 .rectangle {
-
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
   .menu {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: #000;
 
     &a:hover{
       background-color: rgba(255, 255, 255, .25);;
@@ -84,6 +88,7 @@
       }
     }
   }
+}
   .header {
     min-height: 75dvh;
 
@@ -123,6 +128,7 @@
     }
   }
 }
+
 @keyframes rotation {
   0% {
     --gradient-angle: 0deg;
