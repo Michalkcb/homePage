@@ -24,8 +24,11 @@ nav {
     align-items: center;
 
     a:hover{
-      background-color: rgb(43, 43, 43);
       border-radius: 7px;
+      color: #8a8a8a;
+      img {
+        filter: brightness(50%);
+      }
     }
 
     img {
@@ -52,7 +55,7 @@ nav {
       align-items: center;
 
       a:hover, a:focus {
-        background-color: rgb(43, 43, 43);
+        color: #8a8a8a;
         border-radius: 7px;
 
         + ul{
@@ -80,7 +83,6 @@ nav {
         display: none;
 
         li:hover{
-          background-color: rgb(43, 43, 43);
           border-radius: 7px;
         }
         li {
