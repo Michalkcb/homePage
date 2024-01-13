@@ -15,6 +15,7 @@ nav {
   .title {
     img {
       height: 2rem;
+
     }
   }
   .menu {
@@ -28,7 +29,9 @@ nav {
       color: #8a8a8a;
       img {
         filter: brightness(50%);
+        
       }
+      transition-delay: 0.2s;
     }
 
     img {
@@ -42,7 +45,9 @@ nav {
       text-decoration: none;
       padding: 1rem 0.5rem;
       font-size: .8rem;
-      font-weight: 300;      
+      font-weight: 300;  
+      transition: color 0.2s ease;
+    
     }
 
 
