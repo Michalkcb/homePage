@@ -214,13 +214,8 @@ reactData.forEach(project => {
 
 // Resume
 const resume = document.querySelector(".resume");
-// resume.classList.add("resume");
-// resume.id = "resume";
 
 const resumeWrapper = document.querySelector(".resume-wrapper");
-// resumeWrapper.classList.add("resume-wrapper");
-// resume.appendChild(resumeWrapper);
-
 
 // Left panel
 const leftPanel = document.createElement("div");
@@ -513,4 +508,5 @@ const hobbiesList = document.createElement("div");
 hobbiesList.textContent = "Coding, Books, Sailing, Swimming, Scuba diving / Diving, City runs";
 hobbiesSection.appendChild(hobbiesList);
 
-document.body.appendChild(resume);
+pageWrapper.appendChild(resume);
+
