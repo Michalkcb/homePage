@@ -110,26 +110,24 @@
       height: 75vh;
    
     }
-    .zero{
-      width: 15rem;
+    span {
+      width: 20rem;
       height: auto;
       position: absolute;
-      top: 7rem;
-      right: 6rem;
+      top: 50%;
+      right: -5%;
+      transform: translate(-50%, -50%);
+
+    .zero{
       font-size: 5rem;
       font-weight: 300;
     }
 
     .pOne {
-      width: 15rem;
-      height: auto;
-      position: absolute;
-      margin: 5rem 3rem;
       color: #fff;
       font-weight: 300;
-      top: 10rem;
-      right: 3rem;
     }
+  }
   }
 }
 footer {
