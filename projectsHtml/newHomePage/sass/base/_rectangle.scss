@@ -103,11 +103,19 @@
   }
   .header {
     min-height: 75dvh;
+    position: relative;
+    img {
+      height: 100%;
+      position: relative;
+    }
 
     .pOne {
+      position: relative;
       margin: 5rem 3rem;
       color: #fff;
       font: 3rem;
+      top: 10px;
+      left: 20px;
     }
   }
 }
