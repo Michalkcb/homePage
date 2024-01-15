@@ -105,17 +105,22 @@
     min-height: 75dvh;
     position: relative;
     img {
-      height: 100%;
-      position: relative;
+      width: 100%;
+      height: auto;
+   
     }
 
     .pOne {
-      position: relative;
+      border: 2px solid red;
+      width: 15rem;
+      height: auto;
+      position: absolute;
       margin: 5rem 3rem;
       color: #fff;
       font: 3rem;
-      top: 10px;
-      left: 20px;
+      font-weight: 300;
+      top: 5rem;
+      right: -25rem;
     }
   }
 }
