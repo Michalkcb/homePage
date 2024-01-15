@@ -1,4 +1,5 @@
 #react {
+  background-color: #00d8ff;
   .recentReact {
     position: relative;
     display: grid;
@@ -9,7 +10,7 @@
     grid-row-gap: 1rem;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 4rem 4rem;
     line-height: 2rem;
     text-align: justify;
     h1 {

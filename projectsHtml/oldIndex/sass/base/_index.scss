@@ -1,6 +1,6 @@
 @forward "reset";
-@forward "font";
 @forward "custom-props";
+@forward "orbit";
 @forward "certificates";
 @forward "html";
 @forward "resume";
@@ -9,14 +9,3 @@
 @forward "react";
 @forward "tailwind";
 @forward "rectangle";
-@forward "tech";
-@forward "sectionLinks";
-@forward "colors";
-body {
-    background-color: #2C3E50;
-
-    .page-wrapper {
-        text-align: center;
-        font-size: 3rem;
-    }
-}

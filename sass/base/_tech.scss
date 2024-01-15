@@ -1,0 +1,12 @@
+.techLogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    img {
+        max-width: 90vw;
+        margin: .2rem;
+        padding: .1rem;
+        border-radius: 3px;
+
+    }
+}
