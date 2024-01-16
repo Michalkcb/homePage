@@ -1,3 +1,21 @@
+// scroll animation
+let sections = document.querySelectorAll('section');
+
+window.onscroll = () => {
+  sections.forEach(section => {
+    let top = window.screenY;
+    let offset = section.offsetTop -150;
+    let height = section.offsetHeight;
+
+    if (top >= offset && top < height + offset) {
+      section.classList.add('show-animate');
+    } 
+    else {
+      section.classList.remove('show-animate');
+    }
+  })
+}
+
 //JS projects
 
 const javascriptDiv = document.querySelector('.javascript');
@@ -508,5 +526,4 @@ const hobbiesList = document.createElement("div");
 hobbiesList.textContent = "Coding, Books, Sailing, Swimming, Scuba diving / Diving, City runs";
 hobbiesSection.appendChild(hobbiesList);
 
-pageWrapper.appendChild(resume);
-
+// resumeWrapper.appendChild(resume);
