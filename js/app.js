@@ -1,20 +1,4 @@
-// scroll animation
-let sections = document.querySelectorAll('section');
 
-window.onscroll = () => {
-  sections.forEach(section => {
-    let top = window.screenY;
-    let offset = section.offsetTop -150;
-    let height = section.offsetHeight;
-
-    if (top >= offset && top < height + offset) {
-      section.classList.add('show-animate');
-    } 
-    else {
-      section.classList.remove('show-animate');
-    }
-  })
-}
 
 //JS projects
 
@@ -527,3 +511,21 @@ hobbiesList.textContent = "Coding, Books, Sailing, Swimming, Scuba diving / Divi
 hobbiesSection.appendChild(hobbiesList);
 
 // resumeWrapper.appendChild(resume);
+
+// scroll animation
+let sections = document.querySelectorAll('section');
+
+window.onscroll = () => {
+  sections.forEach(section => {
+    let top = window.screenY;
+    let offset = section.offsetTop -150;
+    let height = section.offsetHeight;
+
+    if (top >= offset && top < height + offset) {
+      section.classList.add('show-animate');
+    } 
+    else {
+      section.classList.remove('show-animate');
+    }
+  })
+}
