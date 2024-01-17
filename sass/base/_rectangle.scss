@@ -145,3 +145,12 @@ footer {
   background: #000;
   z-index: 9999;
 }
+
+section {
+  .animate {
+    background-color: red;
+    opacity: 0;
+    filter: blur(4px);
+    transition: 1s;
+  }
+}
