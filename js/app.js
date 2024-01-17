@@ -1,9 +1,37 @@
+//React projects
+const reactData = [
+  {
+    link: 'https://github.com/Michalkcb/myProjects/tree/master/react/react01',
+    imageSrc: 'https://michalkcb.github.io/homePage/assets/reactPage01.png',
+    alt: 'react01'
+  },
+  {
+    link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel3/react_calculator/src',
+    imageSrc: 'https://michalkcb.github.io/homePage/assets/reactCalculator.png',
+    alt: 'reactCalculator'
+  }
+];
 
+const recentReact = document.querySelector('.recentReact');
+
+reactData.forEach(project => {
+  const reactDiv = document.createElement('div');
+  reactDiv.classList.add('exampleReact');
+
+  const projectLink = document.createElement('a');
+  projectLink.href = project.link;
+  projectLink.target = '_blank';
+
+  const projectImage = document.createElement('img');
+  projectImage.src = project.imageSrc;
+  projectImage.alt = project.alt;
+
+  projectLink.appendChild(projectImage);
+  reactDiv.appendChild(projectLink);
+  recentReact.appendChild(reactDiv);
+});
 
 //JS projects
-
-const javascriptDiv = document.querySelector('.javascript');
-
 const projectData = [
   { imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/scrollAnimation/assets/scrollAnimate.png', description: 'JavaScript Animation on Scroll', link: './projectsHtml/scrollAnimation/index.html', },
   { imageSrc: 'https://michalkcb.github.io/homePage/assets/Countries%20Lookup.png', description: 'Countries Lookup JSON BOOTWATCH', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/typeahead/typeahead.html', },
@@ -23,6 +51,7 @@ const projectData = [
   { imageSrc: 'https://michalkcb.github.io/homePage/assets/darkModeByBtn.jpg', description: 'Press btn to switch to dark mode' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/darkMode',},
   { imageSrc: 'https://michalkcb.github.io/homePage/assets/guessNumber.jpg', description: 'Game: guess number' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/guessNumber',},
 ];
+  const javascriptDiv = document.querySelector('.recentJS');
 
   projectData.forEach(project =>  {
   const projectDiv = document.createElement('div');
@@ -181,38 +210,7 @@ tailwindData.forEach(project => {
   recentTailwind.appendChild(tailwindDiv);
 });
 
-//React projects
-const reactData = [
-  {
-    link: 'https://github.com/Michalkcb/myProjects/tree/master/react/react01',
-    imageSrc: 'https://michalkcb.github.io/homePage/assets/reactPage01.png',
-    alt: 'react01'
-  },
-  {
-    link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel3/react_calculator/src',
-    imageSrc: 'https://michalkcb.github.io/homePage/assets/reactCalculator.png',
-    alt: 'reactCalculator'
-  }
-];
 
-const recentReact = document.querySelector('.recentReact');
-
-reactData.forEach(project => {
-  const reactDiv = document.createElement('div');
-  reactDiv.classList.add('exampleReact');
-
-  const projectLink = document.createElement('a');
-  projectLink.href = project.link;
-  projectLink.target = '_blank';
-
-  const projectImage = document.createElement('img');
-  projectImage.src = project.imageSrc;
-  projectImage.alt = project.alt;
-
-  projectLink.appendChild(projectImage);
-  reactDiv.appendChild(projectLink);
-  recentReact.appendChild(reactDiv);
-});
 
 // Resume
 const resume = document.querySelector(".resume");
