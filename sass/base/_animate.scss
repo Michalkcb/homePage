@@ -3,7 +3,7 @@ section {
   .animate {
     opacity: 0;
     filter: blur(4px);
-    transition: 1s;
+    transition: 1s linear;
   }
   &.show-animate  {
     & .animate {
@@ -14,7 +14,7 @@ section {
 }
 .sec-1, .sec-6 {
     & .animate {
-      transform: translateX(-100%);
+      transform: translateX(-20%);
     }
     &.show-animate {
       & .animate {
@@ -29,7 +29,7 @@ section {
       color: #0f0;
     }
     & .animate {
-      transform: translateX(100%);
+      transform: translateX(20%);
     }
     &.show-animate {
       & .animate {
