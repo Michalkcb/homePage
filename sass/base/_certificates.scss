@@ -26,6 +26,10 @@
     padding: 40px 0;
     flex-wrap: wrap;
 
+    h1 {
+      width: 100%;
+    }
+
     .box {
       position: relative;
       width: var(--box-width);
