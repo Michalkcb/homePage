@@ -5,23 +5,23 @@ section {
     filter: blur(4px);
     transition: 1s;
   }
-  // &.show-animate  {
-  //   & .animate {
-  //       opacity: 1;
-  //     filter: blur(0);
-  //   }
-  // }
+  &.show-animate  {
+    & .animate {
+        opacity: 1;
+      filter: blur(0);
+    }
+  }
 }
-// .sec-1 {
-//     & .animate {
-//       transform: translateX(-100%);
-//     }
-//     &.show-animate {
-//       & .animate {
-//         transform: translateX(0);
-//       }
-//     }
-//   }
+.sec-1 {
+    & .animate {
+      transform: translateX(-100%);
+    }
+    &.show-animate {
+      & .animate {
+        transform: translateX(0);
+      }
+    }
+  }
   
   
 //   .sec-2 {
