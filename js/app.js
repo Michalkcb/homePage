@@ -79,6 +79,46 @@ const projectData = [
   javascriptDiv.appendChild(projectDiv);
 });
 
+//tailwind projects
+
+const tailwindData = [
+  {
+    link: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind01/dist/index.html',
+    imageSrc: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind01/assets/tailwind01.png',
+    alt: 'pizzeria'
+  },
+  {
+    link: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind02/dist/index.html',
+    imageSrc: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind02/assets/aikido.png',
+    alt: 'aikido'
+  }
+  ,
+  {
+    link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/FaceGenerator/dist/FaceGenerator.html',
+    imageSrc: 'https://michalkcb.github.io/homePage/assets/faceGenerator.png',
+    alt: 'Face Generator'
+  }
+];
+
+const recentTailwind = document.querySelector('.recentTW');
+
+tailwindData.forEach(project => {
+  const tailwindDiv = document.createElement('div');
+  tailwindDiv.classList.add('example');
+
+  const projectLink = document.createElement('a');
+  projectLink.href = project.link;
+  projectLink.target = '_blank';
+
+  const projectImage = document.createElement('img');
+  projectImage.src = project.imageSrc;
+  projectImage.alt = project.alt;
+
+  projectLink.appendChild(projectImage);
+  tailwindDiv.appendChild(projectLink);
+  recentTailwind.appendChild(tailwindDiv);
+});
+
 // Certificates
 
 const certificatesDiv = document.querySelector('.certificates-container');
@@ -170,45 +210,7 @@ projectsData.forEach(project => {
   recent.appendChild(projectDiv);
 });
 
-//tailwind projects
 
-const tailwindData = [
-  {
-    link: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind01/dist/index.html',
-    imageSrc: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind01/assets/tailwind01.png',
-    alt: 'pizzeria'
-  },
-  {
-    link: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind02/dist/index.html',
-    imageSrc: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind02/assets/aikido.png',
-    alt: 'aikido'
-  }
-  ,
-  {
-    link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/FaceGenerator/dist/FaceGenerator.html',
-    imageSrc: 'https://michalkcb.github.io/homePage/assets/faceGenerator.png',
-    alt: 'Face Generator'
-  }
-];
-
-const recentTailwind = document.querySelector('.recentTailwind');
-
-tailwindData.forEach(project => {
-  const tailwindDiv = document.createElement('div');
-  tailwindDiv.classList.add('example');
-
-  const projectLink = document.createElement('a');
-  projectLink.href = project.link;
-  projectLink.target = '_blank';
-
-  const projectImage = document.createElement('img');
-  projectImage.src = project.imageSrc;
-  projectImage.alt = project.alt;
-
-  projectLink.appendChild(projectImage);
-  tailwindDiv.appendChild(projectLink);
-  recentTailwind.appendChild(tailwindDiv);
-});
 
 
 
