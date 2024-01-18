@@ -13,9 +13,7 @@
         }
       }
     }
-    nav.active {
-      transform: translateX(0%);
-    }
+
     nav {
       padding: 0 1rem;
       .menu {
@@ -26,6 +24,10 @@
         padding: 1rem;
         background-color: #000;
         transform: translateX(100%);
+        transition: .3s linear;
+        &.active {
+          transform: translateX(0%);
+        }
         
 
         a {

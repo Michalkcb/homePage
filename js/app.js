@@ -529,3 +529,10 @@ window.onscroll = () => {
     }
   })
 }
+
+const mobNav = document.querySelector('.menu');
+const burgerBtn = document.querySelector('.burger');
+
+burgerBtn.addEventListener('click', function(){
+  mobNav.classList.toggle('active');
+})
