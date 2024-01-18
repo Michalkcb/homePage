@@ -11,7 +11,9 @@
     align-items: center;
     background: #000;
     z-index: 9999;
-
+    .burger {
+      display: none;
+    }
     .title {
       img {
         height: 2rem;

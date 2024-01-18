@@ -13,5 +13,16 @@
         }
       }
     }
+
+    nav {
+        .menu {
+            display: none;
+        }
+        .burger {
+            display: block;
+            width: 3rem;
+            height: 3rem;
+        }
+    }
   }
 }
