@@ -13,30 +13,41 @@
         }
       }
     }
-
+    nav.active {
+      transform: translateX(0%);
+    }
     nav {
-        .menu {
-            display: none;
+      padding: 0 1rem;
+      .menu {
+        position: absolute;
+        flex-direction: column;
+        top: 3rem;
+        right: 0;
+        padding: 1rem;
+        background-color: #000;
+        transform: translateX(100%);
+        
+
+        a {
+          padding: 0.3rem;
         }
-        .burger {
-            .line {
-                width: 2rem;
-                height: .2rem;
-                background: #fff;
-                margin: .3em;
-                border-radius: .3em;
-            }
-            display: block;
-            margin: .5rem;
-            padding: 0;
-            border: 1px solid #fff;
-            background: none;
-            border-radius: .2em;
-            cursor: pointer;
-
-
-
+      }
+      .burger {
+        .line {
+          width: 2rem;
+          height: 0.2rem;
+          background: #fff;
+          margin: 0.3em;
+          border-radius: 0.3em;
         }
+        display: block;
+        margin: 0.5rem;
+        padding: 0;
+        border: 1px solid #fff;
+        background: none;
+        border-radius: 0.2em;
+        cursor: pointer;
+      }
     }
   }
 }
