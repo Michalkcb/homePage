@@ -1,5 +1,6 @@
 #react {
   .recentReact {
+    min-height: 80vh;
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
