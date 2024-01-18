@@ -1,0 +1,15 @@
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+  .rectangle {
+    .header {
+      .span {
+        width: 5rem;
+        right: 0%;
+        .zero {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
