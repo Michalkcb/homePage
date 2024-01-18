@@ -19,9 +19,23 @@
             display: none;
         }
         .burger {
+            .line {
+                width: 2rem;
+                height: .2rem;
+                background: #fff;
+                margin: .3em;
+                border-radius: .3em;
+            }
             display: block;
-            width: 3rem;
-            height: 3rem;
+            margin: .5rem;
+            padding: 0;
+            border: 1px solid #fff;
+            background: none;
+            border-radius: .2em;
+            cursor: pointer;
+
+
+
         }
     }
   }
