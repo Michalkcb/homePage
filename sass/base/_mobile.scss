@@ -1,14 +1,13 @@
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min--moz-device-pixel-ratio: 1.5),
-  only screen and (min-device-pixel-ratio: 1.5) {
+@media (max-width: 768px) {
   .rectangle {
     .header {
-      .span {
-        background-color: red;
-        width: 5rem;
-        right: 0%;
+      span {
+        width: 100%;
+        transform: translate(0, -50%);
+        margin-left: auto;
+        margin-right: auto;
         .zero {
-          font-size: 2rem;
+          font-size: 2.5rem;
         }
       }
     }

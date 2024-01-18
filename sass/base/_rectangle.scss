@@ -105,11 +105,12 @@
     min-height: 75dvh;
     position: relative;
     background-color: #000;
+  
     img {
       width: auto;
       height: 75vh;
-  
     }
+  
     span {
       width: 20rem;
       height: auto;
@@ -117,20 +118,22 @@
       top: 50%;
       right: -5%;
       transform: translate(-50%, -50%);
-      background-color: rgba(0, 0, 0, .5);
-      border-radius: .5rem;
-      box-shadow:   0rem 0rem 1rem 1rem rgba(0, 0, 0, .5) ;
-
-    .zero{
-      font-size: 5rem;
-      font-weight: 300;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 0.5rem;
+      box-shadow: 0rem 0rem 1rem 1rem rgba(0, 0, 0, 0.5);
+  
+      .zero {
+        font-size: 5rem;
+        font-weight: 300;
+      }
+  
+      .pOne {
+        color: #fff;
+        font-weight: 300;
+      }
     }
+  
 
-    .pOne {
-      color: #fff;
-      font-weight: 300;
-    }
-  }
   }
 }
 footer {
