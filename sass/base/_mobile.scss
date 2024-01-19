@@ -39,11 +39,9 @@
             &.active {
               transform: translateX(-100%);
             }
-
           }
         }
         
-
         a {
           padding: 0.3rem;
         }
@@ -65,5 +63,15 @@
         cursor: pointer;
       }
     }
+  }
+  #react {
+    .recentReact {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "header header";
+      align-items: start;
+    }
+  }
+  .recentJS{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
