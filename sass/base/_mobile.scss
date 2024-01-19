@@ -23,10 +23,18 @@
         right: 0;
         padding: 1rem;
         background-color: #000;
-        transform: translateX(100%);
+        transform: translateX(230%);
         transition: .3s linear;
         &.active {
           transform: translateX(0%);
+        }
+        .dropdown { 
+          ul {
+            display: block;
+            left: -10rem;
+            background-color: #000;
+            transition-delay: .3s;
+          }
         }
         
 
