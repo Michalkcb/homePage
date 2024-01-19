@@ -34,6 +34,7 @@
             display: block;
             background-color: #000;
             transition-delay: .3s;
+            transition: .6s linear;
             transform: translateX(100%);
             &.active {
               transform: translateX(-100%);
