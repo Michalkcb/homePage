@@ -532,7 +532,10 @@ window.onscroll = () => {
 
 const mobNav = document.querySelector('.menu');
 const burgerBtn = document.querySelector('.burger');
+const portfolioList = document.querySelector('.dropdown>ul');
+console.log(portfolioList)
 
 burgerBtn.addEventListener('click', function(){
   mobNav.classList.toggle('active');
+  portfolioList.classList.toggle('active');
 })
