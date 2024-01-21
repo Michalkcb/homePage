@@ -71,7 +71,15 @@
       align-items: start;
     }
   }
+  #javascript{
   .recentJS{
     grid-template-columns: repeat(2, 1fr);
+    h2{
+      grid-column: span 2;
+    }
   }
+  .project{
+    width: 40vw
+  }
+}
 }
