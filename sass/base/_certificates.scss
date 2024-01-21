@@ -44,7 +44,8 @@
 
       .content {
         h2 {
-          font-size: 1.2rem;
+          font-weight: 300;
+          font-size: .8rem;
           color: #fff;
           margin-bottom: 2px;
         }
@@ -81,11 +82,7 @@
         overflow: hidden;
 
         img {
-          // max-width: 90%;
-          // height: auto;
-
-          height: 10rem;
-          height: 8rem;
+          height: 100%;
           border: 2px solid black;
         }
       }
