@@ -73,6 +73,7 @@
   #javascript {
     .recentJS {
       grid-template-columns: repeat(2, 1fr);
+     
       h2 {
         grid-column: span 2;
       }
@@ -83,7 +84,13 @@
   }
 
   .recentTW {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header";
+    align-items: start;
+    h2 {
+      grid-column: span 2;
+    }
   }
   .html {
     .recent {
