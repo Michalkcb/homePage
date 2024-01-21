@@ -86,4 +86,14 @@
 .recentTW {
   grid-template-columns: repeat(2, 1fr);
 }
+.html {
+  .recent {
+    grid-template-columns: repeat(2, 1fr);
+    .example {
+      img {
+        width: 40vw;
+  }
+}
+  }
+}
 }
