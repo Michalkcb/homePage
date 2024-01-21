@@ -119,6 +119,39 @@ tailwindData.forEach(project => {
   recentTailwind.appendChild(tailwindDiv);
 });
 
+//Python projects
+const pythonData = [
+  {
+    link: 'https://github.com/Michalkcb/myProjects/tree/master/python/tictactoe',
+    imageSrc: 'https://michalkcb.github.io/homePage/assets/python01.png',
+    alt: 'python01'
+  },
+  {
+    link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel3/react_calculator/src',
+    imageSrc: 'https://michalkcb.github.io/homePage/assets/reactCalculator.png',
+    alt: 'reactCalculator'
+  }
+];
+
+const recentPython = document.querySelector('.recentPython');
+
+pythonData.forEach(project => {
+  const pythontDiv = document.createElement('div');
+  pythontDiv.classList.add('examplePython');
+
+  const projectLink = document.createElement('a');
+  projectLink.href = project.link;
+  projectLink.target = '_blank';
+
+  const projectImage = document.createElement('img');
+  projectImage.src = project.imageSrc;
+  projectImage.alt = project.alt;
+
+  projectLink.appendChild(projectImage);
+  pythontDiv.appendChild(projectLink);
+  recentPython.appendChild(pythontDiv);
+});
+
 // Certificates
 
 const certificatesDiv = document.querySelector('.certificates-container');
