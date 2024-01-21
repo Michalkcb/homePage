@@ -122,14 +122,9 @@ tailwindData.forEach(project => {
 //Python projects
 const pythonData = [
   {
-    link: 'https://github.com/Michalkcb/myProjects/tree/master/python/tictactoe',
+    link: 'https://github.com/Michalkcb/Python/tree/main/wyzwaniePython/ticTacToe',
     imageSrc: 'https://michalkcb.github.io/homePage/assets/python01.png',
     alt: 'python01'
-  },
-  {
-    link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel3/react_calculator/src',
-    imageSrc: 'https://michalkcb.github.io/homePage/assets/reactCalculator.png',
-    alt: 'reactCalculator'
   }
 ];
 
