@@ -3,6 +3,11 @@ const reactData = [
   {
     link: 'https://github.com/Michalkcb/myProjects/tree/master/react/react01',
     imageSrc: 'https://michalkcb.github.io/homePage/assets/reactPage01.png',
+    alt: 'reactTodoList'
+  },
+  {
+    link: 'https://github.com/Michalkcb/myProjects/tree/master/react/react01',
+    imageSrc: 'https://michalkcb.github.io/homePage/assets/reactPage01.png',
     alt: 'react01'
   },
   {
