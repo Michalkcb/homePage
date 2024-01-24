@@ -6,15 +6,22 @@
     <title>Document</title>
     <style>
       body {
+        display: flex;
         font-family: sans-serif;
         color: azure;
+        justify-content: center;
+        align-items: center;
+        height: 95dvh;
+
       }
       .game-board {
-        width: 360px;
+
+        width: 90vw;
+        height: 90vw;
         background: #a6a6a6;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 100px);
+        grid-template-rows: repeat(3, 1fr);
         grid-gap: 0.5rem;
         border: 1px solid #959191;
         cursor: pointer;
