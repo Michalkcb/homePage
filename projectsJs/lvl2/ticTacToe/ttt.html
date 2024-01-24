@@ -67,8 +67,12 @@ const boxes = document.querySelectorAll('.box');
 arrBoxes = [...boxes];
 
 const pick = (e)=> {
-    const { row, col } = e.target.dataset;
+  const row = parseInt(e.target.dataset.row);
+    const col = parseInt(e.target.dataset.column);
+
+
     const turn = round % 2 === 0 ? PLAYER2 : PLAYER1;
+
     if (board[row][col] !== '') return;
     e.target.textContent = turn;
     board[row][col] = turn;
