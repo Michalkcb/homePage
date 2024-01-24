@@ -38,7 +38,7 @@ reactData.forEach(project => {
 
 //JS projects
 const projectData = [
-  { imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/scrollAnimation/assets/ttt.png', description: 'JavaScript Tic Tac Toe Game', link: './projectsHtml/lvl2/ticTacToe/ttt.html', },
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/ttt.png', description: 'JavaScript Tic Tac Toe Game', link: './projectsHtml/lvl2/ticTacToe/ttt.html', },
   { imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/scrollAnimation/assets/scrollAnimate.png', description: 'JavaScript Animation on Scroll', link: './projectsHtml/scrollAnimation/index.html', },
   { imageSrc: 'https://michalkcb.github.io/homePage/assets/Countries%20Lookup.png', description: 'Countries Lookup JSON BOOTWATCH', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/typeahead/typeahead.html', },
   { imageSrc: 'https://michalkcb.github.io/homePage/assets/faceGenerator.png', description: 'Face Generator JSON TailwindCSS', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/FaceGenerator/dist/FaceGenerator.html', },
