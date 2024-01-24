@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    font-family: sans-serif;
+    color: azure;
+    justify-content: center;
+    align-items: center;
+    height: 95dvh;
+    background: #1f242d;
+  }
+  .game-board {
+    width: 90vw;
+    height: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    cursor: pointer;
+  }
+
+  .box {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25dvw;
+    color: #0ef;
+    border: .15rem solid #fff;
+  }
+  .box:hover {
+    background-color: rgba(0, 238, 255, .2);
+  }
