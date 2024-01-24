@@ -1,6 +1,7 @@
 const PLAYER1 = 'O';
 const PLAYER2 = 'X';
 let round = 1;
+let gameWon = false;
 const board = [
     ['', '', ''],
     ['', '', ''],
@@ -16,6 +17,7 @@ const boxes = document.querySelectorAll('.box');
 arrBoxes = [...boxes];
 
 const pick = (e)=> {
+    if (gameWon) return;
   const row = parseInt(e.target.dataset.row);
     const col = parseInt(e.target.dataset.column);
 
@@ -51,5 +53,6 @@ const check =() =>{
 
     if (winner) {
         document.getElementById('winner-name').textContent = winner;
+        gameWon = true;
     }
 }
