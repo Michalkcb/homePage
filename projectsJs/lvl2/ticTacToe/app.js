@@ -32,6 +32,8 @@ const pick = (e) => {
   e.target.textContent = turn;
   board[row][col] = turn;
   round++;
+
+  check();
 };
 arrBoxes.forEach((box) => box.addEventListener("click", pick));
 
