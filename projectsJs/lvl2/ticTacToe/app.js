@@ -42,12 +42,14 @@ const check =() =>{
     result.forEach((field, index) => moves[field] ? moves[field].push(index) : null);
     combinations.forEach(combination => {
         if (combination.every(index => moves[PLAYER1].indexOf(index) > -1)) {
-            winner = 'Winner: Player 1';
+            winner = 'Player O';
         }
         if (combination.every(index => moves[PLAYER2].indexOf(index) > -1)) {
-            winner = 'Winner: Player 2';
+            winner = 'Player X';
         }
     });
 
-    return winner;
+    if (winner) {
+        document.getElementById('winner-name').textContent = winner;
+    }
 }
