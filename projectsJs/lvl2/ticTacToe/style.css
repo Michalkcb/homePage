@@ -1,11 +1,16 @@
 body {
     display: flex;
+    flex-wrap: wrap;
     font-family: sans-serif;
     color: azure;
     justify-content: center;
     align-items: center;
     height: 95dvh;
     background: #1f242d;
+  }
+  h1{
+    flex-grow: 2;
+    text-align: center;
   }
   .game-board {
     width: 90vw;
