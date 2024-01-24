@@ -1,15 +1,16 @@
 body {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: column;
     font-family: sans-serif;
     color: azure;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     height: 95dvh;
     background: #1f242d;
   }
   h1{
-    flex-grow: 2;
+
     text-align: center;
   }
   .game-board {
@@ -23,14 +24,22 @@ body {
   }
 
   .box {
+
     background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25dvw;
+    font-size: 10rem;
     color: #0ef;
     border: .15rem solid #fff;
   }
   .box:hover {
     background-color: rgba(0, 238, 255, .2);
   }
+
+  @media (orientation: landscape) {
+    .game-board {
+        height: 90vh;
+        width: 90vh;
+  }
+}
