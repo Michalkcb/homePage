@@ -2,16 +2,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
     margin: 0;
+    background-color: #e6e6e6;
+    color: #fff;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 700;
+    
   }
 
   #timer {
-    font-size: 2rem;
+    font-size: 5rem;
   }
 
   button {
     margin: 0.5rem;
     padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 2rem;
+    border-radius: 7px;
+    position: relative;
+    z-index: 999;
+  }
+
+  button::after, button::before {
+    content: "";
+    position: absolute;
+    transform: translate(5px, 5px);
+    background-color: red;
+    width: 130px;
+    height: 60px;
+    border: 2px solid black;
   }

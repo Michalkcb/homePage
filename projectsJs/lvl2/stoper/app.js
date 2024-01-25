@@ -1,23 +1,22 @@
 let timer;
 let seconds = 0;
-const startBtn = document.querySelector('.start');
-const pauseBtn = document.querySelector('.pause');
-const resetBtn = document.querySelector('.reset');
+const startBtn = document.querySelector(".start");
+const pauseBtn = document.querySelector(".pause");
+const resetBtn = document.querySelector(".reset");
 
-startBtn.addEventListener('click', startTimer);
-pauseBtn.addEventListener('click', pauseTimer);
-resetBtn.addEventListener('click', resetTimer);
-
+startBtn.addEventListener("click", startTimer);
+pauseBtn.addEventListener("click", pauseTimer);
+resetBtn.addEventListener("click", resetTimer);
 
 function startTimer() {
-    if (!timer){
-  timer = setInterval(updateTimer, 1000);
-    }
+  if (!timer) {
+    timer = setInterval(updateTimer, 1000);
+  }
 }
 
 function pauseTimer() {
   clearInterval(timer);
-  timer = null
+  timer = null;
 }
 
 function resetTimer() {
@@ -28,11 +27,8 @@ function resetTimer() {
 }
 
 function updateTimer() {
-    const hours = Math.floor(minutes / 60);
-    const remainingMinutes = minutes % 60;
-  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(seconds / 3600);
+  const remainingMinutes = Math.floor((seconds % 3600) / 60);
   const remainingSeconds = seconds % 60;
-  document.getElementById("timer").innerText = `${minutes}:$${remainingSeconds}`;
-//   document.getElementById("timer").innerText = `${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;
-  seconds++;
+  document.getElementById("timer").innerText = `${hours < 10 ? "0" : ""}${hours}:${remainingMinutes < 10 ? "0" : ""}${remainingMinutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;  seconds++;
 }
