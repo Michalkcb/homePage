@@ -1,3 +1,11 @@
+:root {
+  --bg-dark: #000;
+  --gradient-one: linear-gradient(45deg,#ffee02,#f30055); 
+  --gradient-two: linear-gradient(315deg,#0077ff,#f30055); 
+  --gradient-three: linear-gradient(45deg,#74ff03,#00e1ff); 
+  --move: 5px;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -16,21 +24,73 @@ body {
     font-size: 5rem;
   }
 
-  button {
+  /* button {
     margin: 0.5rem;
     padding: 0.5rem 1rem;
     font-size: 2rem;
     border-radius: 7px;
     position: relative;
-    z-index: 999;
+    z-index: 1;
+    background-color: aqua;
   }
 
-  button::after, button::before {
-    content: "";
+  button::before,
+  button::after {
+    content: '';
     position: absolute;
-    transform: translate(5px, 5px);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 7px;
     background-color: red;
-    width: 130px;
+    z-index: -1;
+  } */
+
+  .button {
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
     height: 60px;
-    border: 2px solid black;
-  }
+    width: 130px;
+    margin: 1rem;
+    border-radius: 7px;
+
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    border-radius: 7px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-one);
+    transform: translate(var(--move), var(--move));
+}
+.button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-one);
+    filter: blur(3px);
+    transform: translate(var(--move), var(--move));
+
+}
+span {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1;
+  border-radius: 7px;
+  font-size: 2rem;
+  text-align: center;
+  align-items: center;
+}
