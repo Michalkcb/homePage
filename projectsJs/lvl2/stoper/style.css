@@ -17,7 +17,7 @@ body {
     color: #fff;
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 700;
-    
+    background-color: #000;
   }
 
   #timer {
@@ -65,12 +65,12 @@ body {
     content: '';
     position: absolute;
     border-radius: 7px;
-    top: 0;
-    left: 0;
+    top: -5px;
+    left: -5px;
     width: 100%;
     height: 100%;
     background: var(--gradient-one);
-    transform: translate(var(--move), var(--move));
+    transform: translate(10px, 10px);
 }
 .button::after {
     content: '';
@@ -81,7 +81,8 @@ body {
     height: 100%;
     background: var(--gradient-one);
     filter: blur(3px);
-    transform: translate(var(--move), var(--move));
+    transform: translate(10px, 10px);
+
 
 }
 span {
