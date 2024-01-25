@@ -7,21 +7,38 @@
 }
 
 body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    height: 100vh;
+        flex-direction: column;
+   border-radius: 7px;
     margin: 0;
     background-color: #e6e6e6;
     color: #fff;
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 700;
     background-color: #000;
+    box-shadow: 0 0 10px 10px rgba(0, 123, 255, 0.885);
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    color: #0077ff;
   }
 
   #timer {
     font-size: 5rem;
+    color: fuchsia;
   }
 
   .buttons {
@@ -34,7 +51,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .5s;
+    transition: .3s;
     height: 60px;
     width: 130px;
     margin: 1rem;
@@ -67,7 +84,7 @@ span {
   height: 58px;
   width: 128px;
   z-index: 1;
-  border-radius: 7px;
+  border-radius: 5px;
   font-size: 2rem;
   display: flex;
   align-items: center;
