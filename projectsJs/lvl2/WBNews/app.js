@@ -29,7 +29,7 @@ const getNews = async () => {
     container.innerHTML = "";
     let response = await fetch(requestURL);
     if (!response.ok) {
-        alert("Data unavailble at the moment. Please try agzn later");
+        alert("Data unavailble at the moment. Please try agin later");
         return false;
     }
     let data = await response.json();
