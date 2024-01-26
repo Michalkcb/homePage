@@ -1,6 +1,6 @@
 const container = document.querySelector('.container');
 const optionsContainer = document.querySelector('.opt-container')
-const country = "pl";
+const country = "ru";
 const options = ["general","entertainment", "business", "health", "science", "sports", "technology"];
 
 let requestURL;
@@ -10,7 +10,7 @@ const generateUI = (articles) => {
       let card = document.createElement("div");
       card.classList.add("news-card");
       card.innerHTML = `<div class="news-image-container">
-      <img src="${item.urlToImage || "./newspaper.jpg"}" alt="" />
+      <img src="${item.urlToImage}" alt="" />
       </div>
       <div class="news-content">
         <div class="news-title">
