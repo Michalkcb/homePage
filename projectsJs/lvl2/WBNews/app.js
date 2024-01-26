@@ -1,6 +1,6 @@
 const container = document.querySelector('.container');
 const optionsContainer = document.querySelector('.opt-container')
-const country = "us";
+const country = "pl";
 const options = ["general","entertainment", "business", "health", "science", "sports", "technology"];
 
 let requestURL;
