@@ -12,7 +12,7 @@ img {
     height: 30vh;
     object-fit: cover;
   }
-  .heading-container {
+  .header-container {
     background-color: #cb202d;
     color: #ffffff;
     font-size: 2.5em;
@@ -24,12 +24,12 @@ img {
     box-shadow: 0 10px 50px 0 rgba(2, 0, 31, 0.3);
     z-index: 1;
   }
-  .heading-container h4 {
+  .header-container h4 {
     font-weight: 600;
     font-size: 40px;
     letter-spacing: 5px;
   }
-  .options-container {
+  .opt-container {
     margin: 10em 0 2em 0;
     display: flex;
     flex-wrap: wrap;
