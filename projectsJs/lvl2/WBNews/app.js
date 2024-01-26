@@ -34,7 +34,18 @@ const getNews = async () => {
     }
     let data = await response.json();
     generateUI(data.articles);
+};
+
+const selectCategory = (e, category) => {
+    let options  =document.querySelectorAll(".option");
+    options.forEach((option) => {
+        option.classList.remove("active");
+    });
+    requestURL = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}`;
+    e.target.classList.add("active");
+    getNews();
 }
+
 const createOptions = () => {
     for (let i of options) {
       optionsContainer.innerHTML += `<button class="option ${
