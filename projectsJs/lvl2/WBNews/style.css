@@ -65,17 +65,20 @@ img {
     border-radius: 15px 15px 0 0;
   }
   .news-content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     padding: 1em;
     font-size: 15px;
   }
   .news-title {
+    grid-column: span 2;
     font-weight: 600;
     color: #0b0028;
   }
   .news-description {
+    grid-column: span 2;
+
     color: #6f6f6f;
     text-align: justify;
     margin: 0.8em 0 1em 0;
@@ -89,6 +92,10 @@ img {
     text-align: center;
     padding: 0.3em 0.2em;
     border-radius: 5px;
+  }
+  .news-source {
+    justify-self: end;
+
   }
   .active {
     background-color: #cb202d;
