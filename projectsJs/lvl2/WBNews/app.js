@@ -20,10 +20,12 @@ const generateUI = (articles) => {
         <div class="news-description">
         ${item.description || item.content || ""}
         </div>
+        <div class="news-source">
+        ${item.source.name}
+        </div>
         <a href="${item.url}" target="_blank" class="view-button">Read More</a>
       </div>`;
       container.appendChild(card);
-      console.log(item.image)
     }
   };
 
