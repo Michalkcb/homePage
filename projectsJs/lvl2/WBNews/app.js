@@ -2,7 +2,7 @@ const container = document.querySelector('.container');
 const optionsContainer = document.querySelector('.opt-container')
 const country = "us";
 const language = "en";
-const options = ["general","entertainment", "business", "health", "science", "sports", "technology"];
+const options = ["general","entertainment", "business", "health", "science", "sports", "world", "nation","technology"];
 
 let requestURL;
 
@@ -23,6 +23,7 @@ const generateUI = (articles) => {
         <a href="${item.url}" target="_blank" class="view-button">Read More</a>
       </div>`;
       container.appendChild(card);
+      console.log(item.urlToImage)
     }
   };
 
