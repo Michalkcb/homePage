@@ -18,6 +18,7 @@ const reactData = [
 
 ];
 
+
 const recentReact = document.querySelector('.recentReact');
 
 reactData.forEach(project => {
