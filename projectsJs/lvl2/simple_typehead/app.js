@@ -11,7 +11,7 @@
   ];
   const datalist = document.getElementById("sth");
 
-  optionsArray.forEach(function (optionValue) {
+  optionsArray.forEach((optionValue)=> {
     const optionElement = document.createElement("option");
     optionElement.value = optionValue;
     datalist.appendChild(optionElement);
