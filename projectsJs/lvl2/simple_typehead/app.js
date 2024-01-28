@@ -1,0 +1,1 @@
+const searchWrapper = document.querySelector('.search-input');
