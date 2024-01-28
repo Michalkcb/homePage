@@ -9,7 +9,7 @@
     "majty",
     "onuce",
   ];
-  const datalist = document.getElementById("sth");
+  const datalist = document.querySelector("#sth");
 
   optionsArray.forEach((optionValue)=> {
     const optionElement = document.createElement("option");
