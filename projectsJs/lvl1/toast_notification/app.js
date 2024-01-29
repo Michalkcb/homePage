@@ -38,3 +38,8 @@ info.addEventListener("click", ()=>{
     let txt = "This is info toast notification.";
     createToast(typ, title, txt)});
 
+    warning.addEventListener("click", ()=>{
+        let typ = "warning";
+        let title = "warning";
+        let txt = "This is warning toast notification.";
+        createToast(typ, title, txt)});
