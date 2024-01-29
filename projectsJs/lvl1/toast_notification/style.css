@@ -22,4 +22,10 @@
 .button:hover {
     transform: translateY(-3px);
     box-shadow: .2rem .2rem .5rem .2rem #000;
+    cursor: pointer;
+}
+
+.toast {
+    width: 450px;
+    border: 2px solid #000;
 }
