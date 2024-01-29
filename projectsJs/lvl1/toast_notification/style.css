@@ -62,4 +62,30 @@ h1 {
     border-radius: .5rem;
     box-shadow:.2rem .2rem .5rem .2rem #000;
     margin: 1rem;
+    position: relative;
+}
+.toast .title {
+    font-size: x-large;
+    font-weight: 700;
+}
+.toast span {
+    font-size:small;
+}
+.toast.error {
+    background-image: 
+    linear-gradient(
+        to right, #ff2f00, #e5eafc 45%
+    ); 
+}
+.toast.info {
+    background-image: 
+    linear-gradient(
+        to right, #0080ff, #e5eafc 45%
+    ); 
+}
+.toast.warning {
+    background-image: 
+    linear-gradient(
+        to right, #ff9d00, #e5eafc 45%
+    ); 
 }
