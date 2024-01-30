@@ -1,0 +1,55 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+hr {
+    width: 100px;
+}
+
+#errors {
+    color: #c93406;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    background-color: bisque;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tile {
+    width: 48px;
+    height: 48px;
+    border: 1px solid grey;
+
+    font-size: medium;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#digits {
+    width: 450px;
+    height: 50px;
+    background-color: bisque;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number {
+    width: 48px;
+    height: 48px;
+    border: 1px solid black;
+
+    font-size: medium;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
