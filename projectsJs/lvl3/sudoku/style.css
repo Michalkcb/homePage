@@ -17,6 +17,7 @@ hr {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 .tile {
     width: 48px;
@@ -49,5 +50,11 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
 
+.select-number {
+    background-color: gray;
+    /* transform: translateY(-2px);
+    transition: .2s linear; */
 }

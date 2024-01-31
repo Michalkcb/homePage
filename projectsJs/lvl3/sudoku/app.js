@@ -1,5 +1,5 @@
-const numSel = null;
-const tileSel = null;
+let numSel = null;
+let tileSel = null;
 
 const errors = 0;
 
@@ -31,12 +31,12 @@ window.onload = ()=> {
 setGame();
 }
 
-const setGame = ()=>{
+let setGame = ()=>{
     for (let i = 1; i<=9; i++) {
         let number = document.createElement('div');
         number.id = i;
         number.innerText = i;
-        number.addEventListener("click", selectNumber)
+        number.addEventListener("click", selectNumber);
         number.classList.add('number');
         document.querySelector('#digits').appendChild(number);
     }
@@ -51,6 +51,10 @@ const setGame = ()=>{
        }
     }
 }
-const selectNumber = ()=> {
-    
+let selectNumber = (e)=> {
+    if (numSel != null) {
+        numSel.classList.remove('select-number')
+    }
+    numSel = e.target;
+    numSel.classList.add('select-number')
 }
