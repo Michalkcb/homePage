@@ -58,3 +58,14 @@ hr {
     /* transform: translateY(-2px);
     transition: .2s linear; */
 }
+
+.start-tile {
+    background-color: lightgray;
+}
+.h-line {
+    border-bottom:2px solid #000 ;
+}
+
+.v-line {
+    border-right:2px solid #000 ;
+}
