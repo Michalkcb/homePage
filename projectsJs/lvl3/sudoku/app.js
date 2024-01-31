@@ -36,7 +36,21 @@ const setGame = ()=>{
         let number = document.createElement('div');
         number.id = i;
         number.innerText = i;
+        number.addEventListener("click", selectNumber)
         number.classList.add('number');
         document.querySelector('#digits').appendChild(number);
     }
+
+    for (let r = 1; r<=9; r++) {
+       for (let c = 1; c <=9; c++){
+        let tile = document.createElement('div');
+        tile.id = r.toString() + '-' + c.toString();
+        tile.classList.add('tile');
+        document.querySelector('#board').append(tile);
+
+       }
+    }
+}
+const selectNumber = ()=> {
+    
 }

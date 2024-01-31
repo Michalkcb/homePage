@@ -14,7 +14,6 @@ hr {
 #board {
     width: 450px;
     height: 450px;
-    background-color: bisque;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -35,17 +34,16 @@ hr {
 #digits {
     width: 450px;
     height: 50px;
-    background-color: bisque;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 .number {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
     border: 1px solid black;
-
+    margin: 2px;
     font-size: medium;
     font-weight: 700;
     display: flex;
