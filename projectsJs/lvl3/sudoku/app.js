@@ -31,7 +31,11 @@ window.onload = () => {
   setGame();
 };
 
+
 let setGame = () => {
+  document.querySelector('#digits').innerHTML = "";
+  document.querySelector('#board').innerHTML = "";
+
   for (let i = 1; i <= 9; i++) {
     let number = document.createElement("div");
     number.id = i;
@@ -86,3 +90,5 @@ let selTile = (e) => {
     }
   }
 };
+const restartBtn = document.querySelector('.restart');
+restartBtn.addEventListener('click', setGame)

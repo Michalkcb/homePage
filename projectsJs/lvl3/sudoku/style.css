@@ -57,7 +57,7 @@ hr {
     background-color: gray;
 
 }
-.select-number:hover, .restart.hover {
+.select-number:hover {
     transform: translateY(-2px);
     transition: .2s linear;
 }
@@ -80,4 +80,10 @@ hr {
     border-radius: .5rem;
     padding: 1rem;
     width: 5rem;
+    transition: .2s linear;
+    
+}
+.restart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 5px 5px lightslategray;
 }
