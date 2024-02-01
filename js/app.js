@@ -2,10 +2,9 @@ console.log("Welcome to my Homepage!!!");
 
 //React projects
 import reactData from "./modules/react.js";
+const recentReact = document.querySelector(".recentReact");
 
 reactData.forEach((project) => {
-  const recentReact = document.querySelector(".recentReact");
-
   const reactDiv = document.createElement("div");
   reactDiv.classList.add("exampleReact");
 
