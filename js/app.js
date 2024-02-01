@@ -189,10 +189,7 @@ leftPanel.appendChild(skillsHeading);
 
 const skillsList = document.createElement("ul");
 const skills = [
-  "JavaScript", "HTML5", "CSS", "SCSS", "SASS", "Microsoft BI", "SAP", "QlikView",
-  "Adobe Photoshop", "Gimp", "Microsoft Excel", "Microsoft Word", "Microsoft PowerPoint",
-  "jQuery", "Negocjacje", "Prezentacje i wystąpienia", "Pricing", "Bootstrap", "Lotus Notes", "MP2"
-];
+  "HTML", "CSS", "JavaScript", "SCSS", "SASS", "GIT", "Linux", "Tailwind", "Bootstrap", "React", "Wordpress"];
 
 skills.forEach((skill) => {
   const skillItem = document.createElement("li");
@@ -208,7 +205,7 @@ languagesHeading.textContent = "Languages:";
 leftPanel.appendChild(languagesHeading);
 
 const languagesList = document.createElement("ul");
-const languages = ["English: C1", "German: A1", "Russian: A1", "Polish: Native"];
+const languages = ["English: C1/C2", "German: A1", "Russian: A1", "Polish: Native"];
 
 languages.forEach((language) => {
   const languageItem = document.createElement("li");
@@ -237,13 +234,8 @@ summaryHeading.textContent = "SUMMARY";
 summarySection.appendChild(summaryHeading);
 
 const summaryText = document.createElement("span");
-summaryText.textContent = "In my career so far I have been driven by the will to learn and " +
-  "develop. I am always happy to take on new professional challenges and the opportunity " +
-  "to implement my own ideas, thanks to which the company's income increases and allows " +
-  "me to attract new customers. It gives me pleasure to implement new solutions and " +
-  "improve processes, and this allows me to improve my existing skills. Each company is " +
-  "an opportunity to acquire new skills and learn about new work tools and to pursue " +
-  "interests related to the entrusted categories.";
+summaryText.textContent = "I have 5 years of experience as a Web Developer as the founder and creator of playstation2.pl, the business website albertech.pl, as well as many small commercial projects during my studies in Wyższa Szkoła Informatyki Stosowanej in Warsaw. With 13 years of experience in Category management, I am a skilled team player and team leader in national and international environments. I have completed many modern Front-end courses on: University of California Davis, Udemy, Studiuje.it. You will find all certificates in my PORTFOLIO. Now I am fully focused on becoming a professional full-time front-end developer. Currently I’m developing my skills working on my portfolio using: RWD, JavaScript, React, SCSS, Tailwind or Bootstrap. I have some experience with Python, C which you can check on my Github repository. 2023 I passed tests and the monthly elimination at 42 Warsaw and become a student of an IT Solutions Designer and Developer. While studying and working on my portfolio, I actively use the Version Control System - GIT and work on Windows and Linux platforms.";
+  
 summarySection.appendChild(summaryText);
 
 const experienceSection = document.createElement("div");
@@ -255,95 +247,63 @@ experienceHeading.textContent = "EXPERIENCE";
 experienceSection.appendChild(experienceHeading);
 
 const experiences = [
-  {
-    title: "02.2022 - currently Category Manager Zwieger s.p. z o.o.",
-    location: "Warsaw",
-    responsibility: "kitchen, table ware",
-    description: [
-      "Worldwide sourcing (especially EU and China)",
-      "---",
-      "Product development and on-boarding",
-      "Negotiations",
-      "Buying"
-    ]
-  },
+// 
+// 
+// Auchan, Maxizoo, Empik.com, Otto, Zwiger.
+
+// 03.2008 – 03.2010
+// IT manager & KAM
+// Albertech – Warsaw
+
+// Job description:
+// Development and maintenance of the company's IT network of computers and peripheral devices.
+// Web Development + administration of the company website www.albertech.pl. + SEO.
+// Translation and preparation of advertising materials:
+// graphics + editorial (brochures, catalogues, calendars, business cards)
+// Contact with foreign suppliers and domestic.
+
+// 2001 - 2004
+// Founder and creator playstation2.pl 
 
   {
-    title: "03.2021 - 01.2022 Key Merchandiser Otto International - ScanThor",
+    title: "04.2023 - current",
     location: "Warsaw",
-    responsibility: "DIY, Sport, Furniture",
+    responsibility: "Front-end",
     description: [
-      "E-commerce - OTTO.de",
-      "---",
+      "Working on this portfolio"
+    ]
+  },
+  {
+    title: "04.2010 - 03.2023 - Categoty Manager:",
+    location: "Warsaw",
+    responsibility: "toys, school, culture, sport, garden, camping, auto, diy, art. kitchen, art. for the table, home, textiles, furniture, lighting, intelligent home, pet food & accessories" ,
+    description: [
       "Sourcing",
+      "Product development and on-boarding",
       "Negotiations",
       "Responsibility for key customers including sales and service related tasks",
       "Product development and on-boarding",
       "Daily management of open orders between suppliers and customers",
-      "Quality oversight and improvements in cooperation with Quality Department"
-    ]
-  },
-  {
-    title: "08.2019 - 11.2020 Category Manager Empik S.A.",
-    location: "Warsaw",
-    responsibility: "garden, hand tools, power tools, lighting, intelligent home, pet food & accessories",
-    description: [
-      "E-commerce - Home and Garden",
-      "---",
-      "sourcing",
-          "negotiations",
-          "buying",
-          "Building marketing plans: weekly, monthly, quarter, annual, 3 years",
-          "Budget building and realization: weekly, monthly, quarter,annual, 3 years","Building promotional campaigns",
-        "Creating a trading strategy",
-          "Implementation of solutions ensuring high profitability of products",
-          "Profitability analysis (Microsoft BI)",
-          "Analysis of sales and market data, (Microsoft BI, google analytics)",
-          "Research on market trends and customer needs",
-          "Improvement of UX client experience",
-          "close cooperation with marketing, VM department and logistics",
-        "dynamizing commercial offers"
-    ]
-  },
-  {
-    title: "10.2017 - 02.2019 Category Manager MAXI ZOO",
-    location: "Warsaw",
-    responsibility: "Cat food, Dog food, Cat nonfood, Dog nonfood",
-    description: [
-      "Retail & E-commerce",
-      "---",
-      "sourcing",
-"negotiation",
-"buying",
-"Back catalog (SAP)",
+      "Quality oversight and improvements in cooperation with Quality Department",
+      "Buying",
+      "Building marketing plans: weekly, monthly, quarter, annual, 3 years",
+      "Budget building and realization: weekly, monthly, quarter,annual, 3 years","Building promotional campaigns",
+    "Creating a trading strategy",
+      "Implementation of solutions ensuring high profitability of products",
+      "Profitability analysis (Microsoft BI)",
+      "Analysis of sales and market data, (Microsoft BI, google analytics)",
+      "research on market trends and customer needs, (Sesta, Nielsen, GFK)",
+      "Improvement of UX client experience",
+      "close cooperation with marketing, VM department and logistics",
+    "dynamizing commercial offers",
+    "managing the product range renovation project and guaranteeing the product range optimization process",
+    "co-creating the trade strategy of the sector in close cooperation with buyers",
+
+    "Back catalog (SAP)",
 "reating store planograms, florplans (SpacePlanner)",
 "building promotional leaflets",
-"managing the product range renovation project and guaranteeing the product range optimization process",
 "creating a trading strategy",
-"implementation of solutions ensuring high profitability of products",
-"profitability analysis (Microsoft BI)",
-"analysis of sales and market data, (Microsoft BI)",
-"research on market trends and customer needs, (Sesta, Nielsen, GFK)",
-"close cooperation with marketing, logistics and stores",
-"dynamizing commercial offers"
-    ]
-  },
-  {
-    title: "04.2010 - 02.2017 Senior Category Manager Auchan Polska Sp. z o.o.",
-    location: "Piaseczno",
-    responsibility: "TOYS, SCHOOL, CULTURE, SPORT, GARDEN, CAMPING, AUTO, DIY, ART. KITCHEN, ART. FOR THE TABLE, HOME, TEXTILES, FURNITURE",
-    description: [
-      "Retail",
-      "---",
-      "Creating department plans",
-"managing the product range renovation project and guaranteeing the product range optimization process",
-"co-creating the trade strategy of the sector in close cooperation with buyers",
-"implementation of solutions ensuring high profitability of products",
-"product profitability analysis in selected categories",
-"analysis of sales and market data",
-"research on market trends and customer needs",
-"close cooperation with buyers, marketing, logistics and stores",
-"dynamizing commercial offers"
+
     ]
   },
   {
@@ -399,11 +359,11 @@ educationSection.appendChild(educationHeading);
 
 const educationEntries = [
   {
-    date: "09.2001 - 01.2005",
-    school: "Wyższa Szkoła Informatyki Stosowanej",
-    field: "Field of study: Marketing & managment",
-    specialisation: "Specialisation: ICT managment",
-    level: "Level of education: engineer"
+    date: "12.2023 - current",
+    school: "42 Warsaw",
+    field: "IT Solutions Designer and Developer ",
+    specialisation: "",
+    level: "Level of education: bachelor"
   },
   {
     date: "10.2005 - 01.2007",
@@ -411,7 +371,15 @@ const educationEntries = [
     field: "Field of study: production engineering",
     specialisation: "Specialisation: Marketing & managment",
     level: "Level of education: Master"
-  }
+  },
+  {
+    date: "09.2001 - 01.2005",
+    school: "Wyższa Szkoła Informatyki Stosowanej",
+    field: "Field of study: Marketing & managment",
+    specialisation: "Specialisation: ICT managment",
+    level: "Level of education: engineer"
+  },
+
 ];
 
 educationEntries.forEach((entry) => {
@@ -445,7 +413,7 @@ hobbiesHeading.textContent = "HOBBYS";
 hobbiesSection.appendChild(hobbiesHeading);
 
 const hobbiesList = document.createElement("div");
-hobbiesList.textContent = "Coding, Books, Sailing, Swimming, Scuba diving / Diving, City runs";
+hobbiesList.textContent = "Coding, Books, Sailing, Swimming, Diving, City runs";
 hobbiesSection.appendChild(hobbiesList);
 
 // resumeWrapper.appendChild(resume);

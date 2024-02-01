@@ -38,7 +38,15 @@
   .expirience,
   .education,
   .hobby {
-    padding: 0 2rem 1rem 2rem;
+    padding: 0 2rem 2rem 2rem;
+    text-align: center;
+    li{
+      text-align: left;
+      ul{
+        
+      }
+    }
+
   }
   .right-panel {
     > :nth-child(4),
