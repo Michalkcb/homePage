@@ -1,28 +1,11 @@
 console.log('Welcome to my Homepage!!!')
+
 //React projects
-const reactData = [
-  {
-    link: 'https://michalkcb.github.io/homePage/projectsReact/toDoList/dist/index.html',
-    imageSrc: 'https://michalkcb.github.io/homePage/assets/todoReactVite.png',
-    alt: 'reactTodoList'
-  },
-  {
-    link: 'https://github.com/Michalkcb/myProjects/tree/master/react/react01',
-    imageSrc: 'https://michalkcb.github.io/homePage/assets/reactPage01.png',
-    alt: 'react01'
-  },
-  {
-    link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel3/react_calculator/src',
-    imageSrc: 'https://michalkcb.github.io/homePage/assets/reactCalculator.png',
-    alt: 'reactCalculator'
-  },
-
-];
-
-
-const recentReact = document.querySelector('.recentReact');
+import reactData from "./modules/react.js"
 
 reactData.forEach(project => {
+const recentReact = document.querySelector('.recentReact');
+
   const reactDiv = document.createElement('div');
   reactDiv.classList.add('exampleReact');
 
@@ -40,7 +23,7 @@ reactData.forEach(project => {
 });
 
 //JS projects
-  import projectData from "./modules/jsModule.js";
+  import projectData from "./modules/javaScript.js";
 
 
   projectData.forEach(project =>  {
@@ -73,28 +56,12 @@ reactData.forEach(project => {
 
 //tailwind projects
 
-const tailwindData = [
-  {
-    link: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind01/dist/index.html',
-    imageSrc: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind01/assets/tailwind01.png',
-    alt: 'pizzeria'
-  },
-  {
-    link: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind02/dist/index.html',
-    imageSrc: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind02/assets/aikido.png',
-    alt: 'aikido'
-  }
-  ,
-  {
-    link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/FaceGenerator/dist/FaceGenerator.html',
-    imageSrc: 'https://michalkcb.github.io/homePage/assets/faceGenerator.png',
-    alt: 'Face Generator'
-  }
-];
+  import tailwindData from "./modules/tailwind.js";
 
-const recentTailwind = document.querySelector('.recentTW');
 
 tailwindData.forEach(project => {
+const recentTailwind = document.querySelector('.recentTW');
+
   const tailwindDiv = document.createElement('div');
   tailwindDiv.classList.add('example');
 
@@ -112,13 +79,7 @@ tailwindData.forEach(project => {
 });
 
 //Python projects
-const pythonData = [
-  {
-    link: 'https://github.com/Michalkcb/Python/tree/main/wyzwaniePython/ticTacToe',
-    imageSrc: 'https://michalkcb.github.io/homePage/assets/python01.png',
-    alt: 'python01'
-  }
-];
+import pythonData from "./modules/python.js"
 
 const recentPython = document.querySelector('.recentPython');
 
@@ -143,33 +104,7 @@ pythonData.forEach(project => {
 
 const certificatesDiv = document.querySelector('.certificates-container');
 
-const certificatesData = [
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/reactOdPodstaw.jpg', description: 'React od podstaw'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/nodejsExpressMongoDB.jpg', description: 'Node.js Express MongoDB'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/introductionToWebDevelopment.jpg', description: 'Univerytet of California, Davis'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/zaawansowaneProjektyWCSSIJavascript.jpg', description: 'Zaawansowane projekty w CSS i JavaScript'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/spaceplaning.jpeg', description: 'JDA Space Planning'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/frontendSredniozaawansowany.jpg', description: 'Front-End średniozaawansowany'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/7nawykow.jpeg', description: '7 nawyków'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/arduinoPodstawy.jpg', description: 'Arduino podstawy'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/czystaReka.jpeg', description: 'Czysta ręka'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/fundamentyProgramowania.jpg', description: 'Fundamenty programowania'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/javascriptOdPodstaw.jpg', description: 'JavaScript od podstaw'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/matematykaPodstawy.jpg', description: 'Matematyka od podstaw'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/MQL5Podstawy.jpg', description: 'MQL5 - podstawy'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/podstawyWebDevelopmentu.jpg', description: 'Podstawy Web Developmentu'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/prawoWIT.jpg', description: 'Prawo w IT'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/samoorganizacja.jpeg', description: 'Samoorganizacja'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/seo.jpg', description: 'SEO'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/sieciKomputerowe.jpg', description: 'Sieci komputerowe'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/storyboard.jpeg', description: 'Storyboard'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/wizytowkaGoogle.jpg', description: 'Wizytówka Google'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/wordpress.jpg', description: 'Wordpress'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/wprowadzenieDoProgramowania.jpg', description: 'Wprowadzenie do programowania'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/wstepDoInzynieriiOprogramowania.jpg', description: 'Wstęp do inżynierii oprogramowania'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/wystapienia i prezentacje.jpeg', description: 'Wystąpienia i prezentacje'},
-  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/zarzadzanieProjektamiIT.jpg', description: 'Zarządzanie projektami w IT'},
-]
+import certificatesData from "./modules/certificates.js"
 
     certificatesData.forEach(certificate =>  {
     const boxDiv = document.createElement('div');
@@ -195,20 +130,12 @@ const certificatesData = [
 });
 //HTML projects
 
-const projectsData = [
-  {link: '/projectsHtml/glowingIcons/index.html', imageSrc: 'https://michalkcb.github.io/homePage/assets/glowingItems.jpg', alt: 'glowing_icons'},
-  {link: 'http://michalkcb.ct8.pl/new%20cruzeirosazuis/newTerminyPL.html',imageSrc: 'http://michalkcb.ct8.pl/pic/cruseiro.jpg',alt: 'page_pic1'},
-  {link: 'http://michalkcb.ct8.pl/glowingDiv/index.html',imageSrc: 'http://michalkcb.ct8.pl/glowingDiv/glowingDivs.png',alt: 'Glowing DIV'},
-  {link: '../old/index.html',imageSrc: 'http://michalkcb.ct8.pl/pic/old.png',alt: 'old WD'},
-  {link: 'http://michalkcb.ct8.pl/page07/page07.html',imageSrc: 'http://michalkcb.ct8.pl/pic/page07.png',alt: 'page_pic7'},
-  {link: 'http://michalkcb.ct8.pl/EuroChina/index.html',imageSrc: 'http://michalkcb.ct8.pl/pic/page02.png',alt: 'page_pic2'},
-  {link: 'http://michalkcb.ct8.pl/page06/page06.html',imageSrc: 'http://michalkcb.ct8.pl/pic/page06.png',alt: 'page_pic6'},
-  {link: 'https://michalkcb.github.io/homePage/projectsHtml/semstorm/index.html',imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/semstorm/assets/semstorm.png',alt: 'semstorm'  }
-];
+import projectsData from "./modules/html.js";
 
-const recent = document.querySelector('.recent');
 
 projectsData.forEach(project => {
+const recent = document.querySelector('.recent');
+
   const projectDiv = document.createElement('div');
   projectDiv.classList.add('example');
 
@@ -220,19 +147,10 @@ projectsData.forEach(project => {
   projectImage.src = project.imageSrc;
   projectImage.alt = project.alt;
 
-  // const htmlProjectDescription = document.createElement('div');
-  // htmlProjectDescription.classList.add('project-description');
-  // htmlProjectDescription.textContent = project.description;
-
   projectLink.appendChild(projectImage);
   projectDiv.appendChild(projectLink);
-  // projectDiv.appendChild(htmlProjectDescription);
   recent.appendChild(projectDiv);
 });
-
-
-
-
 
 // Resume
 const resume = document.querySelector(".resume");
