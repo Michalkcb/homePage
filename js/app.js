@@ -247,30 +247,12 @@ experienceHeading.textContent = "EXPERIENCE";
 experienceSection.appendChild(experienceHeading);
 
 const experiences = [
-// 
-// 
-// Auchan, Maxizoo, Empik.com, Otto, Zwiger.
-
-// 03.2008 – 03.2010
-// IT manager & KAM
-// Albertech – Warsaw
-
-// Job description:
-// Development and maintenance of the company's IT network of computers and peripheral devices.
-// Web Development + administration of the company website www.albertech.pl. + SEO.
-// Translation and preparation of advertising materials:
-// graphics + editorial (brochures, catalogues, calendars, business cards)
-// Contact with foreign suppliers and domestic.
-
-// 2001 - 2004
-// Founder and creator playstation2.pl 
-
   {
     title: "04.2023 - current",
     location: "Warsaw",
     responsibility: "Front-end",
     description: [
-      "Working on this portfolio"
+            "Working on this portfolio"
     ]
   },
   {

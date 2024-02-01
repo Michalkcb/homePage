@@ -34,28 +34,48 @@
     }
   }
 
-  .summary,
-  .expirience,
-  .education,
-  .hobby {
-    padding: 0 2rem 2rem 2rem;
-    text-align: center;
-    li{
-      text-align: left;
-      ul{
-        
-      }
-    }
+
 
   }
   .right-panel {
-    > :nth-child(4),
-    > :nth-child(2),
+    >:nth-child(4) {
+      width: 100%;
+      border-bottom: 1px solid #fff;
+    }
+    > :nth-child(2) {
+      width: 100%;
+      border-bottom: 1px solid #fff;
+    }
     > :nth-child(3) {
       width: 100%;
-      border-bottom: 1px solid fff;
+      border-bottom: 1px solid #fff;
+      li {
+        text-align: left;
+      }
     }
-  }
+    .summary,
+    .expirience,
+    .education,
+    .hobby {
+      padding: 0 2rem 2rem 2rem;
+      text-align: center;
+      li{
+        text-align: left;
+      }
+    }
+    .summary {
+
+      > span {
+background-color: red; 
+align-self: self-start;     }
+
+    }
+
+
+
+
+      }
+  
   ul {
     padding: 0 0 1rem 1rem;
     list-style: none;
@@ -69,4 +89,4 @@
       justify-content: center;
     }
   }
-}
+
