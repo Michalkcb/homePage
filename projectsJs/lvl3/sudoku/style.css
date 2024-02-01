@@ -23,13 +23,15 @@ hr {
     width: 48px;
     height: 48px;
     border: 1px solid grey;
-
     font-size: medium;
     font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transition: .2s linear;
+}
+.tile:hover {
+    background-color: rgba(100, 149, 237, .5);
 }
 
 #digits {
