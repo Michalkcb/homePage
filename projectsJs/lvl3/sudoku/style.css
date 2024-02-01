@@ -83,9 +83,27 @@ hr {
     padding: 1rem;
     width: 5rem;
     transition: .2s linear;
+    cursor: pointer;
     
 }
 .restart:hover {
     transform: translateY(-2px);
     box-shadow: 0 0 5px 5px lightslategray;
+}
+
+@media (max-width: 768px){
+    #board {
+        width: 90dvw;
+        height: 90dvw;
+    }
+    .tile, .number, #digits {
+        width: 9dvw;
+        height: 9dvw;
+    }
+    
+    #digits {
+        width: 99dvw;
+    }
+    
+
 }

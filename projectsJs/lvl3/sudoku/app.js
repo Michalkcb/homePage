@@ -35,6 +35,9 @@ window.onload = () => {
 let setGame = () => {
   document.querySelector('#digits').innerHTML = "";
   document.querySelector('#board').innerHTML = "";
+  errors = 0;
+  document.querySelector('#errors').innerHTML = errors;
+
 
   for (let i = 1; i <= 9; i++) {
     let number = document.createElement("div");
