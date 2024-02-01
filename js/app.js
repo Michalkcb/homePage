@@ -40,6 +40,7 @@ reactData.forEach(project => {
 
 //JS projects
 const projectData = [
+  { imageSrc: 'https://michalkcb.github.io/homePage/assets/sudoku.png', description: 'Sudoku (JS)', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl3/sudoku/sudoku.html', },
   { imageSrc: 'https://michalkcb.github.io/homePage/assets/MBN.png', description: 'Real Actual News Portal (JS)(API)', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/MBNews/MBNews.html', },
   { imageSrc: 'https://michalkcb.github.io/homePage/assets/toast.png', description: 'JS Toast Notifications', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl1/toast_notification/toast.html', },
   { imageSrc: 'https://michalkcb.github.io/homePage/assets/typeahead.png', description: 'JS typeahead', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/simple_typehead/simple_typehead.html', },
