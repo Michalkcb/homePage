@@ -1,19 +1,19 @@
-console.log('Welcome to my Homepage!!!')
+console.log("Welcome to my Homepage!!!");
 
 //React projects
-import reactData from "./modules/react.js"
+import reactData from "./modules/react.js";
 
-reactData.forEach(project => {
-const recentReact = document.querySelector('.recentReact');
+reactData.forEach((project) => {
+  const recentReact = document.querySelector(".recentReact");
 
-  const reactDiv = document.createElement('div');
-  reactDiv.classList.add('exampleReact');
+  const reactDiv = document.createElement("div");
+  reactDiv.classList.add("exampleReact");
 
-  const projectLink = document.createElement('a');
+  const projectLink = document.createElement("a");
   projectLink.href = project.link;
-  projectLink.target = '_blank';
+  projectLink.target = "_blank";
 
-  const projectImage = document.createElement('img');
+  const projectImage = document.createElement("img");
   projectImage.src = project.imageSrc;
   projectImage.alt = project.alt;
 
@@ -23,31 +23,30 @@ const recentReact = document.querySelector('.recentReact');
 });
 
 //JS projects
-  import projectData from "./modules/javaScript.js";
+import projectData from "./modules/javaScript.js";
 
+projectData.forEach((project) => {
+  const javascriptDiv = document.querySelector(".recentJS");
 
-  projectData.forEach(project =>  {
-   const javascriptDiv = document.querySelector('.recentJS');
+  const projectDiv = document.createElement("div");
+  projectDiv.classList.add("project");
 
-  const projectDiv = document.createElement('div');
-  projectDiv.classList.add('project');
+  const projectImgDiv = document.createElement("div");
+  projectImgDiv.classList.add("project-img");
 
-  const projectImgDiv = document.createElement('div');
-  projectImgDiv.classList.add('project-img');
-
-  const image = document.createElement('img');
+  const image = document.createElement("img");
   image.src = project.imageSrc;
   projectImgDiv.appendChild(image);
 
-  const projectDescriptionDiv = document.createElement('div');
-  projectDescriptionDiv.classList.add('project-description');
+  const projectDescriptionDiv = document.createElement("div");
+  projectDescriptionDiv.classList.add("project-description");
   projectDescriptionDiv.textContent = project.description;
 
-  const projectLink = document.createElement('a');
+  const projectLink = document.createElement("a");
   projectLink.href = project.link;
-  projectLink.target = '_blank';
+  projectLink.target = "_blank";
 
-  projectLink.appendChild(projectImgDiv)
+  projectLink.appendChild(projectImgDiv);
   projectDiv.appendChild(projectLink);
   projectDiv.appendChild(projectDescriptionDiv);
 
@@ -56,20 +55,19 @@ const recentReact = document.querySelector('.recentReact');
 
 //tailwind projects
 
-  import tailwindData from "./modules/tailwind.js";
+import tailwindData from "./modules/tailwind.js";
 
+tailwindData.forEach((project) => {
+  const recentTailwind = document.querySelector(".recentTW");
 
-tailwindData.forEach(project => {
-const recentTailwind = document.querySelector('.recentTW');
+  const tailwindDiv = document.createElement("div");
+  tailwindDiv.classList.add("example");
 
-  const tailwindDiv = document.createElement('div');
-  tailwindDiv.classList.add('example');
-
-  const projectLink = document.createElement('a');
+  const projectLink = document.createElement("a");
   projectLink.href = project.link;
-  projectLink.target = '_blank';
+  projectLink.target = "_blank";
 
-  const projectImage = document.createElement('img');
+  const projectImage = document.createElement("img");
   projectImage.src = project.imageSrc;
   projectImage.alt = project.alt;
 
@@ -79,19 +77,19 @@ const recentTailwind = document.querySelector('.recentTW');
 });
 
 //Python projects
-import pythonData from "./modules/python.js"
+import pythonData from "./modules/python.js";
 
-const recentPython = document.querySelector('.recentPython');
+const recentPython = document.querySelector(".recentPython");
 
-pythonData.forEach(project => {
-  const pythontDiv = document.createElement('div');
-  pythontDiv.classList.add('examplePython');
+pythonData.forEach((project) => {
+  const pythontDiv = document.createElement("div");
+  pythontDiv.classList.add("examplePython");
 
-  const projectLink = document.createElement('a');
+  const projectLink = document.createElement("a");
   projectLink.href = project.link;
-  projectLink.target = '_blank';
+  projectLink.target = "_blank";
 
-  const projectImage = document.createElement('img');
+  const projectImage = document.createElement("img");
   projectImage.src = project.imageSrc;
   projectImage.alt = project.alt;
 
@@ -102,48 +100,47 @@ pythonData.forEach(project => {
 
 // Certificates
 
-const certificatesDiv = document.querySelector('.certificates-container');
+const certificatesDiv = document.querySelector(".certificates-container");
 
-import certificatesData from "./modules/certificates.js"
+import certificatesData from "./modules/certificates.js";
 
-    certificatesData.forEach(certificate =>  {
-    const boxDiv = document.createElement('div');
-    boxDiv.classList.add('box');
+certificatesData.forEach((certificate) => {
+  const boxDiv = document.createElement("div");
+  boxDiv.classList.add("box");
 
-    const spanElem = document.createElement('span');
+  const spanElem = document.createElement("span");
 
-    const contentDiv = document.createElement('div');
-    contentDiv.classList.add('content');
+  const contentDiv = document.createElement("div");
+  contentDiv.classList.add("content");
 
-    const image = document.createElement('img');
-    image.src = certificate.certificateSrc;
-    contentDiv.appendChild(image);
+  const image = document.createElement("img");
+  image.src = certificate.certificateSrc;
+  contentDiv.appendChild(image);
 
-    const certificateTitle = document.createElement('h2');
-    certificateTitle.textContent = certificate.description;
+  const certificateTitle = document.createElement("h2");
+  certificateTitle.textContent = certificate.description;
 
-    contentDiv.appendChild(certificateTitle);
-    contentDiv.appendChild(image);
-    spanElem.appendChild(contentDiv)
-    boxDiv.appendChild(spanElem);
-    certificatesDiv.appendChild(boxDiv);
+  contentDiv.appendChild(certificateTitle);
+  contentDiv.appendChild(image);
+  spanElem.appendChild(contentDiv);
+  boxDiv.appendChild(spanElem);
+  certificatesDiv.appendChild(boxDiv);
 });
 //HTML projects
 
 import projectsData from "./modules/html.js";
 
+projectsData.forEach((project) => {
+  const recent = document.querySelector(".recent");
 
-projectsData.forEach(project => {
-const recent = document.querySelector('.recent');
+  const projectDiv = document.createElement("div");
+  projectDiv.classList.add("example");
 
-  const projectDiv = document.createElement('div');
-  projectDiv.classList.add('example');
-
-  const projectLink = document.createElement('a');
+  const projectLink = document.createElement("a");
   projectLink.href = project.link;
-  projectLink.target = '_blank';
+  projectLink.target = "_blank";
 
-  const projectImage = document.createElement('img');
+  const projectImage = document.createElement("img");
   projectImage.src = project.imageSrc;
   projectImage.alt = project.alt;
 
@@ -173,7 +170,12 @@ contactHeading.textContent = "CONTACT:";
 leftPanel.appendChild(contactHeading);
 
 const contactList = document.createElement("ul");
-const contactItems = ["E-mail: michalkcb@gmail.com", "Mobile: 603 655 331", "Birth date: 05.10.1982", "Town: Warsaw"];
+const contactItems = [
+  "E-mail: michalkcb@gmail.com",
+  "Mobile: 603 655 331",
+  "Birth date: 05.10.1982",
+  "Town: Warsaw",
+];
 
 contactItems.forEach((itemText) => {
   const contactItem = document.createElement("li");
@@ -189,7 +191,18 @@ leftPanel.appendChild(skillsHeading);
 
 const skillsList = document.createElement("ul");
 const skills = [
-  "HTML", "CSS", "JavaScript", "SCSS", "SASS", "GIT", "Linux", "Tailwind", "Bootstrap", "React", "Wordpress"];
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "SCSS",
+  "SASS",
+  "GIT",
+  "Linux",
+  "Tailwind",
+  "Bootstrap",
+  "React",
+  "Wordpress",
+];
 
 skills.forEach((skill) => {
   const skillItem = document.createElement("li");
@@ -205,7 +218,12 @@ languagesHeading.textContent = "Languages:";
 leftPanel.appendChild(languagesHeading);
 
 const languagesList = document.createElement("ul");
-const languages = ["English: C1/C2", "German: A1", "Russian: A1", "Polish: Native"];
+const languages = [
+  "English: C1/C2",
+  "German: A1",
+  "Russian: A1",
+  "Polish: Native",
+];
 
 languages.forEach((language) => {
   const languageItem = document.createElement("li");
@@ -234,8 +252,9 @@ summaryHeading.textContent = "SUMMARY";
 summarySection.appendChild(summaryHeading);
 
 const summaryText = document.createElement("span");
-summaryText.textContent = "I have 5 years of experience as a Web Developer as the founder and creator of playstation2.pl, the business website albertech.pl, as well as many small commercial projects during my studies in Wyższa Szkoła Informatyki Stosowanej in Warsaw. With 13 years of experience in Category management, I am a skilled team player and team leader in national and international environments. I have completed many modern Front-end courses on: University of California Davis, Udemy, Studiuje.it. You will find all certificates in my PORTFOLIO. Now I am fully focused on becoming a professional full-time front-end developer. Currently I’m developing my skills working on my portfolio using: RWD, JavaScript, React, SCSS, Tailwind or Bootstrap. I have some experience with Python, C which you can check on my Github repository. 2023 I passed tests and the monthly elimination at 42 Warsaw and become a student of an IT Solutions Designer and Developer. While studying and working on my portfolio, I actively use the Version Control System - GIT and work on Windows and Linux platforms.";
-  
+summaryText.textContent =
+  `I have 5 years of experience as a Web Developer as the founder and creator of playstation2.pl, the business website albertech.pl, as well as many small commercial projects during my studies in Wyższa Szkoła Informatyki Stosowanej in Warsaw. With 13 years of experience in Category management, I am a skilled team player and team leader in national and international environments. I have completed many modern Front-end courses on: University of California Davis, Udemy, Studiuje.it. You will find all certificates in my PORTFOLIO. Now I am fully focused on becoming a professional full-time front-end developer. Currently I’m developing my skills working on my portfolio using: RWD, JavaScript, React, SCSS, Tailwind or Bootstrap. I have some experience with Python, C which you can check on my Github repository. 2023 I passed tests and the monthly elimination at 42 Warsaw and become a student of an IT Solutions Designer and Developer. While studying and working on my portfolio, I actively use the Version Control System - GIT and work on Windows and Linux platforms.`;
+summaryText.classList.add("summaryText");
 summarySection.appendChild(summaryText);
 
 const experienceSection = document.createElement("div");
@@ -251,53 +270,49 @@ const experiences = [
     title: "04.2023 - current",
     location: "Warsaw",
     responsibility: "Front-end",
-    description: [
-            "Working on this portfolio"
-    ]
+    description: ["Working on this portfolio"],
   },
   {
     title: "04.2010 - 03.2023 - Categoty Manager:",
     location: "Warsaw",
-    responsibility: "toys, school, culture, sport, garden, camping, auto, diy, art. kitchen, art. for the table, home, textiles, furniture, lighting, intelligent home, pet food & accessories" ,
+    responsibility:
+      "toys, school, culture, sport, garden, camping, auto, diy, art. kitchen, art. for the table, home, textiles, furniture, lighting, intelligent home, pet food & accessories",
     description: [
-      "Sourcing",
-      "Product development and on-boarding",
-      "Negotiations",
-      "Responsibility for key customers including sales and service related tasks",
-      "Product development and on-boarding",
-      "Daily management of open orders between suppliers and customers",
-      "Quality oversight and improvements in cooperation with Quality Department",
       "Buying",
-      "Building marketing plans: weekly, monthly, quarter, annual, 3 years",
-      "Budget building and realization: weekly, monthly, quarter,annual, 3 years","Building promotional campaigns",
-    "Creating a trading strategy",
-      "Implementation of solutions ensuring high profitability of products",
-      "Profitability analysis (Microsoft BI)",
-      "Analysis of sales and market data, (Microsoft BI, google analytics)",
-      "research on market trends and customer needs, (Sesta, Nielsen, GFK)",
+      "Sourcing (PL, EU, CN)",
+      "Negotiations",
+      "Back catalog (SAP)",
+      "Creating a trading strategy",
+      "Dynamizing commercial offers",
+      "Building promotional leaflets",
+      "Building promotional campaigns",
+      "Product development and on-boarding",
       "Improvement of UX client experience",
-      "close cooperation with marketing, VM department and logistics",
-    "dynamizing commercial offers",
-    "managing the product range renovation project and guaranteeing the product range optimization process",
-    "co-creating the trade strategy of the sector in close cooperation with buyers",
-
-    "Back catalog (SAP)",
-"reating store planograms, florplans (SpacePlanner)",
-"building promotional leaflets",
-"creating a trading strategy",
-
-    ]
+      "Profitability analysis (Microsoft BI)",
+      "Creating store planograms, florplans (SpacePlanner)",
+      "Close cooperation with marketing, VM department and logistics",
+      "Daily management of open orders between suppliers and customers",
+      "research on market trends and customer needs, (Sesta, Nielsen, GFK)",
+      "Analysis of sales and market data, (Microsoft BI, google analytics)",
+      "Implementation of solutions ensuring high profitability of products",
+      "Building marketing plans: weekly, monthly, quarter, annual, 3 years",
+      "Budget building and realization: weekly, monthly, quarter,annual, 3 years",
+      "Quality oversight and improvements in cooperation with Quality Department",
+      "Responsibility for key customers including sales and service related tasks",
+      "Co-creating the trade strategy of the sector in close cooperation with buyers",
+      "Managing the product range renovation project and guaranteeing the product range optimization process",
+    ],
   },
   {
     title: "03.2008 - 03.2010 KAM & IT menager Albertech",
     location: "Warsaw",
     responsibility: "IT, WebDev, clutches",
     description: [
-     "Web Development and maintenance of the company's IT network of computers and peripheral devices",
-"Development + administration of the company website www.albertech.pl. + SEO",
-"Translation and preparation of advertising materials: graphics + editorial (brochures, catalogues, calendars, business cards)",
-"Contact with foreign and domestic suppliers"
-    ]
+      "Web Development and maintenance of the company's IT network of computers and peripheral devices",
+      "Development + administration of the company website www.albertech.pl. + SEO",
+      "Translation and preparation of advertising materials: graphics + editorial (brochures, catalogues, calendars, business cards)",
+      "Contact with foreign and domestic suppliers",
+    ],
   },
 ];
 
@@ -311,7 +326,7 @@ experiences.forEach((experience) => {
   locationItem.textContent = experience.location;
   const responsibilityItem = document.createElement("li");
   responsibilityItem.textContent = `Categories: ${experience.responsibility}`;
-  
+
   experienceDetails.appendChild(locationItem);
   experienceDetails.appendChild(responsibilityItem);
 
@@ -345,23 +360,22 @@ const educationEntries = [
     school: "42 Warsaw",
     field: "IT Solutions Designer and Developer ",
     specialisation: "",
-    level: "Level of education: bachelor"
+    level: "Level of education: bachelor",
   },
   {
     date: "10.2005 - 01.2007",
     school: "Politechnika Warszawska",
     field: "Field of study: production engineering",
     specialisation: "Specialisation: Marketing & managment",
-    level: "Level of education: Master"
+    level: "Level of education: Master",
   },
   {
     date: "09.2001 - 01.2005",
     school: "Wyższa Szkoła Informatyki Stosowanej",
     field: "Field of study: Marketing & managment",
     specialisation: "Specialisation: ICT managment",
-    level: "Level of education: engineer"
+    level: "Level of education: engineer",
   },
-
 ];
 
 educationEntries.forEach((entry) => {
@@ -401,28 +415,27 @@ hobbiesSection.appendChild(hobbiesList);
 // resumeWrapper.appendChild(resume);
 
 // scroll animation
-let sections = document.querySelectorAll('section');
+let sections = document.querySelectorAll("section");
 
 window.onscroll = () => {
-  sections.forEach(section => {
+  sections.forEach((section) => {
     let top = window.scrollY;
-    let offset = section.offsetTop -450;
+    let offset = section.offsetTop - 450;
     let height = section.offsetHeight;
 
     if (top >= offset && top < height + offset) {
-      section.classList.add('show-animate');
-    } 
-    else {
-      section.classList.remove('show-animate');
+      section.classList.add("show-animate");
+    } else {
+      section.classList.remove("show-animate");
     }
-  })
-}
+  });
+};
 
-const mobNav = document.querySelector('.menu');
-const burgerBtn = document.querySelector('.burger');
-const portfolioList = document.querySelector('.dropdown>ul');
+const mobNav = document.querySelector(".menu");
+const burgerBtn = document.querySelector(".burger");
+const portfolioList = document.querySelector(".dropdown>ul");
 
-burgerBtn.addEventListener('click', function(){
-  mobNav.classList.toggle('active');
-  portfolioList.classList.toggle('active');
+burgerBtn.addEventListener("click", function () {
+  mobNav.classList.toggle("active");
+  portfolioList.classList.toggle("active");
 });

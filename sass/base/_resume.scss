@@ -33,60 +33,52 @@
       border-radius: 1rem;
     }
   }
+}
+.right-panel {
 
 
-
+  > :nth-child(4) {
+    width: 100%;
+    border-bottom: 1px solid #fff;
   }
-  .right-panel {
-    >:nth-child(4) {
-      width: 100%;
-      border-bottom: 1px solid #fff;
-    }
-    > :nth-child(2) {
-      width: 100%;
-      border-bottom: 1px solid #fff;
-    }
-    > :nth-child(3) {
-      width: 100%;
-      border-bottom: 1px solid #fff;
-      li {
-        text-align: left;
-      }
-    }
-    .summary,
-    .expirience,
-    .education,
-    .hobby {
-      padding: 0 2rem 2rem 2rem;
-      text-align: center;
-      li{
-        text-align: left;
-      }
-    }
-    .summary {
-
-      > span {
-background-color: red; 
-align-self: self-start;     }
-
-    }
-
-
-
-
-      }
-  
-  ul {
-    padding: 0 0 1rem 1rem;
-    list-style: none;
+  > :nth-child(2) {
+    width: 100%;
+    border-bottom: 1px solid #fff;
   }
-
-  @media (min-width: 758px) {
-    .resume-wrapper {
-      display: grid;
-      grid-template-columns: 20vw 50vw;
-      column-gap: 2rem;
-      justify-content: center;
+  > :nth-child(3) {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    li {
+      text-align: left;
     }
   }
+  .summary,
+  .expirience,
+  .education,
+  .hobby {
+    padding: 0 2rem 2rem 2rem;
+    text-align: center;
+    li {
+      text-align: left;
+    }
+  }
+  .summary {
+    text-align: justify;
+    line-height: normal;
+  }
 
+}
+
+ul {
+  padding: 0 0 1rem 1rem;
+  list-style: none;
+}
+
+@media (min-width: 758px) {
+  .resume-wrapper {
+    display: grid;
+    grid-template-columns: 20vw 50vw;
+    column-gap: 2rem;
+    justify-content: center;
+  }
+}
