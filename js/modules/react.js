@@ -18,4 +18,3 @@ const reactData = [
   ];
 
   export default reactData;
-
