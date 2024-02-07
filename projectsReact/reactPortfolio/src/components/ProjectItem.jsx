@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ProjectItem() {
+const ProjectItem = () => {
   return (
     <div>ProjectItem</div>
   )
