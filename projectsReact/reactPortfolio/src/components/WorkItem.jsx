@@ -1,6 +1,6 @@
 import React from 'react'
 
-function WorkItem() {
+const WorkItem = () => {
   return (
     <div>WorkItem</div>
   )
