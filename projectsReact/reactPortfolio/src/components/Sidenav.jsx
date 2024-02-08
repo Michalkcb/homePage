@@ -7,7 +7,7 @@ import {
   } from "react-icons/ai";
 import { GrProjects } from "react-icons/gr";
 import { BsPerson } from "react-icons/bs";
-import { FaCertificate } from "react-icons/fa";
+import {FaCertificate} from "react-icons/fa";
 
 const Sidenav = () => {
   const [nav, setNav] = useState(false);
@@ -43,7 +43,6 @@ const Sidenav = () => {
             <AiOutlineProject size={20} />
             <span className="pl-4">Projects</span>
           </a>
-
           <a onClick={handleNav}
             href="#certificates"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
@@ -51,6 +50,8 @@ const Sidenav = () => {
             <FaCertificate size={20} />
             <span className="pl-4">Certificates</span>
           </a>
+
+
 
           <a onClick={handleNav}
             href="#resume"
@@ -80,6 +81,9 @@ const Sidenav = () => {
             </a>
             <a href="#projects" className="rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineProject size={20}/>
+            </a>
+            <a href="#certificates" className="rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaCertificate size={20}/>
             </a>
             <a href="#resume" className="rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                 <BsPerson size={20}/>
