@@ -6,7 +6,12 @@ const Contact = () => {
       <h1 className="py-4 text-4xl font-bold text-center text-[#001b5e]">Contact</h1>
       <form action="https://getform.io/f/b5ea2a6b-976a-457b-9188-0fc7a8788e14" method="POST" encType="multioart/form-data">
         <div className="grid md:grid-cols-2 gap-4 w-full py-2" >
-    
+          <h1>
+            
+          </h1>
+          <span>
+
+          </span>
         </div>
       </form>
     </div>
