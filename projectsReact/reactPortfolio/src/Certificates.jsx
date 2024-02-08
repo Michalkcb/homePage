@@ -130,15 +130,19 @@ const certificatesData = [
 
 const Certificates = () => {
   return (
-    <div className="text-4xl font-bold text-center text-[#001b5e] max-w-[1040px] flex justify-center items-center m-auto pl-16">
-      <h1 className="text-4xl font-bold text-center text-[#001b5e]" >Certificates</h1>
+    <div id='certificates' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16' >
+      <h1 className="text-4xl font-bold text-center text-[#001b5e] py-16" >Certificates</h1>
+      <div className="grid  lg:grid-cols-3 md:grid-cols-2 gap-12" >
       {certificatesData.map((item, idy)=>(
         <CertificateItem 
         key={idy}
-        src={item.certificateSrc}
+        img={item.certificateSrc}
         dsc={item.description}
         />
       ))}
+
+      </div>
+
     </div>
   );
 };
