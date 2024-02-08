@@ -12,9 +12,10 @@ function App() {
     <>
 <Sidenav/>
 <Main/>
+<Resume/>
 <Work/>
 <Projects/>
-<Resume/>
+
 <Contact/>
     </>
   )
