@@ -5,6 +5,7 @@ import Work from './components/Work'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Resume from './components/Resume'
+import Certificates from './certificates'
 
 function App() {
 
@@ -12,10 +13,10 @@ function App() {
     <>
 <Sidenav/>
 <Main/>
+<Projects/>
+<Certificates/>
 <Resume/>
 <Work/>
-<Projects/>
-
 <Contact/>
     </>
   )

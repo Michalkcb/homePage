@@ -37,6 +37,7 @@ const Work = () => {
           duration={item.duration}
           details={item.details}
           description={item.description}
+          
         />
       ))}
     </div>
