@@ -6,16 +6,19 @@ const Resume = () => {
       <h1 className="py-4 text-4xl font-bold text-center text-[#001b5e]">
         ABAUT ME
       </h1>
-      <h3>SUMMARY</h3>
-      <span>
-        I have 5 years of experience as a Web Developer as the founder and
+      <span className=" text-justify " >
+          I have 5 years of experience as a Web Developer as the founder and
         creator of playstation2.pl, the business website albertech.pl, as well
         as many small commercial projects during my studies in Wyższa Szkoła
-        Informatyki Stosowanej in Warsaw. With 13 years of experience in
+        Informatyki Stosowanej in Warsaw. 
+        <br />
+                With 13 years of experience in
         Category management, I am a skilled team player and team leader in
         national and international environments. I have completed many modern
         Front-end courses on: University of California Davis, Udemy,
-        Studiuje.it. You will find all certificates above. Currently I’m
+        Studiuje.it. You will find all certificates above. 
+        <br />
+        Currently I’m
         developing my skills working on my portfolio using: RWD, JavaScript,
         React, SCSS, Tailwind or Bootstrap. I have some experience with Python
         and C which you can check on my Github repository. 2023 I passed tests
