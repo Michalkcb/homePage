@@ -131,9 +131,13 @@ const certificatesData = [
 const Certificates = () => {
   return (
     <div className="text-4xl font-bold text-center text-[#001b5e] max-w-[1040px] flex justify-center items-center m-auto pl-16">
-      <h1>Certificates</h1>
-      {certificatesData.map((src, desc)=>(
-        <CertificateItem />
+      <h1 className="text-4xl font-bold text-center text-[#001b5e]" >Certificates</h1>
+      {certificatesData.map((item, idy)=>(
+        <CertificateItem 
+        key={idy}
+        src={item.certificateSrc}
+        dsc={item.description}
+        />
       ))}
     </div>
   );
