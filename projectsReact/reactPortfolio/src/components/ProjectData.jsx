@@ -1,7 +1,7 @@
 const projectsData = [
     {tech:"html", link: '/projectsHtml/glowingIcons/index.html', imageSrc: 'https://michalkcb.github.io/homePage/assets/glowingItems.jpg', description: 'glowing_icons'},
     {tech:"html", link: 'http://michalkcb.ct8.pl/new%20cruzeirosazuis/newTerminyPL.html',imageSrc: 'http://michalkcb.ct8.pl/pic/cruseiro.jpg',description: 'page_pic1'},
-    {tech:"html", link: 'http://michalkcb.ct8.pl/glowingDiv/index.html',imageSrc: 'http://michalkcb.ct8.pl/glowingDiv/glowingDivs.png',description: 'Glowing DIV'},
+    {tech:"html", link: 'http://michalkcb.ct8.pl/glowingDiv/index.html',imageSrc: 'https://michalkcb.github.io/homePage/blob/master/EuroChina/img/eurochina.png',description: 'Glowing DIV'},
     {tech:"html", link: '../old/index.html',imageSrc: 'http://michalkcb.ct8.pl/pic/old.png',description: 'old WD'},
     {tech:"html", link: 'http://michalkcb.ct8.pl/page07/page07.html',imageSrc: 'http://michalkcb.ct8.pl/pic/page07.png',description: 'page_pic7'},
     {tech:"html", link: 'http://michalkcb.ct8.pl/EuroChina/index.html',imageSrc: 'http://michalkcb.ct8.pl/pic/page02.png',description: 'page_pic2'},
