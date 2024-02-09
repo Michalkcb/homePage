@@ -1,5 +1,34 @@
 const projectsData = [
-
+  { tech:"React",
+  link: 'https://michalkcb.github.io/homePage/projectsReact/toDoList/dist/index.html',
+  imageSrc: 'https://michalkcb.github.io/homePage/assets/todoReactVite.png',
+  description: 'react Todo List'
+},
+{tech:"React",
+  link: 'https://github.com/Michalkcb/myProjects/tree/master/react/react01',
+  imageSrc: 'https://michalkcb.github.io/homePage/assets/reactPage01.png',
+  description: 'react01'
+},
+{tech:"React",
+  link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel3/react_calculator/src',
+  imageSrc: 'https://michalkcb.github.io/homePage/assets/reactCalculator.png',
+  description: 'Calculator'
+},
+{ tech:"Tailwind",
+  link: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind01/dist/index.html',
+  imageSrc: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind01/assets/tailwind01.png',
+  description: 'pizzeria'
+},
+{ tech:"Tailwind",
+  link: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind02/dist/index.html',
+  imageSrc: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind02/assets/aikido.png',
+  description: 'aikido'
+},
+{  tech:"Tailwind",
+  link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/FaceGenerator/dist/FaceGenerator.html',
+  imageSrc: 'https://michalkcb.github.io/homePage/assets/faceGenerator.png',
+  description: 'Face Generator'
+},
     // {tech:"html", link: 'https://michalkcb.github.io/homePage/projectsHtml/semstorm/index.html',imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/semstorm/assets/semstorm.png',alt: 'semstorm'  }
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/sudoku.png', description: 'Sudoku (JS)', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl3/sudoku/sudoku.html', },
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/MBN.png', description: 'Real Actual News Portal (JS)(API)', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/MBNews/MBNews.html', },
@@ -24,36 +53,6 @@ const projectsData = [
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/toDoApp.jpg', description: 'To do App witt Arry' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/toDoApp2Array',},
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/darkModeByBtn.jpg', description: 'Press btn to switch to dark mode' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/darkMode',},
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/guessNumber.jpg', description: 'Game: guess number' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/guessNumber',},
-    { tech:"React",
-      link: 'https://michalkcb.github.io/homePage/projectsReact/toDoList/dist/index.html',
-      imageSrc: 'https://michalkcb.github.io/homePage/assets/todoReactVite.png',
-      description: 'react Todo List'
-    },
-    {tech:"React",
-      link: 'https://github.com/Michalkcb/myProjects/tree/master/react/react01',
-      imageSrc: 'https://michalkcb.github.io/homePage/assets/reactPage01.png',
-      description: 'react01'
-    },
-    {tech:"React",
-      link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel3/react_calculator/src',
-      imageSrc: 'https://michalkcb.github.io/homePage/assets/reactCalculator.png',
-      description: 'Calculator'
-    },
-    { tech:"Tailwind",
-      link: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind01/dist/index.html',
-      imageSrc: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind01/assets/tailwind01.png',
-      description: 'pizzeria'
-    },
-    { tech:"Tailwind",
-      link: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind02/dist/index.html',
-      imageSrc: 'https://michalkcb.github.io/homePage/tailwindCSS/tailwind02/assets/aikido.png',
-      description: 'aikido'
-    },
-    {  tech:"Tailwind",
-      link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/FaceGenerator/dist/FaceGenerator.html',
-      imageSrc: 'https://michalkcb.github.io/homePage/assets/faceGenerator.png',
-      description: 'Face Generator'
-  },
     {  tech:"Python",
       link: 'https://github.com/Michalkcb/Python/tree/main/wyzwaniePython/ticTacToe',
       imageSrc: 'https://michalkcb.github.io/homePage/assets/python01.png',

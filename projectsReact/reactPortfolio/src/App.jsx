@@ -5,7 +5,7 @@ import Work from './components/Work'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Resume from './components/Resume'
-import Certificates from './certificates'
+import Certificates from './components/Certificates'
 import Footer from './components/Footer'
 
 function App() {

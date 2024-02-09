@@ -1,5 +1,5 @@
 import React from "react";
-import CertificateItem from "./components/CertificateItem";
+import CertificateItem from "./CertificateItem";
 
 const certificatesData = [
   {
@@ -130,7 +130,7 @@ const certificatesData = [
 
 const Certificates = () => {
   return (
-    <div id='certificates' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16' >
+    <div id='certificates' className='max-w-[1280px] m-auto md:pl-20 p-4 py-16' >
       <h1 className="text-4xl font-bold text-center text-[#001b5e] py-16" >Certificates</h1>
       <div className="grid  lg:grid-cols-3 md:grid-cols-2 gap-12" >
       {certificatesData.map((item, idy)=>(
