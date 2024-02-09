@@ -1,5 +1,10 @@
 const projectsData = [
   { tech:"React",
+  link: 'https://michalkcb.github.io/homePage/projectsReact/reactPortfolio/dist/index.html',
+  imageSrc: 'https://michalkcb.github.io/homePage/assets/reactPortfolio.png',
+  description: 'My Portfolio in React'
+},
+  { tech:"React",
   link: 'https://michalkcb.github.io/homePage/projectsReact/toDoList/dist/index.html',
   imageSrc: 'https://michalkcb.github.io/homePage/assets/todoReactVite.png',
   description: 'react Todo List'
@@ -7,7 +12,7 @@ const projectsData = [
 {tech:"React",
   link: 'https://github.com/Michalkcb/myProjects/tree/master/react/react01',
   imageSrc: 'https://michalkcb.github.io/homePage/assets/reactPage01.png',
-  description: 'react01'
+  description: 'Pizza'
 },
 {tech:"React",
   link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel3/react_calculator/src',
