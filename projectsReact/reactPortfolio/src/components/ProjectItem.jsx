@@ -9,12 +9,10 @@ const ProjectItem = ({ img, dsc, link, tech }) => {
         className="rounded-xl group-hover:opacity-10"
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
-        <h2 className="text-2xl font-bold text-black tracking-wider text-center shadow-lg" >{tech}</h2>
-        <h3 className=" font-semibold text-white tracking-wider text-center">
-          {dsc}
-        </h3>
+        <h2 className="bg-[#fff] text-gray-800 mt-2 w-full p-2 rounded-lg text-center text-2xl font-bold  " >{tech}</h2>
+        <h3 className=" font-semibold text-white tracking-wider text-center pt-4">{dsc}</h3>
         <a href={link}>
-          <p className="bg-[#001b5e] text-gray-100 mt-2 w-full p-2 rounded-lg text-center">Open project</p>
+          <p className="bg-[#001b5e] text-gray-100 mt-2 w-full p-2 rounded-lg text-center font-bold">Open project</p>
         </a>
       </div>
     </div>
