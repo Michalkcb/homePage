@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectItem = ({ img, dsc, link, tech }) => {
   return (
-    <div className="relative flex items-center h-[200px] w-[300px] overflow-hidden justify-center shadow-xl shadow-grey-400 rounded-lg group hover:bg-gradient-to-r from-gray-200 to-[#001b5e]">
+    <div className="relative flex items-center h-auto w-auto overflow-hidden justify-center shadow-xl shadow-grey-400 rounded-lg group hover:bg-gradient-to-r from-gray-200 to-[#001b5e] bg-transparent">
       <img
         src={img}
         alt="image"
