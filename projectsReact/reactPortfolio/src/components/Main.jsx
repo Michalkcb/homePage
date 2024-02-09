@@ -1,6 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 
 const Main = () => {
   return (
@@ -37,9 +37,9 @@ const Main = () => {
           </h2>
           <div className="flex pt-6 max-w-[180px] w-full justify-between">
 
-          <a href="https://www.facebook.com/michalkcb/" target="_blank">
+          <a href="https://github.com/Michalkcb" target="_blank">
               {" "}
-              <FaFacebookF className="cursor-pointer" size={20} />
+              <FaGithub className="cursor-pointer" size={20} />
             </a>
 
             <a href="https://www.facebook.com/michalkcb/" target="_blank">
