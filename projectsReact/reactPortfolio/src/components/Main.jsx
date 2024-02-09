@@ -20,7 +20,7 @@ const Main = () => {
             I'm a
             <TypeAnimation
               sequence={[
-                "Developer",
+                "Frontend developer",
                 1000,
                 "Coder",
                 1000,
@@ -39,23 +39,23 @@ const Main = () => {
 
           <a href="https://github.com/Michalkcb" target="_blank">
               {" "}
-              <FaGithub className="cursor-pointer" size={20} />
+              <FaGithub className="cursor-pointer" size={30} />
             </a>
 
             <a href="https://www.facebook.com/michalkcb/" target="_blank">
               {" "}
-              <FaFacebookF className="cursor-pointer" size={20} />
+              <FaFacebookF className="cursor-pointer" size={30} />
             </a>
             <a
               href="https://www.linkedin.com/in/micha%C5%82-bany-4a9bb0116/"
               target="_blank"
             >
               {" "}
-              <FaLinkedinIn className="cursor-pointer" size={20} />{" "}
+              <FaLinkedinIn className="cursor-pointer" size={30} />{" "}
             </a>
             <a href="https://www.instagram.com/michalkcb/" target="_blank">
               {" "}
-              <FaInstagram className="cursor-pointer" size={20} />
+              <FaInstagram className="cursor-pointer" size={30} />
             </a>
           </div>
         </div>
