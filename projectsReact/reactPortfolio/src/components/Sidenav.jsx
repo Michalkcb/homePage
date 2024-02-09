@@ -9,6 +9,7 @@ import { GrProjects } from "react-icons/gr";
 import { BsPerson } from "react-icons/bs";
 import {FaCertificate} from "react-icons/fa";
 
+
 const Sidenav = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
