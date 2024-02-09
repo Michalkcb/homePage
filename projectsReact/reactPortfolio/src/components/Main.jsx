@@ -4,13 +4,16 @@ import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 const Main = () => {
   return (
-    <div id="main">
-      <img
-        className="w-full h-screen object-cover object-left scale-x-[-1]"
-        src="https://michalkcb.github.io/homePage/assets/codeBG2.png"
-        alt=""
-      />
-      <div className=" w-full h-3/4 absolute top-0 left-0 bg-white/50">
+    <div id="main" className="h-4/5 overflow-hidden">
+      <div className="relative w-full h-auto md:h-[80vh] overflow-hidden">
+        <img
+          className="w-full h-auto md:w-full md:h-full object-cover object-left"
+          src="https://michalkcb.github.io/homePage/assets/codeBG2.png"
+          alt=""
+        />
+      </div>
+
+      <div className=" w-full h-4/5 absolute top-0 left-0 bg-white/50">
         <div className="max-w-[700px] m-auto h-full flex flex-col justify-center items-center">
           <h1 className="sm:text-5xl text-4xl font-bold text-gray-800">
             I'm Michael Bany
@@ -53,6 +56,11 @@ const Main = () => {
           </div>
         </div>
       </div>
+
+              <div>
+                
+              </div>
+
     </div>
   );
 };

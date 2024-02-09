@@ -6,6 +6,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Resume from './components/Resume'
 import Certificates from './certificates'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
 <Resume/>
 <Work/>
 <Contact/>
+<Footer/>
+
     </>
   )
 }
