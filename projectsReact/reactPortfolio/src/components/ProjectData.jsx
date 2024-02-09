@@ -1,12 +1,5 @@
 const projectsData = [
-    {tech:"html", link: '/projectsHtml/glowingIcons/index.html', imageSrc: 'https://michalkcb.github.io/homePage/assets/glowingItems.jpg', description: 'glowing_icons'},
-    {tech:"html", link: 'http://michalkcb.ct8.pl/new%20cruzeirosazuis/newTerminyPL.html',imageSrc: 'https://michalkcb.github.io/homePage/pic/cruseiro.jpg',description: 'page_pic1'},
-    {tech:"html", link: 'https://michalkcb.github.io/homePage/projectsHtml/EuroChina/index.html',imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/EuroChina/img/eurochina.png',description: 'Glowing DIV'},
-    {tech:"html", link: 'https://michalkcb.github.io/homePage/projectsHtml/glowingDiv/index.html',imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/glowingDiv/glowingDivs.png',description: 'Glowing DIV'},
-    {tech:"html", link: '',imageSrc: 'https://michalkcb.github.io/homePage/pic/old.png',description: 'old WD'},
-    {tech:"html", link: 'http://michalkcb.ct8.pl/page07/page07.html',imageSrc: 'https://michalkcb.github.io/homePage/pic/page07.png',description: 'page_pic7'},
-    {tech:"html", link: 'http://michalkcb.ct8.pl/EuroChina/index.html',imageSrc: 'https://michalkcb.github.io/homePage/pic/page02.png',description: 'page_pic2'},
-    {tech:"html", imageSrc: 'https://michalkcb.github.io/homePage/assets/sudoku.png', link: 'https://michalkcb.github.io/homePage/pic/page06.html',description: 'page_pic6'},
+
     // {tech:"html", link: 'https://michalkcb.github.io/homePage/projectsHtml/semstorm/index.html',imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/semstorm/assets/semstorm.png',alt: 'semstorm'  }
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/sudoku.png', description: 'Sudoku (JS)', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl3/sudoku/sudoku.html', },
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/MBN.png', description: 'Real Actual News Portal (JS)(API)', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/MBNews/MBNews.html', },
@@ -65,7 +58,14 @@ const projectsData = [
       link: 'https://github.com/Michalkcb/Python/tree/main/wyzwaniePython/ticTacToe',
       imageSrc: 'https://michalkcb.github.io/homePage/assets/python01.png',
       description: 'Tic Tac Toe'
-    }
+    },
+    {tech:"html", link: '/projectsHtml/glowingIcons/index.html', imageSrc: 'https://michalkcb.github.io/homePage/assets/glowingItems.jpg', description: 'glowing_icons'},
+    {tech:"html", link: '',imageSrc: 'https://michalkcb.github.io/homePage/pic/cruseiro.jpg',description: 'page_pic1'},
+    {tech:"html", link: 'https://michalkcb.github.io/homePage/projectsHtml/EuroChina/index.html',imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/EuroChina/img/eurochina.png',description: 'Glowing DIV'},
+    {tech:"html", link: 'https://michalkcb.github.io/homePage/projectsHtml/glowingDiv/index.html',imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/glowingDiv/glowingDivs.png',description: 'Glowing DIV'},
+    {tech:"html", link: 'https://michalkcb.github.io/homePage/page08/index.html',imageSrc: 'https://michalkcb.github.io/homePage/assets/webDesign.png',description: 'old WD'},
+    {tech:"html", link: 'https://michalkcb.github.io/homePage/page07/page07.html',imageSrc: 'https://michalkcb.github.io/homePage/pic/page07.png',description: 'page_pic7'},
+    {tech:"html", imageSrc: 'https://michalkcb.github.io/homePage/pic/page06.png', link: 'https://michalkcb.github.io/homePage/page06/page06.html',description: 'page_pic6'},
   ];
 
   export default projectsData;
