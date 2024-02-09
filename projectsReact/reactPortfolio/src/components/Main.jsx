@@ -11,9 +11,7 @@ const Main = () => {
           src="https://michalkcb.github.io/homePage/assets/codeBG2.png"
           alt=""
         />
-      </div>
-
-      <div className=" w-full h-4/5 absolute top-0 left-0 bg-white/50">
+              <div className=" w-full h-full absolute top-0 left-0 bg-white/50">
         <div className="max-w-[700px] m-auto h-full flex flex-col justify-center items-center">
           <h1 className="sm:text-5xl text-4xl font-bold text-gray-800">
             I'm Michael Bany
@@ -38,6 +36,12 @@ const Main = () => {
             />
           </h2>
           <div className="flex pt-6 max-w-[180px] w-full justify-between">
+
+          <a href="https://www.facebook.com/michalkcb/" target="_blank">
+              {" "}
+              <FaFacebookF className="cursor-pointer" size={20} />
+            </a>
+
             <a href="https://www.facebook.com/michalkcb/" target="_blank">
               {" "}
               <FaFacebookF className="cursor-pointer" size={20} />
@@ -56,11 +60,15 @@ const Main = () => {
           </div>
         </div>
       </div>
+      </div>
 
-              <div>
-                
-              </div>
 
+
+      <div className="flex justify-center items-center pt-6" >
+          <a href="https://skillicons.dev">
+            <img src="https://skillicons.dev/icons?i=git,github,bash,powershell,linux,css,html,sass,js,react,tailwind,bootstrap,codepen,replit,wordpress,c,vim,vscode,webpack,mongodb,nextjs,nodejs,jest,jquery,ps,raspberrypi&theme=dark&perline=13" />
+          </a>
+      </div>
     </div>
   );
 };
