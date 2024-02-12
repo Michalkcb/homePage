@@ -15,6 +15,7 @@ Currently, two official plugins are available:
 
 add pages folder
 add components folder
+npm install --save react-google-button
 
 
 -tailwind: 
