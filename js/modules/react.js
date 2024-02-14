@@ -1,5 +1,10 @@
 const reactData = [
   { 
+    link: 'https://michalkcb.github.io/homePage/projectsReact/googleAuthentication/dist/index.html',
+    imageSrc: 'https://michalkcb.github.io/homePage/assets/googleAuth.png',
+    alt: 'Google Authentication (Tailwind)'
+  },
+  { 
   link: 'https://michalkcb.github.io/homePage/projectsReact/reactPortfolio/dist/index.html',
   imageSrc: 'https://michalkcb.github.io/homePage/assets/reactPortfolio.png',
   alt: 'My Portfolio in React'
