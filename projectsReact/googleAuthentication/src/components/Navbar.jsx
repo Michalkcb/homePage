@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import UserAuth from '../context/AuthContext'
+import {UserAuth} from '../context/AuthContext'
 
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
         <h1 className=' text-center text-2xl font-bold'>
             Google Auth
         </h1>
-        {user?.displayName ? <button onClick={handleSignOut}>Logout</button> : <Link to='./signin'>Sign in</Link> }
+        {user?.displayName ? <button onClick={handleSignOut}>Logout</button> : (<Link to='./signin'>Sign in</Link>) }
     </div>
   )
 }
