@@ -5,6 +5,7 @@ import { AuthContextProvider } from './context/AuthContext';
 import Account from './pages/Account';
 import Home from './pages/Home';
 import Signin from './pages/Signin';
+import 'tailwindcss/tailwind.css'
 
 function App() {
   return (
