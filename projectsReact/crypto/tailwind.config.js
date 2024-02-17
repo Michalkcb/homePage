@@ -18,6 +18,12 @@ export default {
         primary:  'var(--color-text-primary)',
         secondary:  'var(--color-text-secondary)',
         btnText:  'var(--color-bg-secondary)',
+      },
+      borderColor:{
+        primary: 'var(--color-bg-primary)',
+        secondary: 'var(--color-bg-secondary)',
+        input: 'var(--color-bg-input)',
+        accent: 'var(--color-bg-accent)',
       }
     },
   },
