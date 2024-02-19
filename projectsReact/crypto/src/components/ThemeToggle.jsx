@@ -1,4 +1,5 @@
 import React from 'react'
+import {HiSun, HiMoon} from 'react-icons/hi'
 
 const ThemeToggle = () => {
   return (
