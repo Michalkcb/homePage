@@ -1,23 +1,24 @@
-import React, { useContext } from 'react'
-import {HiSun, HiMoon} from 'react-icons/hi'
-import { ThemeContext } from '../context/ThemeContext'
+import React, { useContext } from "react";
+import { HiSun, HiMoon } from "react-icons/hi";
+import { ThemeContext } from "../context/ThemeContext";
 
 const ThemeToggle = () => {
-    const {theme, setTheme} = useContext(ThemeContext)
+  const { theme, setTheme } = useContext(ThemeContext);
 
   return (
     <div>
-        {theme === 'dark' ? (
-        <div>
-            <HiSun/> Light Mode
+      {theme === "dark" ? (
+        <div onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+          <HiSun /> Light Mode
         </div>
-        ) : (
-        <div>
-            <HiMoon/>Dark Mode
+      ) : (
+        <div onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+          <HiMoon />
+          Dark Mode
         </div>
-        )}
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default ThemeToggle
+export default ThemeToggle;

@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div>
         <Link to='/'>
-            <h1>MB CryptoHub</h1>
+            <h1 className='border font-bold'>MB CryptoHub</h1>
         </Link>
         <div>
             <ThemeToggle/>
