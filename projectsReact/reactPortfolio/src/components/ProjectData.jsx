@@ -32,7 +32,7 @@ const projectsData = [
 {  tech:"Tailwind",
   link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/FaceGenerator/dist/FaceGenerator.html',
   imageSrc: 'https://michalkcb.github.io/homePage/assets/faceGenerator.png',
-  description: 'Face Generator'
+  description: 'Face Generator JS, API, JSON, Tailwind'
 },
     // {tech:"html", link: 'https://michalkcb.github.io/homePage/projectsHtml/semstorm/index.html',imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/semstorm/assets/semstorm.png',alt: 'semstorm'  }
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/sudoku.png', description: 'Sudoku (JS)', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl3/sudoku/sudoku.html', },
@@ -43,7 +43,6 @@ const projectsData = [
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/ttt.png', description: 'Tic Tac Toe Game', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/ticTacToe/ttt.html', },
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/scrollAnimation/assets/scrollAnimate.png', description: 'Animation on Scroll', link: './projectsHtml/scrollAnimation/index.html', },
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/Countries%20Lookup.png', description: 'Countries Lookup JSON BOOTWATCH', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/typeahead/typeahead.html', },
-    { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/faceGenerator.png', description: 'Face Generator JSON TailwindCSS', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/FaceGenerator/dist/FaceGenerator.html', },
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/passwordGenerator.jpg', description: 'Password Generator', link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/passwordGenerator', },
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/infinitePageScroll.png', description: 'Infinite Page Scroller', link: 'https://github.com/Michalkcb/myProjects/blob/master/ProjectsLvl1/infiniteScroll/infiniteScroll.html', },
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/memoryGame.jpg', description: 'Memory Game', link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/theSimplestMemoryGame', },
