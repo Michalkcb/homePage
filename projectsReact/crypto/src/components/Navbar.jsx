@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
+  const [nav, setNav] = useState(false)
+
+  const handleNav = () => {
+    setNav(!nav)
+  }
+
   return (
     <div className=" rounded-div flex items-center justify-between h-20 font-bold">
       <Link to="/" className="flex items-center">
@@ -21,8 +27,8 @@ const Navbar = () => {
         <Link to="./signin" className="p-4 hover:text-accent">Sign In</Link>
         <Link to="./signup" className=" bg-button text-btnText px-5 py-2 rounded-2xl shadow-lg hover:shadow-2xl">Sign Up</Link>
       </div>
-      <div className="block mb:hidden cursor-pointer z-10">
-        <AiOutlineMenu></AiOutlineMenu>
+      <div onClick={handleNav} className="block mb:hidden cursor-pointer z-10">
+        {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
       </div>
 
       {/* mobile menu */}
