@@ -27,20 +27,20 @@ const Navbar = () => {
 
       {/* mobile menu */}
       <div className=" md:hidden fixed left-0 top-20 flex flex-col items-center justify-between w-full h-[90%] bg-primary ease-in duration-300 z-10">
-        <ul>
-          <li>
+        <ul className="w-full p-4">
+          <li className="border py-6 ">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="border py-6 ">
             <Link to="/">Account</Link>
           </li>
-          <li>
+          <li className="border py-6 ">
             <ThemeToggle></ThemeToggle>
           </li>
         </ul>
-        <div>
-          <Link to="./signin"> <button>Sign In</button> </Link>
-          <Link to="./signup"> <button>Sign Up</button> </Link>
+        <div className="flex flex-col w-full p-4">
+          <Link to="./signin"> <button className="w-full my-2 p-3 bg-primary text-primary border border-secondary rounded-2xl shadow-xl">Sign In</button> </Link>
+          <Link to="./signup"> <button className=" w-full my-2 p-3 bg-button text-btnText rounded-2xl shadow-xl">Sign Up</button> </Link>
         </div>
       </div>
     </div>
