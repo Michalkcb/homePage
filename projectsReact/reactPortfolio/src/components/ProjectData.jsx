@@ -1,4 +1,19 @@
 const projectsData = [
+  {  tech:"Python",
+  link: 'https://github.com/Michalkcb/Python/tree/main/wyzwaniePython/ticTacToe',
+  imageSrc: 'https://michalkcb.github.io/homePage/assets/python01.png',
+  description: 'Tic Tac Toe'
+},
+{  tech:"",
+link: '',
+imageSrc: '',
+description: ''
+},
+{  tech:"",
+link: '',
+imageSrc: '',
+description: ''
+},
   { tech:"React",
   link: 'https://michalkcb.github.io/homePage/projectsReact/reactPortfolio/dist/index.html',
   imageSrc: 'https://michalkcb.github.io/homePage/assets/reactPortfolio.png',
@@ -57,18 +72,13 @@ const projectsData = [
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/toDoApp.jpg', description: 'To do App witt Arry' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/toDoApp2Array',},
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/darkModeByBtn.jpg', description: 'Press btn to switch to dark mode' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/darkMode',},
     { tech:"Java Script", imageSrc: 'https://michalkcb.github.io/homePage/assets/guessNumber.jpg', description: 'Game: guess number' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/guessNumber',},
-    {  tech:"Python",
-      link: 'https://github.com/Michalkcb/Python/tree/main/wyzwaniePython/ticTacToe',
-      imageSrc: 'https://michalkcb.github.io/homePage/assets/python01.png',
-      description: 'Tic Tac Toe'
-    },
     {tech:"html", link: '/projectsHtml/glowingIcons/index.html', imageSrc: 'https://michalkcb.github.io/homePage/assets/glowingItems.jpg', description: 'glowing_icons'},
-    {tech:"html", link: '',imageSrc: 'https://michalkcb.github.io/homePage/pic/cruseiro.jpg',description: 'page_pic1'},
-    {tech:"html", link: 'https://michalkcb.github.io/homePage/projectsHtml/EuroChina/index.html',imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/EuroChina/img/eurochina.png',description: 'Glowing DIV'},
+    {tech:"html", link: '',imageSrc: 'https://michalkcb.github.io/homePage/pic/cruseiro.jpg',description: 'cruzeirosazuis.eu'},
+    {tech:"html", link: 'https://michalkcb.github.io/homePage/projectsHtml/EuroChina/index.html',imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/EuroChina/img/eurochina.png',description: 'EuroChina'},
     {tech:"html", link: 'https://michalkcb.github.io/homePage/projectsHtml/glowingDiv/index.html',imageSrc: 'https://michalkcb.github.io/homePage/projectsHtml/glowingDiv/glowingDivs.png',description: 'Glowing DIV'},
     {tech:"html", link: 'https://michalkcb.github.io/homePage/page08/index.html',imageSrc: 'https://michalkcb.github.io/homePage/assets/webDesign.png',description: 'old WD'},
-    {tech:"html", link: 'https://michalkcb.github.io/homePage/page07/page07.html',imageSrc: 'https://michalkcb.github.io/homePage/pic/page07.png',description: 'page_pic7'},
-    {tech:"html", imageSrc: 'https://michalkcb.github.io/homePage/pic/page06.png', link: 'https://michalkcb.github.io/homePage/page06/page06.html',description: 'page_pic6'},
+    {tech:"html", link: 'https://michalkcb.github.io/homePage/page07/page07.html',imageSrc: 'https://michalkcb.github.io/homePage/pic/page07.png',description: 'TouYube'},
+    {tech:"html", imageSrc: 'https://michalkcb.github.io/homePage/pic/page06.png', link: 'https://michalkcb.github.io/homePage/page06/page06.html',description: 'Foogle'},
   ];
 
   export default projectsData;
