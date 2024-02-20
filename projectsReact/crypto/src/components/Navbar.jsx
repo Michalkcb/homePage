@@ -21,10 +21,12 @@ const Navbar = () => {
         <Link to="./signin" className="p-4 hover:text-accent">Sign In</Link>
         <Link to="./signup" className=" bg-button text-btnText px-5 py-2 rounded-2xl shadow-lg hover:shadow-2xl">Sign Up</Link>
       </div>
-      <div>
+      <div className="block mb:hidden cursor-pointer z-10">
         <AiOutlineMenu></AiOutlineMenu>
       </div>
-      <div>
+
+      {/* mobile menu */}
+      <div className=" md:hidden fixed left-0 top-20 flex flex-col items-center justify-between w-full h-[90%] bg-primary ease-in duration-300 z-10">
         <ul>
           <li>
             <Link to="/">Home</Link>
