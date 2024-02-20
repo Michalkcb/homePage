@@ -5,7 +5,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className=" rounded-div">
       <Link to="/" className="flex items-center">
         <img
           src="https://michalkcb.github.io/homePage/assets/MB_logo.png"
