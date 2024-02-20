@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import ThemeToggle from './ThemeToggle'
+import {AiOutlirMenu} from 'react-icons/ai'
 
 const Navbar = () => {
   return (
@@ -13,6 +14,13 @@ const Navbar = () => {
         </Link>
         <div>
             <ThemeToggle/>
+        </div>
+        <div>
+         <Link to='./signin'>Sign In</Link>
+         <Link to='./signup'>Sign Up</Link>
+        </div>
+        <div>
+          <AiOutlirMenu></AiOutlirMenu>
         </div>
     </div>
   )
