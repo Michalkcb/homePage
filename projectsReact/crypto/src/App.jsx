@@ -6,6 +6,7 @@ import Home from "./routes/Home";
 import SignUp from "./routes/SignUp";
 import SignIn from "./routes/SignIn";
 import Account from "./routes/Account";
+import axios from "axios";
 
 function App() {
   return <ThemeProvider>
