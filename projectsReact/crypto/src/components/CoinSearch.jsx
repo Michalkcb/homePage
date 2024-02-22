@@ -41,10 +41,10 @@ const CoinSearch = ({ coins }) => {
               </td>
               <td>{coin.symbol}</td>
               <td>{coin.current_price}</td>
-              <td>{coin.price_change_24h}</td>
+              <td>{coin.price_change_percentage_24h}</td>
+              <td>{coin.total_volume}</td>
               <td>{coin.market_cap}</td>
-              <td>{}</td>
-              <td></td>
+              <td>{coin.sparkline_in_7d.price}</td>
             </tr>
           ))}
         </tbody>
