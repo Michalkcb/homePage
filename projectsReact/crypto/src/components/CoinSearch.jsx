@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineStar } from "react-icons/ai";
+import { Sparklines, SparklinesLine  } from 'react-sparklines';
 
 const CoinSearch = ({ coins }) => {
   return (
@@ -44,7 +45,11 @@ const CoinSearch = ({ coins }) => {
               <td>{coin.price_change_percentage_24h}</td>
               <td>{coin.total_volume}</td>
               <td>{coin.market_cap}</td>
-              <td>{coin.sparkline_in_7d.price}</td>
+              <td>
+                <Sparklines data={coin.sparkline_in_7d.price}>
+                  <SparklinesLine color='blue'/>
+                </Sparklines>
+                </td>
             </tr>
           ))}
         </tbody>
