@@ -15,7 +15,7 @@ const CoinSearch = ({ coins }) => {
         </form>
       </div>
 
-      <table>
+      <table className=" w-full border-collapse text-center">
         <thead>
           <tr>
             <th></th>
