@@ -17,7 +17,7 @@ const CoinSearch = ({ coins }) => {
 
       <table className=" w-full border-collapse text-center">
         <thead>
-          <tr>
+          <tr className="border-b">
             <th></th>
             <th>#</th>
             <th>Coin</th>
