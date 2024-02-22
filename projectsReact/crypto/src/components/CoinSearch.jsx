@@ -1,5 +1,5 @@
 import React from "react";
-import {AiOutlineStar} from 'react-icons/ai';
+import { AiOutlineStar } from "react-icons/ai";
 
 const CoinSearch = ({ coins }) => {
   return (
@@ -26,11 +26,19 @@ const CoinSearch = ({ coins }) => {
           </tr>
         </thead>
         <tbody>
-          {coins.map((coin)=>(
+          {coins.map((coin) => (
             <tr>
-              <td> <AiOutlineStar/> </td>
+              <td>
+                {" "}
+                <AiOutlineStar />{" "}
+              </td>
               <td>{coin.market_cap_rank}</td>
-              <td></td>
+              <td>
+                <div>
+                  <img src={coin.image} alt={coin.id} />
+                  <p>{coin.name}</p>
+                </div>
+              </td>
               <td></td>
               <td></td>
               <td></td>
