@@ -4,7 +4,7 @@ import { Sparklines, SparklinesLine } from "react-sparklines";
 
 const CoinItem = ({ coin }) => {
   return (
-    <tr className="">
+    <tr className="h-[80px] border-b overflow-hidden">
       <td>
         {" "}
         <AiOutlineStar />{" "}
