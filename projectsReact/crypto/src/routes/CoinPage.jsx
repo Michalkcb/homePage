@@ -13,7 +13,29 @@ const CoinPage = () => {
     });
   }, [url]);
 
-  return <div>CoinPage</div>;
+  return (
+    <div>
+      <div>
+        <img src={coin.image?.large} alt="/" />
+        <div>
+          <p>{coin?.name} price</p>
+          <p className=" uppercase"> ({coin?.symbol} / PLN) </p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+            {coin.market_data?.current_price ? (
+              <p>
+                {coin.market_data.current_price.pln.toLocaleString()} PLN
+              </p>
+            ) : null}
+            <p>7 Day</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default CoinPage;
