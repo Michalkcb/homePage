@@ -1,9 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const Trending = () => {
-  return (
-    <div>Trending</div>
-  )
-}
+  const [trending, setTrending] = useState([]);
+  const url = "https://api.coingecko.com/api/v3/search/trending";
 
-export default Trending
+  useEffect(() => {
+    axios.get(url).then((response) => {
+      setTrending(response.data.coins);
+    });
+  }, []);
+
+  return (
+    <div>
+      <h1>Trending Coins</h1>
+      <div>
+        {trending.map((coin) => {
+          <div>
+            <div>
+              <div>
+                <img src={coin.item.small} alt="/" />
+                <div>
+                  <p>{coin.item.name}</p>
+                  <p>{coin.item.symbol}</p>
+                </div>
+              </div>
+            </div>
+          </div>;
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default Trending;
