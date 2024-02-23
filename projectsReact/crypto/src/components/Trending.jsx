@@ -13,11 +13,11 @@ const Trending = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Trending Coins</h1>
+    <div className="rounded-div my-12 py-8 text-primary" >
+      <h1 className="text-2xl font-bold py-4">Trending Coins</h1>
       <div>
         {trending.map((coin) => (
-          <div>
+          <div className="rounded-div flex justify-between p-4 hover:scale-105 ease-in-out duration-300">
             <div>
               <div>
                 <img src={coin.item.small} alt="/" />
