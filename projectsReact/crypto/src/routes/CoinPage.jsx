@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Sparklines, SparklinesLine } from "react-sparklines";
+import { FaTwitter, FaFacebook, FaReddit, FaGithub } from "react-icons/fa";
+import DOMPurify from 'dompurify';
 
 const CoinPage = () => {
   const [coin, setCoin] = useState({});
@@ -66,9 +68,7 @@ const CoinPage = () => {
           </div>
         </div>
         <div>
-          <p>
-            Market Stats
-          </p>
+          <p>Market Stats</p>
           <div>
             <div>
               <p>Maret Rank</p>
@@ -76,7 +76,9 @@ const CoinPage = () => {
             </div>
             <div>
               <p>Hashing Algorithm</p>
-              {coin.hashing_algorithm ? <p> {coin.hashing_algorithm} </p> : null}
+              {coin.hashing_algorithm ? (
+                <p> {coin.hashing_algorithm} </p>
+              ) : null}
             </div>
             <div>
               {/* <p className='text-gray-500 text-sm'>Trust Score</p>
@@ -86,36 +88,62 @@ const CoinPage = () => {
           <div>
             <div>
               <p>Price Change (24h)</p>
-              {coin.market_data ? (<p>{coin.market_data.price_change_percentage_24h.toFixed(2)}%</p>) : (null)}
+              {coin.market_data ? (
+                <p>
+                  {coin.market_data.price_change_percentage_24h.toFixed(2)}%
+                </p>
+              ) : null}
             </div>
             <div>
               <p>Price Change (7d)</p>
-              {coin.market_data ? (<p>{coin.market_data.price_change_percentage_7d.toFixed(2)}%</p>) : (null)}
+              {coin.market_data ? (
+                <p>{coin.market_data.price_change_percentage_7d.toFixed(2)}%</p>
+              ) : null}
             </div>
             <div>
               <p>Price Change (14d)</p>
-              {coin.market_data ? (<p>{coin.market_data.price_change_percentage_14d.toFixed(2)}%</p>) : (null)}
+              {coin.market_data ? (
+                <p>
+                  {coin.market_data.price_change_percentage_14d.toFixed(2)}%
+                </p>
+              ) : null}
             </div>
           </div>
           <div>
             <div>
-            <p>Price Change (30d)</p>
-              {coin.market_data ? (<p>{coin.market_data.price_change_percentage_30d.toFixed(2)}%</p>) : (null)}
+              <p>Price Change (30d)</p>
+              {coin.market_data ? (
+                <p>
+                  {coin.market_data.price_change_percentage_30d.toFixed(2)}%
+                </p>
+              ) : null}
             </div>
             <div>
-            <p>Price Change (60d)</p>
-              {coin.market_data ? (<p>{coin.market_data.price_change_percentage_60d.toFixed(2)}%</p>) : (null)}
+              <p>Price Change (60d)</p>
+              {coin.market_data ? (
+                <p>
+                  {coin.market_data.price_change_percentage_60d.toFixed(2)}%
+                </p>
+              ) : null}
             </div>
             <div>
-            <p>Price Change (1y)</p>
-              {coin.market_data ? (<p>{coin.market_data.price_change_percentage_1y.toFixed(2)}%</p>) : (null)}
+              <p>Price Change (1y)</p>
+              {coin.market_data ? (
+                <p>{coin.market_data.price_change_percentage_1y.toFixed(2)}%</p>
+              ) : null}
             </div>
           </div>
-
           <div>
-            
+            <FaFacebook />
+            <FaGithub />
+            <FaReddit />
+            <FaTwitter />
           </div>
         </div>
+      </div>
+      <div>
+      <p className='text-xl font-bold'>About {coin.name}</p>
+        <p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(coin.description ? coin.description.en : ''),}} ></p>
       </div>
     </div>
   );
