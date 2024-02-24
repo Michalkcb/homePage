@@ -52,15 +52,15 @@ const CoinPage = () => {
               ) : null}
             </div>
           </div>
-          <div>
+          <div className='flex justify-between py-4'>
             <div>
-              <p>24h High </p>
+              <p className='text-gray-500 text-sm'>24h High </p>
               {coin.market_data?.high_24h ? (
                 <p>{coin.market_data.high_24h.pln.toLocaleString()} PLN</p>
               ) : null}
             </div>
             <div>
-              <p>24h Low </p>
+              <p  className='text-gray-500 text-sm'>24h Low </p>
               {coin.market_data?.low_24h ? (
                 <p>{coin.market_data.low_24h.pln.toLocaleString()} PLN</p>
               ) : null}
