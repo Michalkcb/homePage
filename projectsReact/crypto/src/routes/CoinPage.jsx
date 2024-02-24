@@ -83,6 +83,12 @@ const CoinPage = () => {
               {coin.tickers ? <p>{coin.liquidity_score}</p> : null} */}
             </div>
           </div>
+          <div>
+            <div>
+              <p>Price Change (24h)</p>
+              {coin.market_data ? (<p>{coin.market_data.price_change_percentage_24h.toFixed(2)}%</p>) : (null)}
+            </div>
+          </div>
         </div>
       </div>
     </div>
