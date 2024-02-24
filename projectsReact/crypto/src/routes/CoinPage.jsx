@@ -46,7 +46,7 @@ const CoinPage = () => {
               ) : null}
             </div>
             <div>
-              <p>Volume (24h) </p>
+              <p className='text-gray-500 text-sm'>Volume (24h) </p>
               {coin.market_data?.market_cap ? (
                 <p>{coin.market_data.total_volume.pln.toLocaleString()} PLN</p>
               ) : null}
