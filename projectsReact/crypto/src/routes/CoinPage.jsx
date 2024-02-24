@@ -38,9 +38,9 @@ const CoinPage = () => {
               <SparklinesLine color="blue" />
             </Sparklines>
           </div>
-          <div>
+          <div className='flex justify-between py-4'>
             <div>
-              <p>Market Cap</p>
+              <p className='text-gray-500 text-sm'>Market Cap</p>
               {coin.market_data?.market_cap ? (
                 <p>{coin.market_data.market_cap.pln.toLocaleString()} PLN</p>
               ) : null}
