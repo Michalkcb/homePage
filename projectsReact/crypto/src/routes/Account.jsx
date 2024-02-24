@@ -1,4 +1,5 @@
 import React from 'react'
+import SavedCoin from '../components/SavedCoin'
 
 const Account = () => {
   return (
@@ -15,6 +16,7 @@ const Account = () => {
         </div>
       <div>
         <h1>Watch List</h1>
+        <SavedCoin/>
       </div>
       </div>
     </div>
