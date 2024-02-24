@@ -10,6 +10,12 @@ const Account = () => {
             <p>Welcome, user</p>
           </div>
         </div>
+        <div>
+          <button>Sign Out</button>
+        </div>
+      <div>
+        <h1>Watch List</h1>
+      </div>
       </div>
     </div>
   )
