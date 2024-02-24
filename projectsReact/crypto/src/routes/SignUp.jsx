@@ -6,7 +6,7 @@ const SignUp = () => {
   return (
     <div>
     <div className='max-w-[400px] mx-auto min-h-[600px] px-4 py-20'>
-      <h1 className='text-2xl font-bold'>Sign In</h1>
+      <h1 className='text-2xl font-bold'>Sign Up</h1>
       <form>
         <div className='my-4'>
           <label>Email</label>
@@ -29,13 +29,13 @@ const SignUp = () => {
           </div>
         </div>
         <button className='w-full my-2 p-3 bg-button text-btnText rounded-2xl shadow-xl'>
-          Sign in
+          Sign up
         </button>
       </form>
       <p className='my-4'>
-        Don't have an account?{' '}
-        <Link to='/signup' className='text-accent'>
-          Sign up
+        Already have an account?{' '}
+        <Link to='/signin' className='text-accent'>
+          Sign in
         </Link>
       </p>
     </div>
