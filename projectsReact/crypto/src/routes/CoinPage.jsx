@@ -17,15 +17,15 @@ const CoinPage = () => {
   }, [url]);
 
   return (
-    <div>
-      <div>
-        <img src={coin.image?.large} alt="/" />
+    <div className=" rounded-div my-12 py-8">
+      <div className=" flex py-8">
+        <img className=" w-20 mr-8" src={coin.image?.large} alt="/" />
         <div>
-          <p>{coin?.name} price</p>
+          <p className="text-3xl font-bold">{coin?.name} price</p>
           <p className=" uppercase"> ({coin?.symbol} / PLN) </p>
         </div>
       </div>
-      <div>
+      <div className=" grid md:grid-cols-2 gap-8" >
         <div>
           <div>
             {coin.market_data?.current_price ? (
@@ -133,7 +133,7 @@ const CoinPage = () => {
               ) : null}
             </div>
           </div>
-          <div>
+          <div className=" flex p-4">
             <FaFacebook />
             <FaGithub />
             <FaReddit />
