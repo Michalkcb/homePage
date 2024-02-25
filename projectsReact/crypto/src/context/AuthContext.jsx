@@ -9,7 +9,7 @@ import {
 } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 
-const UserContext = useContext();
+const UserContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
 const [user, setUser] = useState({});
