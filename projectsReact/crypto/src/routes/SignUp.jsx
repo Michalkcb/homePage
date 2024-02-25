@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { AiFillLock, AiOutlineMail } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {UserAuth} from '../context/AuthContext';
 
 
 const SignUp = () => {
-  const {SignUp} = UserAuth()
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+  const {SignUp} = UserAuth();
   return (
     <div>
     <div className='max-w-[400px] mx-auto min-h-[600px] px-4 py-20'>
