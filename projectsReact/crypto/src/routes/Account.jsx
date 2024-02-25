@@ -22,7 +22,7 @@ const handleSignOut = async () => {
         <div>
           <h1 className="text-2xl font-bold">Account</h1>
           <div>
-            <p>Welcome, user</p>
+            <p>Welcome, {user?.email}</p>
           </div>
         </div>
         <div>
