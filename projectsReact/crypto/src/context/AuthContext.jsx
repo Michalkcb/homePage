@@ -45,3 +45,7 @@ const [user, setUser] = useState({});
 
   )
 };
+
+export const UserAuth = () => {
+  return useContext(UserContext);
+};
