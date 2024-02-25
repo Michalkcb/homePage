@@ -1,10 +1,10 @@
-import { createContext, useContext, useState, useEffect } from 'react'
-import React from 'react'
-
-const AuthContext = () => {
-  return (
-    <div>AuthContext</div>
-  )
-}
-
-export default AuthContext
+import { createContext, useContext, useState, useEffect } from "react";
+import React from "react";
+import { auth, db } from "../firebase";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
+} from "firebase/auth";
+import { doc, setDoc } from "firebase/firestore";
