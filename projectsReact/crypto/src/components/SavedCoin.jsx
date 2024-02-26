@@ -58,7 +58,7 @@ const deleteCoin = async (passedid) => {
               </td>
               <td className='pl-8'>
                 <AiOutlineClose
-                 
+                 onClick={()=>deleteCoin(coin.id)}
                   className='cursor-pointer'
                 />
               </td>
