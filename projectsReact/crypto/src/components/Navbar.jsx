@@ -70,10 +70,10 @@ const Navbar = () => {
         }
       >
         <ul className="w-full p-4">
-          <li className="border py-6 ">
+          <li onClick={handleNav} className="border py-6 ">
             <Link to="/">Home</Link>
           </li>
-          <li className="border py-6 ">
+          <li onClick={handleNav} className="border py-6 ">
             <Link to="/">Account</Link>
           </li>
           <li className="border py-6 ">
