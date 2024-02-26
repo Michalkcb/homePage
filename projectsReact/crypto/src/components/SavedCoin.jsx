@@ -16,11 +16,14 @@ useEffect(()=> {
 },[user.email])
 
 const coinPath = doc(db, 'users', `${user.email}`)
-// const deleteCoin = async (passedid) => {
-//   try{
-//     const result = coins.filter((item) => item.id !== passedid)
-//   }
-// }
+const deleteCoin = async (passedid) => {
+  try{
+    const result = coins.filter((item) => item.id !== passedid)
+    await updateDoc(coinPath, {watchList: result})
+  } catch(e) {
+    console.log(e.message)
+  }
+}
 
   return (
     <div>
