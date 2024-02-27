@@ -15,7 +15,7 @@ useEffect(()=> {
   })
 },[user.email])
 
-const coinPath = doc(db, 'users', `${user.email}`)
+const coinPath = doc(db, 'users', `${user?.email}`)
 const deleteCoin = async (passedid) => {
   try{
     const result = coins.filter((item) => item.id !== passedid)
@@ -27,7 +27,7 @@ const deleteCoin = async (passedid) => {
 
   return (
     <div>
-        {coins.lenght === 0 ? (<p>
+        {coins?.lenght === 0 ? (<p>
         You don't have any coins saved. Please save a coin to add it to your
         watch list. <Link to="/">Click here to search coins.</Link>
       </p>) : (
