@@ -1,7 +1,7 @@
 import React from "react";
 import SavedCoin from "../components/SavedCoin";
 import { UserAuth } from "../context/AuthContext";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Account = () => {
 const{user, logout} = UserAuth()
@@ -16,6 +16,7 @@ const handleSignOut = async () => {
   }
 }
 
+if (user) {
   return (
     <div className="max-w-[1140px] mx-auto">
       <div className="flex justify-between items-center my-12 py-8 rounded-div">
@@ -41,6 +42,8 @@ const handleSignOut = async () => {
       </div>
     </div>
   );
+} else{ <Navigate to='/signin' />}
+
 };
 
 export default Account;
