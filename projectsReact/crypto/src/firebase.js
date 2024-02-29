@@ -5,27 +5,26 @@ import {getAuth} from 'firebase/auth'
 import { getFirestore } from 'firebase/firestore';
 
 
-console.log(process.env.FIREBASE_API_KEY);
-console.log(process.env.FIREBASE_AUTH_DOMAIN);
+console.log('Welcome to my Cryptu Hub');
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: process.env.VITE_FIREBASE_API_KEY,
-  authDomain: process.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.VITE_FIREBASE_APP_ID,
-  measurementId: process.env.VITE_FIREBASE_MEASUREMENT_ID
+  apiKey: "AIzaSyBF2HosSdsBZ0th05j0Lhx1l0QN8HJVeOE",
+  authDomain: "mb-crypto-hub.firebaseapp.com",
+  projectId: "mb-crypto-hub",
+  storageBucket: "mb-crypto-hub.appspot.com",
+  messagingSenderId: "404198622476",
+  appId: "1:404198622476:web:f302acf96f86d124db3529",
+  measurementId: "G-VDYJJ9D1ZY"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-export const auth = getAuth(app);
-export const db = getFirestore(app);
+const auth = getAuth(app);
+const db = getFirestore(app);
 
-export default app;
+export {app, analytics, auth, db};
