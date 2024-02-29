@@ -14,6 +14,12 @@ link: '',
 imageSrc: '',
 description: ''
 },
+
+{ tech:"React",
+  link: 'https://mb-crypto-hub.web.app/',
+  imageSrc: 'https://michalkcb.github.io/homePage/assets/mbCryptoHub.png',
+  description: 'Firebase Tailwind API'
+},
   { tech:"React",
   link: 'https://michalkcb.github.io/homePage/projectsReact/reactPortfolio/dist/index.html',
   imageSrc: 'https://michalkcb.github.io/homePage/assets/reactPortfolio.png',
