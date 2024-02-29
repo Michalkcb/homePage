@@ -24,7 +24,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className=" rounded-div flex items-center justify-between h-20 font-bold">
+    <div className=" rounded-div flex items-center justify-between h-20 font-bold fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1140px]">
       <Link to="/" className="flex items-center">
         <img
           src="https://michalkcb.github.io/homePage/assets/MB_logo.png"

@@ -25,7 +25,7 @@ function App() {
   return (
     <ThemeProvider>
       <AuthContextProvider>
-        <Navbar />
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Home coins={coins} />} />
           <Route path="/signin" element={<SignIn />} />
