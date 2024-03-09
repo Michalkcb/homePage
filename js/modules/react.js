@@ -4,6 +4,7 @@ const reactData = [
     imageSrc: 'https://michalkcb.github.io/homePage/assets/mbCryptoHub.png',
     alt: 'Firebase Tailwind API'
   },
+  
   { 
     link: 'https://michalkcb.github.io/homePage/projectsReact/googleAuthentication/dist/index.html',
     imageSrc: 'https://michalkcb.github.io/homePage/assets/googleAuth.png',

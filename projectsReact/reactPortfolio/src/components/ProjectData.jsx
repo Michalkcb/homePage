@@ -6,13 +6,13 @@ const projectsData = [
 },
 {  tech:"",
 link: '',
-imageSrc: '',
-description: ''
+imageSrc: 'https://michalkcb.github.io/homePage/assets/anotherApp.jpg',
+description: 'Place for another Python App'
 },
 {  tech:"",
 link: '',
-imageSrc: '',
-description: ''
+imageSrc: 'https://michalkcb.github.io/homePage/assets/anotherApp.jpg',
+description: 'Place for another Python App'
 },
 
 { tech:"React",
