@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        custom: [ 'Figtree', 'sans-serif'],
+        'myFigtree': [ 'Figtree', 'sans-serif'],
+        'myRoboto': ['Roboto', 'sans-serif'],
       },
     },
   },

@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-    <h1 className="text-3xl bg-green-500 text-gray-500 font-mono uppercase tracking-wide tracking-2xl">
+    <h1 className="text-5xl text-gray-500 font-mono uppercase tracking-widest">
       Tomcio Piotrowski
     </h1>
     </>
