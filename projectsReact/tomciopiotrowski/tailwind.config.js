@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         'myFigtree': [ 'Figtree', 'sans-serif'],
         'myRoboto': ['Roboto', 'sans-serif'],
+        'mygRUPPO': ['Gruppo', 'sans-serif'],
       },
     },
   },
