@@ -14,14 +14,9 @@ const Navbar = () => {
 
 
   return (
-    <div className=" rounded-div flex items-center justify-between h-20 font-bold fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1140px]">
+    <div className=" rounded-div flex items-center justify-between h-20 fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1140px]">
       <Link to="/" className="flex items-center">
-        <img
-          src="https://michalkcb.github.io/homePage/assets/MB_logo.png"
-          alt=""
-          className="filter invert max-h-[40px] p-2"
-        />
-        <h1 className=" font-bold text-2xl">CryptoHub</h1>
+        <h1 className=" text-2xl pl-4">Tomcio Piotrowski</h1>
       </Link>
       <div className="hidden md:block">
       </div>
@@ -38,31 +33,24 @@ const Navbar = () => {
             : " fixed left-[-100%] top-20 h-[90%] flex flex-col items-center justify-between ease-in duration-300"
         }
       >
-        <ul className="w-full p-4">
-          <li onClick={handleNav} className="border py-6 ">
-            <Link to="/">Home</Link>
+        <ul className="w-full p-4 bg-gray-600 text-gray-100 text-center">
+          <li onClick={handleNav} className=" py-6 ">
+            <Link to="/account">Overview</Link>
           </li>
-          <li onClick={handleNav} className="border py-6 ">
-            <Link to="/account">Account</Link>
+          <li onClick={handleNav} className=" py-6 ">
+            <Link to="/account">Objects</Link>
           </li>
-          <li className="border py-6 ">
-
+          <li onClick={handleNav} className=" py-6 ">
+            <Link to="/account">People</Link>
+          </li>
+          <li onClick={handleNav} className=" py-6 ">
+            <Link to="/account">Film/Video</Link>
+          </li>
+          <li onClick={handleNav} className=" py-6 ">
+            <Link to="/account">About</Link>
           </li>
         </ul>
-        <div className="flex flex-col w-full p-4">
-          <Link to="./signin">
-            {" "}
-            <button onClick={handleNav} className="w-full my-2 p-3 bg-primary text-primary border border-secondary rounded-2xl shadow-xl">
-              Sign In
-            </button>{" "}
-          </Link>
-          <Link to="./signup">
-            {" "}
-            <button onClick={handleNav} className=" w-full my-2 p-3 bg-button text-btnText rounded-2xl shadow-xl">
-              Sign Up
-            </button>{" "}
-          </Link>
-        </div>
+
       </div>
     </div>
   );
