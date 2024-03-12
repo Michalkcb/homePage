@@ -2,7 +2,7 @@ import React from 'react';
 
 const GaleryStart = () => {
   return (
-    <div className=' flex gap-4 flex-wrap mt-[100px]'>
+    <div className=' flex gap-4 flex-wrap mt-[60px]'>
         <div className=' mx-4'>
             <img 
             className=' rounded-xl'
