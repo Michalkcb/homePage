@@ -2,11 +2,16 @@ import React from 'react';
 
 const GaleryStart = () => {
   return (
-    <div className=' flex gap-4 flex-wrap mt-[60px]'>
+    <div className=' flex gap-4 flex-wrap mt-[80px]'>
         <div className=' mx-4'>
             <img 
             className=' rounded-xl'
             src='https://michalkcb.github.io/homePage/projectsReact/tomciopiotrowski/src/assets/347250423_10158946128525563_6717665936168975433_n.jpg' alt="pic01" />
+        </div>
+        <div className='mx-4'>
+            <img 
+            className='rounded-xl'
+            src='https://michalkcb.github.io/homePage/projectsReact/tomciopiotrowski/src/assets/410815943_10159233251425563_4459431366362872379_n.jpg' alt="pic01" />
         </div>
         <div className='mx-4'>
             <img 
@@ -22,11 +27,6 @@ const GaleryStart = () => {
             <img 
             className='rounded-xl'
             src='https://michalkcb.github.io/homePage/projectsReact/tomciopiotrowski/src/assets/410812104_10159233289080563_7965221519588041280_n.jpg' alt="pic01" />
-        </div>
-        <div className='mx-4'>
-            <img 
-            className='rounded-xl'
-            src='https://michalkcb.github.io/homePage/projectsReact/tomciopiotrowski/src/assets/410815943_10159233251425563_4459431366362872379_n.jpg' alt="pic01" />
         </div>
         <div className='mx-4'>
             <img 
