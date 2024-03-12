@@ -17,7 +17,6 @@ function App() {
         <Route path="/movie" element={<Movie />} />
         <Route path="/people" element={<People />} />
       </Routes>
-      <GaleryStart />
     </Router>
   );
 }
