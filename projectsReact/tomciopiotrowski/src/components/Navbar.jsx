@@ -35,19 +35,19 @@ const Navbar = () => {
       >
         <ul className="w-full p-4 bg-gray-600 text-gray-100 text-center">
           <li onClick={handleNav} className=" py-6 ">
-            <Link to="/account">Overview</Link>
+            <Link to="/">Overview</Link>
           </li>
           <li onClick={handleNav} className=" py-6 ">
-            <Link to="/account">Objects</Link>
+            <Link to="/Objects">Objects</Link>
           </li>
           <li onClick={handleNav} className=" py-6 ">
-            <Link to="/account">People</Link>
+            <Link to="/People">People</Link>
           </li>
           <li onClick={handleNav} className=" py-6 ">
-            <Link to="/account">Film/Video</Link>
+            <Link to="/Movie">Film/Video</Link>
           </li>
           <li onClick={handleNav} className=" py-6 ">
-            <Link to="/account">About</Link>
+            <Link to="/About">About</Link>
           </li>
         </ul>
 
