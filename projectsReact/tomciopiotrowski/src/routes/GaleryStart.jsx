@@ -1,4 +1,6 @@
 import React from 'react';
+import GaleryItem from '../components/GaleryItem';
+import GaleryStartData from './GaleryStartData';
 
 const GaleryStart = () => {
   return (
