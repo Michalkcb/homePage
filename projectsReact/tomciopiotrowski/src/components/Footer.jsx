@@ -14,8 +14,9 @@ const Footer = () => {
       <Link to='https://www.instagram.com/wedding_tomas_piotrowski' target='_blank'>
       <FaInstagram size={30} />
       </Link>
-      <Link to='https://www.facebook.com/tomciopiotrowski' target='_blank'>
-      <FaSnapchat size={30} />
+      <Link to='https://michalkcb.github.io/homePage/projectsReact/reactPortfolio/dist/index.html' target='_blank'>
+        <img className=' h-6 w-8' src="https://michalkcb.github.io/homePage/assets/MB_logo.png" alt="MB" />
+  
       </Link>
     </div>
   )
