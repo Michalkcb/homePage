@@ -5,18 +5,20 @@ import About from "./routes/About";
 import Objects from "./routes/Objects";
 import Movie from "./routes/Movie";
 import People from "./routes/People";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<GaleryStart />} />
+        {/* <Route path="/" element={<GaleryStart />} />
         <Route path="/about" element={<About />} />
         <Route path="/objects" element={<Objects />} />
         <Route path="/movie" element={<Movie />} />
-        <Route path="/people" element={<People />} />
+        <Route path="/people" element={<People />} /> */}
       </Routes>
+      <Footer />
     </Router>
   );
 }
