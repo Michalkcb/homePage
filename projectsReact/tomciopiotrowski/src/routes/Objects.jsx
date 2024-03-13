@@ -1,4 +1,5 @@
 import React from 'react'
+import ObjectsData from './ObjectsData'
 
 const Objects = () => {
   return (

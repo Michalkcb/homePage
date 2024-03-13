@@ -1,4 +1,4 @@
-const GaleryStartData = [
+const MovieData = [
   {
     imageSrc:
       "https://michalkcb.github.io/homePage/projectsReact/tomciopiotrowski/src/assets/419032060_10159265855860563_431308715801369977_n.jpg",
@@ -17,4 +17,4 @@ const GaleryStartData = [
   },
 ];
 
-export default GaleryStartData;
+export default MovieData;
