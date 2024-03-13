@@ -1,5 +1,4 @@
 import React from 'react'
-import { AiOutlineClose, AiFillFacebook } from "react-icons/ai";
 import { FaSquareXTwitter, FaInstagram, FaFacebookF, FaSnapchat } from "react-icons/fa6";
 
 const Footer = () => {
