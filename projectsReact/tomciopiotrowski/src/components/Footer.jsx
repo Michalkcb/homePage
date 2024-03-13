@@ -1,13 +1,14 @@
 import React from 'react'
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose, AiFillFacebook } from "react-icons/ai";
+import { FaSquareXTwitter, FaInstagram, FaFacebookF, FaSnapchat } from "react-icons/fa6";
 
 const Footer = () => {
   return (
     <div className='bg-gray-800 h-[60px] fixed bottom-0 w-full opacity-100 flex justify-around items-center text-white'>
-      <AiOutlineClose size={30} />
-      <AiOutlineClose size={30} />
-      <AiOutlineClose size={30} />
-      <AiOutlineClose size={30} />
+      <FaFacebookF size={30} />
+      <FaSquareXTwitter size={30} />
+      <FaInstagram size={30} />
+      <FaSnapchat size={30} />
     </div>
   )
 }
