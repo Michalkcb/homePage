@@ -16,13 +16,30 @@ const Navbar = () => {
   return (
     <div className=" rounded-div flex items-center justify-between h-20 fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1140px] bg-white bg-opacity-50">
       <Link to="/" className="flex items-center">
-        <h1 className=" text-2xl pl-4">Tomcio Piotrowski</h1>
+        <h1 className=" text-2xl pl-6">Tomcio Piotrowski</h1>
       </Link>
       <div className="hidden md:block">
+      <ul className="w-full p-4 bg-pink-300 text-gray-100 text-center">
+          <li onClick={handleNav} className=" py-6 ">
+            <Link to="/">Overview</Link>
+          </li>
+          <li onClick={handleNav} className=" py-6 ">
+            <Link to="/Objects">Objects</Link>
+          </li>
+          <li onClick={handleNav} className=" py-6 ">
+            <Link to="/People">People</Link>
+          </li>
+          <li onClick={handleNav} className=" py-6 ">
+            <Link to="/Movie">Film/Video</Link>
+          </li>
+          <li onClick={handleNav} className=" py-6 ">
+            <Link to="/About">About</Link>
+          </li>
+        </ul>
       </div>
 
-      <div onClick={handleNav} className="block mb:hidden cursor-pointer z-10">
-        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+      <div onClick={handleNav} className="block mb:hidden cursor-pointer z-10 mr-6 ">
+        {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
       </div>
 
       {/* mobile menu */}
