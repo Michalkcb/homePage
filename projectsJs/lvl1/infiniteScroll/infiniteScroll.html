@@ -5,35 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Infinite Page Scroll</title>
     <style>
+      body {
+        background-color: #505050;
+      }
       header > h1 {
         font-weight: 900;
         text-transform: uppercase;
         text-shadow: 5px 5px 5px #050505;
         text-align: center;
         padding: 2rem;
-        border-radius: 1rem;
+        border-radius: .3rem;
         border: #050505 2px solid;
       }
       img {
-        max-height: 300px;
-        max-width: 300px;
-        margin: 2rem;
-        border-radius: 1rem;
-        box-shadow: 0 0 3rem 0.1rem #35b0fc;
+        margin: 0.5rem;
+        border-radius: .3rem;
+        /* box-shadow: 0 0 5rem 0.5rem rgb(53, 176, 252, .5); */
       }
       .container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
       }
       @media only screen and (max-width: 768px) {
-        .container {
+        /* .container {
           grid-template-columns: 1fr;
-          gap: 0.2 rem;
-        }
-
+          grid-gap: 0.5 rem;
+        } */
         img {
-          height: 300px;
-          max-width: auto;
+            margin: 1rem 0;
         }
       }
     </style>
