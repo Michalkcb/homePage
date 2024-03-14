@@ -1,77 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="https://michalkcb.github.io/homePage/assets/MB_logo.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Infinite Page Scroll</title>
     <style>
-      body {
-        background-color: #505050;
-      }
-      header > h1 {
-        font-weight: 900;
-        text-transform: uppercase;
-        text-shadow: 5px 5px 5px #050505;
-        text-align: center;
-        padding: 2rem;
-        border-radius: .3rem;
-        border: #050505 2px solid;
-      }
-      img {
-        margin: 0.5rem;
-        border-radius: .3rem;
-        /* box-shadow: 0 0 5rem 0.5rem rgb(53, 176, 252, .5); */
-      }
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-      }
-      @media only screen and (max-width: 768px) {
-        /* .container {
-          grid-template-columns: 1fr;
-          grid-gap: 0.5 rem;
-        } */
-        img {
-            margin: 1rem 0;
+        body{
+            margin: 0;
+            padding: 0;
         }
-      }
+        header {
+            position: fixed;
+            display: flex;
+            border: #565656 2px solid;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 9;
+            background-color: rgb(246, 246, 246);
+        }
+        .logo {
+            filter: invert(60%);
+            width: 50px;
+        }
+        header > h1 {
+            font-weight: 900;
+            color: #565656;
+            text-transform: uppercase;
+            text-shadow: 5px 5px 5px #bfbfbf;
+            text-align: center;
+            justify-content: center;
+            flex-grow: 4;
+            margin-right: 2rem;
+        }
+        img {
+            margin: 2rem;
+            border-radius: 0.3rem;
+            max-width: 100%; /* Nowa linia: Obrazki nie będą przekraczać szerokości ekranu */
+            height: auto; /* Nowa linia: Zachowaj proporcje obrazków */
+        }
+        .container {
+            position: relative;
+            top: 7rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
     </style>
-  </head>
-  <body>
-    <header><h1>infinite scroll</h1></header>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="https://michalkcb.github.io/homePage/assets/MB_logo.png" alt="logo" class="logo" />
+        </div>
+        <h1>infinite scroll</h1>
+    </header>
     <div class="container"></div>
 
     <script>
-      const container = document.querySelector(".container");
-
-      const URL = "https://picsum.photos/id/";
-
-      const getRandNum = () => {
-        return Math.floor(Math.random() * 100);
-      };
-
-      const loadImg = (numImg = 12) => {
         const container = document.querySelector(".container");
+        const URL = "https://picsum.photos/id/";
 
-        for (let i = 0; i < numImg; i++) {
-          const img = document.createElement("img");
-          const randNum = getRandNum();
-          img.src = `${URL}${randNum}/300/200`;
-          container.appendChild(img);
-        }
-      };
+        const getRandNum = () => {
+            return Math.floor(Math.random() * 100);
+        };
 
-      loadImg();
+        const loadImg = (numImg = 12) => {
+            for (let i = 0; i < numImg; i++) {
+                const img = document.createElement("img");
+                img.src = `${URL}${getRandNum()}/300/200`;
+                container.appendChild(img);
+            }
+        };
 
-      window.addEventListener("scroll", () => {
-        if (
-          window.scrollY + window.innerHeight >=
-          document.documentElement.scrollHeight
-        ) {
-          loadImg();
-        }
-      });
+        loadImg();
+
+        // Nowa linia: Obsługa przewijania na urządzeniach mobilnych
+        window.addEventListener("scroll", () => {
+            if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+                loadImg(); // Ładuj więcej obrazków przy przewinięciu do końca strony
+            }
+        });
     </script>
-  </body>
+</body>
 </html>
+
