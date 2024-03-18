@@ -16,7 +16,7 @@ const Navbar = () => {
         <h1 className=" text-2xl pl-6">Tomcio Piotrowski</h1>
       </Link>
       <div className="hidden md:block">
-      <ul className="w-full p-4 bg-pink-300 text-gray-100 text-center">
+      <ul className="w-full p-4 bg-pink-300 text-gray-100 text-center left-0">
           <li onClick={handleNav} className=" py-6 ">
             <Link to="/">Overview</Link>
           </li>
@@ -35,7 +35,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div onClick={handleNav} className="block mb:hidden cursor-pointer z-10 mr-6 ">
+      <div onClick={handleNav} className="block md:hidden cursor-pointer z-10 mr-6 ">
         {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
       </div>
 
