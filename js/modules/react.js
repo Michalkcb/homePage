@@ -6,7 +6,7 @@ const reactData = [
   },
   
   { 
-    link: 'https://michalkcb.github.io/homePage/projectsReact/googleAuthentication/dist/index.html',
+    link: 'https://auth-project-2825c.web.app',
     imageSrc: 'https://michalkcb.github.io/homePage/assets/googleAuth.png',
     alt: 'Google Authentication (Tailwind)'
   },
