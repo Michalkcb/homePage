@@ -9,6 +9,8 @@
         body{
             margin: 0;
             padding: 0;
+            overflow-y: scroll;
+            height: 120vh;
         }
         header {
             width: 100%;
@@ -40,12 +42,16 @@
             max-width: 100%; /* Nowa linia: Obrazki nie będą przekraczać szerokości ekranu */
             height: auto; /* Nowa linia: Zachowaj proporcje obrazków */
         }
+
         .container {
             position: relative;
             top: 7rem;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+        }
+        .container > img {
+            min-width: 30vh;
         }
     </style>
 </head>
@@ -63,13 +69,13 @@
         const URL = "https://picsum.photos/id/";
 
         const getRandNum = () => {
-            return Math.floor(Math.random() * 100);
+            return Math.floor(Math.random() * 500);
         };
 
-        const loadImg = (numImg = 12) => {
+        const loadImg = (numImg = 42) => {
             for (let i = 0; i < numImg; i++) {
                 const img = document.createElement("img");
-                img.src = `${URL}${getRandNum()}/300/200`;
+                img.src = `${URL}${getRandNum()}/600/400`;
                 container.appendChild(img);
             }
         };
