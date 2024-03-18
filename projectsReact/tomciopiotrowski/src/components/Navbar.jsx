@@ -6,12 +6,9 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const navigate = useNavigate();
 
-
   const handleNav = () => {
     setNav(!nav);
   };
-
-
 
   return (
     <div className=" rounded-div flex items-center justify-between h-20 fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1140px] bg-white bg-opacity-100">
