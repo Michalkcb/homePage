@@ -1,10 +1,24 @@
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    background: #2f3746;
+    color: aliceblue;
+    margin: 0;padding: 0;
 }
 
 hr {
     width: 100px;
+}
+.header{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.header > img {
+    height: 30px;
+    width: 40px;
+    margin-right: 2rem;
 }
 
 #errors {
@@ -31,7 +45,7 @@ hr {
     transition: .2s linear;
 }
 .tile:hover {
-    background-color: rgba(100, 149, 237, .5);
+    background-color: rgba(74, 203, 254, 0.5);
 }
 
 #digits {
@@ -45,7 +59,7 @@ hr {
 .number {
     width: 44px;
     height: 44px;
-    border: 1px solid black;
+    border: 1px solid aliceblue;
     margin: 2px;
     font-size: medium;
     font-weight: 700;
@@ -56,7 +70,7 @@ hr {
 }
 
 .select-number {
-    background-color: gray;
+    background-color: rgb(0, 128, 255);
 
 }
 .select-number:hover {
@@ -65,20 +79,20 @@ hr {
 }
 
 .start-tile {
-    background-color: lightgray;
+    background-color: rgb(0, 157, 255);
 }
 .h-line {
-    border-bottom:2px solid #000 ;
+    border-bottom:2px solid aliceblue ;
 }
 
 .v-line {
-    border-right:2px solid #000 ;
+    border-right:2px solid aliceblue ;
 }
 .restart{
     margin: 0 auto;
     align-self: center;
     justify-self: center;
-    border: 2px solid black;
+    border: 2px solid aliceblue;
     border-radius: .5rem;
     padding: 1rem;
     width: 5rem;
@@ -88,7 +102,7 @@ hr {
 }
 .restart:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 5px 5px lightslategray;
+    box-shadow: 0 0 5px 5px rgb(28, 141, 255);
 }
 
 @media (max-width: 768px){
