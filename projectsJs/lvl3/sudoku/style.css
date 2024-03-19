@@ -12,8 +12,8 @@ hr {
 }
 
 #board {
-    width: 450px;
-    height: 450px;
+    width: 490px;
+    height: 460px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +35,7 @@ hr {
 }
 
 #digits {
-    width: 450px;
+    width: 490px;
     height: 50px;
     margin: 20px auto;
     display: flex;
