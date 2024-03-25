@@ -21,7 +21,7 @@ const projectData = [
     { imageSrc: 'https://michalkcb.github.io/homePage/assets/wordCounter.jpg', description: 'Counting words in text' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/wordsCounter',},
     { imageSrc: 'https://michalkcb.github.io/homePage/assets/toDoApp.jpg', description: 'To do App witt Arry' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/toDoApp2Array',},
     { imageSrc: 'https://michalkcb.github.io/homePage/assets/darkModeByBtn.jpg', description: 'Press btn to switch to dark mode' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/darkMode',},
-    { imageSrc: 'https://michalkcb.github.io/homePage/assets/guessNumber.jpg', description: 'Game: guess number' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/guessNumber',},
+    { imageSrc: 'https://michalkcb.github.io/homePage/assets/guessNumber.jpg', description: 'Game: guess number' , link: 'https://michalkcb.github.io/homePage/projectsJs/lvl1/guessNumber/index.html',},
   ];
 
 export default projectData;
