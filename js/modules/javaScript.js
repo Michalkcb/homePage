@@ -14,7 +14,7 @@ const projectData = [
     { imageSrc: 'https://michalkcb.github.io/homePage/assets/fallingBall.jpg', description: 'JS Falling Ball Game', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/fallingBall/index.html', },
     { imageSrc: 'https://michalkcb.github.io/homePage/assets/dinoRun1.jpg', description: 'JS Dino Run on squares', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/dinoGoogleGame/index.html', },
     // { imageSrc: 'https://michalkcb.github.io/homePage/assets/dinoRun2.jpg', description: 'JS Dino Run with graphic' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/chromeDinoClone',},
-    { imageSrc: 'https://michalkcb.github.io/homePage/assets/paint1.jpg', description: 'JS Paint in canvas', link: 'https://github.com/Michalkcb/myProjects/blob/master/ProjectsLvl1/anotherPaint/index.html', },
+    { imageSrc: 'https://michalkcb.github.io/homePage/assets/paint1.jpg', description: 'JS Paint in canvas', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl1/anotherPaint/index.html', },
     { imageSrc: 'https://michalkcb.github.io/homePage/assets/paint2.jpg', description: 'Another JS Paint in Canvas' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/yetAnotherPaintInCanvas',},
     { imageSrc: 'https://michalkcb.github.io/homePage/assets/changeColorByBtn.jpg', description: 'Press button to change color' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/bgColorChangeByBtn',},
     { imageSrc: 'https://michalkcb.github.io/homePage/assets/toDoApp.jpg', description: 'Simple to do app' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLvl1/toDoApp1',},
