@@ -10,7 +10,7 @@ const projectData = [
     { imageSrc: 'https://michalkcb.github.io/homePage/assets/faceGenerator.png', description: 'Face Generator JSON TailwindCSS', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/FaceGenerator/dist/FaceGenerator.html', },
     { imageSrc: 'https://michalkcb.github.io/homePage/assets/passwordGenerator.jpg', description: 'JS Password Generator', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/passwordGenerator/index.html', },
     { imageSrc: 'https://michalkcb.github.io/homePage/assets/infinitePageScroll.png', description: 'JS Infinite Page Scroller', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl1/infiniteScroll/infiniteScroll.html', },
-    { imageSrc: 'https://michalkcb.github.io/homePage/assets/memoryGame.jpg', description: 'JS Memory Game', link: 'https://github.com/Michalkcb/homePage/projectsJs/lvl2/theSimplestMemoryGame/index.html', },
+    { imageSrc: 'https://michalkcb.github.io/homePage/assets/memoryGame.jpg', description: 'JS Memory Game', link: 'https://michalkcb.github.io/homePage/projectsJs/lvl2/theSimplestMemoryGame/index.html', },
     { imageSrc: 'https://michalkcb.github.io/homePage/assets/fallingBall.jpg', description: 'JS Falling Ball Game', link: 'https://github.com/Michalkcb/homePage/projectsJs/lvl2/fallingBall/index.html', },
     { imageSrc: 'https://michalkcb.github.io/homePage/assets/dinoRun1.jpg', description: 'JS Dino Run on squares', link: 'https://github.com/Michalkcb/homePage/projectsJs/lvl2/dinoGoogleGame/index.html', },
     // { imageSrc: 'https://michalkcb.github.io/homePage/assets/dinoRun2.jpg', description: 'JS Dino Run with graphic' , link: 'https://github.com/Michalkcb/myProjects/tree/master/ProjectsLevel2/chromeDinoClone',},
