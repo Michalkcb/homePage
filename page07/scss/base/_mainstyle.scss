@@ -137,10 +137,14 @@ hr {
 .profile-box {
     position: relative;
     height: 30px;
-    width: 30px;
-    border-radius: 50%;
+    width: 40px;
     overflow: hidden;
     margin-left: 25px;
+    img{
+        height: 80%;
+        width: 80%;
+        margin: 3px;
+    }
 }
 img {
     position: absolute;
