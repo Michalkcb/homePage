@@ -56,5 +56,14 @@ rangeBar.addEventListener("input", passLong);
 rangeInput.addEventListener("input", passLong);
 
 themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
+  document.body.classList.toggle("dark");
+  if (document.body.classList.contains("dark")) {
+    themeToggle.textContent = "Light Mode";
+    document.body.classList.remove("bg-gray-200", "text-gray-800");
+    document.body.classList.add("bg-gray-800", "text-white");
+  } else {
+    themeToggle.textContent = "Dark Mode";
+    document.body.classList.remove("bg-gray-800", "text-white");
+    document.body.classList.add("bg-gray-200", "text-gray-800");
+  }
 });
