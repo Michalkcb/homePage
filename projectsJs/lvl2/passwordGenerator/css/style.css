@@ -25,6 +25,19 @@ body {
   width: 100%;
 }
 
+.logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 30px;
+    filter: invert(1)
+  }
+  
+  .dark-mode .logo {
+    filter: invert(0); /* Odwraca kolory obrazka w trybie ciemnym */
+  }
+
 #password {
   background-color: #f5f5f5;
   padding: 0.5rem 1rem;
@@ -59,6 +72,7 @@ button {
   padding: 0.5rem 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
+  height: 2.5rem;
 }
 
 button:hover {
@@ -77,7 +91,7 @@ button:hover {
 
 button#themeToggle {
   position: fixed;
-  top: 20px;
+  top: 10px;
   right: 20px;
   color: #333;
   background-color: transparent;
