@@ -46,6 +46,11 @@ input[type="range"] {
   width: 100%;
 }
 
+#rangeBar {
+    width: 15rem;
+    height: 2rem;
+  }
+
 button {
   background-color: #007bff;
   color: #fff;
