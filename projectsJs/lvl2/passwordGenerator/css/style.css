@@ -1,1 +1,107 @@
-body{background-color:gray;margin:0;color:#fff;height:100vh;display:flex;justify-content:center;align-items:center;line-height:2rem}body .wrapper{background-color:blue;padding:2rem;border-radius:1.2rem;display:flex;flex-direction:column;align-items:center}body .wrapper #password{background-color:rgba(0,0,0,.3);padding:.5rem 5rem;border-radius:.5rem;box-shadow:0rem 0rem .5rem .5rem rgba(0,0,0,.6)}body .wrapper form{display:grid;grid-template-columns:auto auto}body .wrapper form button{grid-column:span 2;border-radius:.3rem;padding:.5rem}/*# sourceMappingURL=style.css.map */
+/* body {
+  background-color: gray;
+  margin: 0;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2rem;
+}
+body .wrapper {
+  background-color: blue;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .wrapper #password {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.6);
+}
+body .wrapper form {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+body .wrapper form button {
+  grid-column: span 2;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+} # sourceMappingURL=style.css.map */
+
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .wrapper {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  #password {
+    background-color: #f5f5f5;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    margin: 1rem 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .dark-mode .wrapper {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .dark-mode #password {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  
