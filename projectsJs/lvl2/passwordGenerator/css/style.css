@@ -24,15 +24,32 @@ body {
   max-width: 400px;
   width: 100%;
 }
-
+.operators{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .logo {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    width: 40px;
-    height: 30px;
-    filter: invert(1)
-  }
+  /* position: fixed;
+  top: 10px;
+  left: 30%; */
+  width: 40px;
+  height: 30px;
+  filter: invert(1)
+}
+
+button#themeToggle {
+  /* position: fixed;
+  top: 10px;
+  right: 30%; */
+  color: #333;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 999;
+}
   
   .dark-mode .logo {
     filter: invert(0); /* Odwraca kolory obrazka w trybie ciemnym */
@@ -89,18 +106,6 @@ button:hover {
   color: #fff;
 }
 
-button#themeToggle {
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  color: #333;
-  background-color: transparent;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-  z-index: 999;
-}
 
 button#themeToggle:hover {
   color: #333; /* Kolor tekstu przy najjaśniejszym motywie */
