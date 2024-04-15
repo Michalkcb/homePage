@@ -32,14 +32,6 @@ const Sidenav = () => {
           </a>
           <a
             onClick={handleNav}
-            href="#work"
-            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
-          >
-            <GrProjects size={20} />
-            <span className="pl-4">Work</span>
-          </a>
-          <a
-            onClick={handleNav}
             href="#projects"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
@@ -65,6 +57,14 @@ const Sidenav = () => {
           </a>
           <a
             onClick={handleNav}
+            href="#work"
+            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+          >
+            <GrProjects size={20} />
+            <span className="pl-4">Work</span>
+          </a>
+          <a
+            onClick={handleNav}
             href="#contact"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
@@ -84,12 +84,6 @@ const Sidenav = () => {
             <AiOutlineHome size={20} />
           </a>
           <a
-            href="#work"
-            className="rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
-          >
-            <GrProjects size={20} />
-          </a>
-          <a
             href="#projects"
             className="rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
           >
@@ -106,6 +100,12 @@ const Sidenav = () => {
             className="rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
           >
             <BsPerson size={20} />
+          </a>
+          <a
+            href="#work"
+            className="rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
+          >
+            <GrProjects size={20} />
           </a>
           <a
             href="#contact"
