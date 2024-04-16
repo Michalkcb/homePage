@@ -88,7 +88,10 @@ body {
     color: #fff;
   }
   
-  .dark-mode input[type="number"],
+  .dark-mode input[type="number"]{
+    background-color: #444;
+    color: #fff;
+  }
   .dark-mode button#guessButton {
     color: #fff;
   }
