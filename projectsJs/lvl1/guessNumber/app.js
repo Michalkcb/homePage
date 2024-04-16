@@ -12,15 +12,15 @@ let attempts = 0;
 guessButton.addEventListener("click", () => {
     const userGuess = parseInt(guessInput.value);
   if (isNaN(userGuess) || userGuess < 0 || userGuess>99) {
-    message.textContent = "Podaj liczbę od 0 do 99.";
+    message.textContent = "Enter a number from 0 to 99.";
   } else {
     attempts++;
     if (userGuess == targetNumber) {
-      message.textContent = `Brawo! Zgadłeś liczbę ${targetNumber} w ${attempts} próbach.`;
+      message.textContent = `Way to go! You guessed the number ${targetNumber} w ${attempts} próbach.`;
     } else if (userGuess < targetNumber) {
-      message.textContent = "Szukana liczba jest większa.";
+      message.textContent = "The number you are looking for is larger.";
     } else {
-      message.textContent = "Szukana liczba jest mniejsza.";
+      message.textContent = "The number you are looking for is smaller.";
     }
   }
   guessInput.value = "";
