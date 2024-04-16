@@ -39,10 +39,18 @@ body {
     font-weight: 700;
     cursor: pointer;
     z-index: 999;
+    border: none;
   }
   
   .dark-mode .logo {
     filter: invert(0);
+  }
+
+  .operators {
+    display: flex;
+    /* align-items: ;
+    justify-items: ; */
+    justify-content: space-between;
   }
   
   h1 {
@@ -82,7 +90,6 @@ body {
   
   .dark-mode input[type="number"],
   .dark-mode button#guessButton {
-    background-color: #444;
     color: #fff;
   }
   

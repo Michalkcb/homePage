@@ -1,6 +1,8 @@
 const targetNumber = Math.floor(Math.random() * 100);
 console.log(targetNumber);
 
+const themeToggle = document.getElementById("themeToggle");
+
 const guessInput = document.getElementById("guessInput");
 const guessButton = document.getElementById("guessButton");
 const message = document.getElementById("message");
@@ -22,4 +24,13 @@ guessButton.addEventListener("click", () => {
     }
   }
   guessInput.value = "";
+});
+
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  if (document.body.classList.contains("dark-mode")) {
+    themeToggle.textContent = "Light Mode";
+  } else {
+    themeToggle.textContent = "Dark Mode";
+  }
 });
