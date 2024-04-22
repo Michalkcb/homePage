@@ -1,45 +1,48 @@
-const notifications = document.querySelector(".notifications");
-const succes = document.querySelector(".succes");
-const error = document.querySelector(".error");
-const info = document.querySelector(".info");
-const warning = document.querySelector(".warning");
+document.addEventListener("DOMContentLoaded", function() {
+    const notifications = document.querySelector(".notifications");
+    const success = document.querySelector(".success");
+    const error = document.querySelector(".error");
+    const info = document.querySelector(".info");
+    const warning = document.querySelector(".warning");
 
-function createToast(typ, title, txt) {
-  let newToast = document.createElement("div");
-  newToast.innerHTML = `
-    <div class="toast ${typ}">
-        <div class="content">
-            <div class="title">${title}</div>
-            <span>${txt}</span>
-        </div>
-    </div>
-    `;
-    notifications.appendChild(newToast);
-    newToast.timeOut = setTimeout(()=>newToast.remove(),2000)
-};
+    function createToast(type, title, text) {
+        let newToast = document.createElement("div");
+        newToast.className = "toast " + type;
+        newToast.innerHTML = `
+            <div class="content">
+                <div class="title">${title}</div>
+                <span>${text}</span>
+            </div>
+        `;
+        notifications.appendChild(newToast);
+        setTimeout(() => newToast.remove(), 2000);
+    }
 
-succes.onclick = function(){
-    let typ = "succes";
-    let title = "succes";
-    let txt = "This is success toast notification.";
-    createToast(typ, title, txt);
-}
+    success.addEventListener("click", function() {
+        let type = "success";
+        let title = "Success";
+        let text = "This is a success toast notification.";
+        createToast(type, title, text);
+    });
 
-error.onclick = ()=>{
-    let typ = "error";
-    let title = "error";
-    let txt = "This is error toast notification.";
-    createToast(typ, title, txt);
-}
+    error.addEventListener("click", function() {
+        let type = "error";
+        let title = "Error";
+        let text = "This is an error toast notification.";
+        createToast(type, title, text);
+    });
 
-info.addEventListener("click", ()=>{
-    let typ = "info";
-    let title = "info";
-    let txt = "This is info toast notification.";
-    createToast(typ, title, txt)});
+    info.addEventListener("click", function() {
+        let type = "info";
+        let title = "Info";
+        let text = "This is an info toast notification.";
+        createToast(type, title, text);
+    });
 
-    warning.addEventListener("click", ()=>{
-        let typ = "warning";
-        let title = "warning";
-        let txt = "This is warning toast notification.";
-        createToast(typ, title, txt)});
+    warning.addEventListener("click", function() {
+        let type = "warning";
+        let title = "Warning";
+        let text = "This is a warning toast notification.";
+        createToast(type, title, text);
+    });
+});
