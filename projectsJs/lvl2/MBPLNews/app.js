@@ -57,7 +57,7 @@ const selectCategory = (e, category) => {
   });
 
   // requestURL = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=${language}&country=${country}&max=10&apikey=${apiKey}`;
-  requestURL = `https://newsapi.org/v2/everything?category=${category}&lang=${language}&country=${country}&apiKey=${apiKey}`;
+  requestURL = `https://newsapi.org/v2/top-headlines?category=${category}&lang=${language}&country=${country}&apiKey=${apiKey}`;
   e.target.classList.add("active");
   getNews();
 };
@@ -77,6 +77,6 @@ const init = () => {
 };
 
 window.onload = () => {
-  requestURL = `https://newsapi.org/v2/everything?category=${category}&lang=${language}&country=${country}&apiKey=${apiKey}`;
+  requestURL = `https://newsapi.org/v2/top-headlines?category=general&lang=${language}&country=${country}&apiKey=${apiKey}`;
   init();
 };
