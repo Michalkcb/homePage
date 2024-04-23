@@ -1,7 +1,7 @@
 const container = document.querySelector(".container");
 const optionsContainer = document.querySelector(".opt-container");
 const country = "pl";
-const language = "en";
+const language = "pl";
 const options = [
   "general",
   "entertainment",
@@ -56,7 +56,8 @@ const selectCategory = (e, category) => {
     option.classList.remove("active");
   });
 
-  requestURL = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=${language}&country=${country}&max=10&apikey=${apiKey}`;
+  // requestURL = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=${language}&country=${country}&max=10&apikey=${apiKey}`;
+  requestURL = `https://newsapi.org/v2/everything?category=${category}&lang=${language}&country=${country}&apiKey=${apiKey}`;
   e.target.classList.add("active");
   getNews();
 };
@@ -76,6 +77,6 @@ const init = () => {
 };
 
 window.onload = () => {
-  requestURL = `https://gnews.io/api/v4/top-headlines?category=general&lang=${language}&country=${country}&max=10&apikey=${apiKey}`;
+  requestURL = `https://newsapi.org/v2/everything?category=${category}&lang=${language}&country=${country}&apiKey=${apiKey}`;
   init();
 };
