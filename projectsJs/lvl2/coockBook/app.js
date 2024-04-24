@@ -27,7 +27,7 @@ const getData = async (value) => {
       div.innerHTML = `
         <img src=${curData.strMealThumb} alt="">
             <p>${curData.strMeal}</p>
-            <button>Show More</button>
+            <button><a href=${curData.strYoutube}>Youtube</a></button>
         `;
       document.querySelector(".showMeal").appendChild(div);
     });
