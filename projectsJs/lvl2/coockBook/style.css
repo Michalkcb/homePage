@@ -1,0 +1,25 @@
+/* Możesz dostosować stylizację według własnych preferencji */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .recipe {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .recipe h2 {
+    margin-top: 0;
+  }
+  
+  .recipe p {
+    margin: 5px 0;
+  }
+  
+  .recipe img {
+    max-width: 100%;
+    height: auto;
+  }
+  
