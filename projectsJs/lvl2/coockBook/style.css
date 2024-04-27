@@ -91,7 +91,7 @@ body{
   border: none;
   color: #fff;
   background-color: rgb(2, 133, 255);
-  border-radius: 1.4rem;
+  border-radius: .4rem;
   font-size: 1.1rem;
   cursor: pointer;
 }
