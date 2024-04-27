@@ -4,6 +4,12 @@
 }
 body{
   font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+width: 1400px;
 }
 header{
   display: flex;
@@ -97,6 +103,8 @@ header{
   position: relative;
   margin: auto;
   overflow: hidden;
+
+  background-color: #ff0000;
 }
 #category .dishName{
   display: flex;
@@ -123,18 +131,14 @@ header{
 }
 #category button{
   position: relative;
-  top: 44px;
   border: none;
   background-color: transparent;
   font-size: 1.5rem;
   cursor: pointer;
 }
 #prevBtn{
-  padding: 12px;
 }
 #nextBtn{
-  position: relative;
-  left: 80%;
   border: none;
   background-color: transparent;
 }
