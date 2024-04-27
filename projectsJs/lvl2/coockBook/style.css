@@ -40,13 +40,7 @@ body{
 .showMeal{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 22px;
-  margin-top: -53px;
-  gap: 25px;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  background-color: red;
+  justify-items: center;
 }
 .showMeal .card{
   width: 400px;
@@ -56,10 +50,12 @@ body{
   text-align: center;
   margin-top: 32px;
   box-shadow: 1px 3px 3px 3px rgb(185, 184, 184);
+  overflow: hidden;
 }
 .card img{
-  height: 400px;
-  width: 300px;
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
   border-radius: 4px;
 }
 .card p{
