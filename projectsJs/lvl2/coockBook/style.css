@@ -1,22 +1,22 @@
-*{
+* {
   margin: 0%;
   padding: 0%;
 }
-body{
-  font-family: 'Lato', sans-serif;
+body {
+  font-family: "Lato", sans-serif;
   display: flex;
   justify-content: center;
 }
 
 .container {
-width: 1400px;
+  width: 1400px;
 }
-header{
+header {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
 }
-.logo{
+.logo {
   font-size: 1.4rem;
   text-align: center;
   margin-top: 1.4rem;
@@ -24,53 +24,53 @@ header{
 
 .header_btn {
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: transparent;
   font-weight: 700;
   font-size: larger;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 .header_btn:hover {
   background-color: darkgrey;
 }
 
-.logo_img{
+.logo_img {
   filter: invert(100%);
   width: 40px;
 }
-.searchBar{
+.searchBar {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
   margin-top: 1.4rem;
 }
-.searchBar input{
+.searchBar input {
   width: 300px;
   height: 13px;
   padding: 11px;
   font-size: 1.1rem;
   border: 1px solid rgb(83, 83, 83);
   outline: none;
-  border-radius: 0.4rem;    
+  border-radius: 0.4rem;
 }
-.searchBar button{
+.searchBar button {
   width: 60px;
   height: 38px;
   background-color: orangered;
   color: #fff;
   border: none;
   font-size: 18px;
-  border-top-right-radius: .4rem;
-  border-bottom-right-radius: .4rem;
-   margin-left: -33px;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  margin-left: -33px;
 }
-.showMeal{
+.showMeal {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
-.showMeal .card{
+.showMeal .card {
   width: 400px;
   height: 300px;
   border-radius: 4px;
@@ -80,16 +80,16 @@ header{
   box-shadow: 1px 3px 3px 3px rgb(185, 184, 184);
   overflow: hidden;
 }
-.card img{
+.card img {
   height: 80%;
   width: 100%;
   object-fit: cover;
   border-radius: 4px;
 }
-.card p{
+.card p {
   margin-top: 12px;
 }
-.card button a{
+.card button a {
   margin-top: 12px;
   width: 90px;
   /* background-color: rgb(255, 136, 0); */
@@ -97,16 +97,14 @@ header{
   font-size: 1rem;
   border: none;
 }
-#category{
+#category {
   width: 450px;
   height: 150px;
   position: relative;
   margin: auto;
   overflow: hidden;
-
-  background-color: #ff0000;
 }
-#category .dishName{
+#category .dishName {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -114,62 +112,105 @@ header{
   position: absolute;
   transition: all 1s ease;
   gap: 12px;
+  top: 63px;
 }
-.dishName input{
+.dishName input {
   width: 100px;
   height: 35px;
   border: none;
   color: #fff;
   background-color: rgb(2, 133, 255);
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   font-size: 1.1rem;
   cursor: pointer;
 }
-.dishName input:hover{
+.dishName input:hover {
   color: black;
   background-color: rgb(223, 223, 223);
 }
-#category button{
+#category button {
   position: relative;
+  top: 44px;
   border: none;
   background-color: transparent;
   font-size: 1.5rem;
   cursor: pointer;
 }
-#prevBtn{
+#prevBtn {
+  padding: 12px;
 }
-#nextBtn{
+#nextBtn {
+  position: relative;
+  left: 80%;
   border: none;
   background-color: transparent;
 }
-@media screen and (max-width:700px){
-  nan{
-      height: 120px;
+@media screen and (max-width: 1280px) {
+  html {
+    all: unset;
+    padding: 0;
+    margin: 0;
   }
-  .logo h1{
-      margin-top: 6px;
+  .container {
+    all: unset;
+    display: flex;
+    flex-direction: column;
   }
-  #category{
-      width: 90%;
+  header {
+    all: unset;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
   }
-}
+  .logo {
+  }
 
-@media screen and (max-width:450px){
-  #category input {
-      width: 65px;
-      height: 33px;
-      font-size: 13px;
+  .header_btn {
   }
-  #category .dishName{
-      gap: 3px;
+  .header_btn:hover {
   }
-  #category #nextBtn{
-      left: 67%;
-  }
-}
 
-@media screen and (max-width:450px){
-  .searchBar input{
-      width: 60%;
+  .searchBar {
+  }
+  .searchBar input {
+  }
+  .searchBar button {
+  }
+  .showMeal {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+  }
+  .showMeal .card {
+  }
+  .card img {
+    all: unset;
+    width: 100%;
+  }
+  .card p {
+  }
+  .card button a {
+  }
+  #category {
+    all: unset;
+  }
+  #category .dishName {
+    all: unset;
+    background-color: #ff0000;
+    height: 50px;
+    display: flex;
+    display: none;
+  }
+  .dishName input {
+  }
+  .dishName input:hover {
+  }
+  #category button {
+  }
+  #prevBtn {
+    display: none;
+  }
+  #nextBtn {
+    display: none;
   }
 }
