@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MB Cook Book</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f30fac2c61.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./../../../assets/MB_logo.png" type="image/png" />
+  </head>
+  <body>
     <div class="container">
-        <nav>
-            <div class="logo">
-                <h1>MB Cook Book</h1>
-            </div>
-            <div class="searchBar">
-                <input type="text" placeholder="Search Here" id="searchInput">
-                <button id="searchBtn"><i class="fa-solid fa-search"></i></button>
-            </div>
-        </nav>
-        <div class="dishTypes">
-           
-            <div id="category">
-               <button id="prevBtn"  ><i id="prevBtn" class="fa-solid fa-angle-left"></i></button>
-                <div class="dishName">
-                    <input type="button" class="dish" value="Cake">
-                    <input type="button" class="dish" value="soup" >
-                    <input type="button" class="dish" value="sandwich">
-                </div>
-                <div class="dishName">
-                    <input type="button" class="dish" value="pork">
-                    <input type="button" class="dish" value="chicken" >
-                    <input type="button" class="dish" value="beef">
-                </div>
-                <div class="dishName">
-                    <input type="button" class="dish" value="Salad">
-                    <input type="button" class="dish" value="apple" >
-                    <input type="button" class="dish" value="fish">
-                    
-                </div> 
-               <button id="nextBtn"><i class="fa-solid fa-angle-right"></i></button>
-                
-            </div>
-             
-             
-        </div>
-         
-        <div class="showMeal">
+      <nav>
 
-             
+        <header>
+            <img
+              class="logo_img"
+              src="./../../../assets/MB_logo.png"
+              type="image/png"
+            />
+
+            <button class="header_btn">Dark mode</button>
+
+        </header>
+        <div class="logo">
+
+          <h1>Cook Book</h1>
         </div>
+        <div class="searchBar">
+          <input type="text" placeholder="Search Here" id="searchInput" />
+          <button id="searchBtn"><i class="fa-solid fa-search"></i></button>
+        </div>
+      </nav>
+      <div class="dishTypes">
+        <div id="category">
+          <button id="prevBtn">
+            <i id="prevBtn" class="fa-solid fa-angle-left"></i>
+          </button>
+          <div class="dishName">
+            <input type="button" class="dish" value="Cake" />
+            <input type="button" class="dish" value="soup" />
+            <input type="button" class="dish" value="sandwich" />
+          </div>
+          <div class="dishName">
+            <input type="button" class="dish" value="pork" />
+            <input type="button" class="dish" value="chicken" />
+            <input type="button" class="dish" value="beef" />
+          </div>
+          <div class="dishName">
+            <input type="button" class="dish" value="Salad" />
+            <input type="button" class="dish" value="apple" />
+            <input type="button" class="dish" value="fish" />
+          </div>
+          <button id="nextBtn"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+      </div>
+
+      <div class="showMeal"></div>
     </div>
-     
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
-
-
