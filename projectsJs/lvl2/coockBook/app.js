@@ -25,9 +25,9 @@ const getData = async (value) => {
       let div = document.createElement("div");
       div.classList.add("card");
       div.innerHTML = `
-        <img src=${curData.strMealThumb} alt="">
+        <img src=${curData.strMealThumb} alt="" class="card_img">
             <p>${curData.strMeal}</p>
-            <button><a href=${curData.strYoutube} target="blank">Youtube</a></button>
+            <button><a href=${curData.strYoutube} target="blank"><img src="yt.png" alt="youtube button" class="yt_btn"></a></button>
         `;
       document.querySelector(".showMeal").appendChild(div);
     });

@@ -88,14 +88,19 @@ header {
 }
 .card p {
   margin-top: 12px;
+  font-weight: 700;
 }
 .card button a {
   margin-top: 12px;
-  width: 90px;
-  /* background-color: rgb(255, 136, 0); */
+  width: 15px;
+  background-color: rgb(255, 136, 0);
   color: #ff0000;
   font-size: 1rem;
   border: none;
+}
+.yt_btn{
+  height: 15px;
+  width: 30px;
 }
 #category {
   width: 450px;
@@ -182,14 +187,25 @@ header {
     flex-direction: column;
   }
   .showMeal .card {
+    width: 400px;
+    height: 300px;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 32px;
+    box-shadow: 1px 3px 3px 3px rgb(185, 184, 184);
+    overflow: hidden;
   }
   .card img {
-    all: unset;
-    width: 100%;
+
   }
   .card p {
   }
   .card button a {
+  }
+  .yt_btn{
+    height: 15px;
+    width: 30px;
   }
   #category {
     all: unset;
