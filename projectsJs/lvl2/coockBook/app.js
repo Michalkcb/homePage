@@ -6,23 +6,7 @@ let nextBtn = document.getElementById("nextBtn");
 let prevBtn = document.getElementById("prevBtn");
 console.log(prevBtn);
 
-//dark mode
-let darkModeBtn = document.querySelector(".header_btn");
-let container = document.querySelector(".container");
 
-let isDarkMode = false;
-
-darkModeBtn.addEventListener("click", function () {
-  if (isDarkMode) {
-    container.classList.remove("dark-mode");
-    darkModeBtn.textContent = "Dark mode";
-  } else {
-    container.classList.add("dark-mode");
-    darkModeBtn.textContent = "Light mode";
-  }
-  isDarkMode = !isDarkMode;
-});
-//end darkmode
 
 let count = 0;
 
@@ -102,5 +86,30 @@ function init() {
   // Call getData with "chicken" as the initial search value
   getData("chicken");
 }
+
+//dark mode
+let darkModeBtn = document.querySelector(".header_btn");
+let container = document.querySelector(".container");
+let body = document.querySelector("body");
+let card = document.querySelector(".card");
+console.log(card)
+
+let isDarkMode = false;
+
+darkModeBtn.addEventListener("click", function () {
+  if (isDarkMode) {
+    container.classList.remove("dark-mode");
+    body.classList.remove("dark-mode");
+    card.classList.remove("dark-mode");
+    darkModeBtn.textContent = "Dark mode";
+  } else {
+    container.classList.add("dark-mode");
+    body.classList.add("dark-mode");
+    card.classList.add("dark-mode");
+    darkModeBtn.textContent = "Light mode";
+  }
+  isDarkMode = !isDarkMode;
+});
+//end darkmode
 
 window.onload = init;

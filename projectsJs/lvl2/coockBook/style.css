@@ -29,9 +29,7 @@ header {
   font-weight: 700;
   font-size: larger;
   padding: 0 0.5rem;
-}
-.header_btn:hover {
-  background-color: darkgrey;
+  cursor:alias
 }
 
 .logo_img {
@@ -149,7 +147,7 @@ border: none;
   background-color: transparent;
 }
 .dark-mode {
-  background-color: #222;
+  background-color: #333;
   color: #fff;
 }
 
@@ -170,20 +168,7 @@ border: none;
     justify-content: space-between;
     padding: 1rem;
   }
-  .logo {
-  }
 
-  .header_btn {
-  }
-  .header_btn:hover {
-  }
-
-  .searchBar {
-  }
-  .searchBar input {
-  }
-  .searchBar button {
-  }
   .showMeal {
     all: unset;
     display: flex;
@@ -199,13 +184,6 @@ border: none;
     box-shadow: 1px 3px 3px 3px rgb(185, 184, 184);
     overflow: hidden;
   }
-  .card img {
-
-  }
-  .card p {
-  }
-  .card button a {
-  }
   .yt_btn{
     height: 15px;
     width: 30px;
@@ -219,12 +197,6 @@ border: none;
     height: 50px;
     display: flex;
     display: none;
-  }
-  .dishName input {
-  }
-  .dishName input:hover {
-  }
-  #category button {
   }
   #prevBtn {
     display: none;
