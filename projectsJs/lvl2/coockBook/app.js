@@ -6,6 +6,7 @@ let nextBtn = document.getElementById("nextBtn");
 let prevBtn = document.getElementById("prevBtn");
 console.log(prevBtn);
 
+//dark mode
 let darkModeBtn = document.querySelector(".header_btn");
 let container = document.querySelector(".container");
 
@@ -21,7 +22,7 @@ darkModeBtn.addEventListener("click", function () {
   }
   isDarkMode = !isDarkMode;
 });
-
+//end darkmode
 
 let count = 0;
 
