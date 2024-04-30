@@ -80,7 +80,7 @@ header {
   box-shadow: 1px 3px 3px 3px rgb(185, 184, 184);
   overflow: hidden;
 }
-.card img {
+.card_img {
   height: 80%;
   width: 100%;
   object-fit: cover;
@@ -90,14 +90,12 @@ header {
   margin-top: 12px;
   font-weight: 700;
 }
-.card button a {
-  margin-top: 12px;
-  width: 15px;
-  background-color: rgb(255, 136, 0);
-  color: #ff0000;
-  font-size: 1rem;
-  border: none;
+.card button {
+border: none;
 }
+.card button:hover {
+  transform: scale(1.1);  }
+
 .yt_btn{
   height: 15px;
   width: 30px;
@@ -150,6 +148,11 @@ header {
   border: none;
   background-color: transparent;
 }
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
 @media screen and (max-width: 1280px) {
   html {
     all: unset;

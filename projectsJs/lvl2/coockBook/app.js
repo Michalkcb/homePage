@@ -6,6 +6,23 @@ let nextBtn = document.getElementById("nextBtn");
 let prevBtn = document.getElementById("prevBtn");
 console.log(prevBtn);
 
+let darkModeBtn = document.querySelector(".header_btn");
+let container = document.querySelector(".container");
+
+let isDarkMode = false;
+
+darkModeBtn.addEventListener("click", function () {
+  if (isDarkMode) {
+    container.classList.remove("dark-mode");
+    darkModeBtn.textContent = "Dark mode";
+  } else {
+    container.classList.add("dark-mode");
+    darkModeBtn.textContent = "Light mode";
+  }
+  isDarkMode = !isDarkMode;
+});
+
+
 let count = 0;
 
 console.log(dishs);
