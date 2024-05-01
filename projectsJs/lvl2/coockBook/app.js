@@ -29,7 +29,7 @@ const getData = async (value) => {
       div.innerHTML = `
         <img src=${curData.strMealThumb} alt="" class="card_img">
             <p>${curData.strMeal}</p>
-            <button><a href=${curData.strYoutube} target="blank"><img src="yt.png" alt="youtube button" class="yt_btn"></a></button>
+            <a href=${curData.strYoutube} target="blank"><img src="yt.png" alt="youtube button" class="yt_btn"></a>
         `;
       document.querySelector(".showMeal").appendChild(div);
     });
@@ -92,8 +92,6 @@ let darkModeBtn = document.querySelector(".header_btn");
 let body = document.querySelector("body");
 let logo = document.querySelector(".logo_img");
 let dark_btn = document.querySelector(".header_btn")
-let cards = document.querySelectorAll(".card")
-console.log(cards)
 
 let isDarkMode = false;
 
@@ -102,12 +100,19 @@ darkModeBtn.addEventListener("click", function () {
     body.classList.remove("dark-mode");
     logo.classList.remove("logo-dark-mode");
     dark_btn.classList.remove("dark-mode");
+    searchInput.classList.remove("inp-dark-mode")
+    prevBtn.classList.remove("prev-dark-mode")
+    nextBtn.classList.remove("prev-dark-mode")
 
     darkModeBtn.textContent = "Dark mode";
   } else {
     body.classList.add("dark-mode");
     logo.classList.add("logo-dark-mode");
     dark_btn.classList.add("dark-mode");
+    searchInput.classList.add("inp-dark-mode")
+    prevBtn.classList.add("prev-dark-mode")
+    nextBtn.classList.add("prev-dark-mode")
+
     darkModeBtn.textContent = "Light mode";
   }
   isDarkMode = !isDarkMode;

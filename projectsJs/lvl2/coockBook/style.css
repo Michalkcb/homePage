@@ -75,7 +75,7 @@ header {
   width: 400px;
   height: 300px;
   border-radius: 4px;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, .1);
   text-align: center;
   margin-top: 32px;
   box-shadow: 1px 3px 3px 3px rgb(185, 184, 184);
@@ -94,11 +94,11 @@ header {
 .card button {
 border: none;
 }
-.card button:hover {
+.card .yt_btn:hover {
   transform: scale(1.1);  }
 
 .yt_btn{
-  height: 15px;
+  height: 20px;
   width: 30px;
 }
 #category {
@@ -149,8 +149,18 @@ border: none;
   border: none;
   background-color: transparent;
 }
+
+.prev-dark-mode{
+  filter: invert(100%);
+}
+
 .dark-mode {
   background-color: #333;
+  color: #fff;
+}
+
+.inp-dark-mode{
+  background-color: #444;
   color: #fff;
 }
 
