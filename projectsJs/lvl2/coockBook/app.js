@@ -6,8 +6,6 @@ let nextBtn = document.getElementById("nextBtn");
 let prevBtn = document.getElementById("prevBtn");
 // console.log(prevBtn);
 
-
-
 let count = 0;
 
 // console.log(dishs);
@@ -44,6 +42,17 @@ searchBtn.addEventListener("click", function () {
     alert("SearchValue First");
   } else {
     getData(searchValue);
+  }
+});
+
+addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    let searchValue = searchInput.value;
+    if (searchValue == "") {
+      alert("SearchValue First");
+    } else {
+      getData(searchValue);
+    }
   }
 });
 
@@ -91,7 +100,7 @@ function init() {
 let darkModeBtn = document.querySelector(".header_btn");
 let body = document.querySelector("body");
 let logo = document.querySelector(".logo_img");
-let dark_btn = document.querySelector(".header_btn")
+let dark_btn = document.querySelector(".header_btn");
 
 let isDarkMode = false;
 
@@ -100,18 +109,18 @@ darkModeBtn.addEventListener("click", function () {
     body.classList.remove("dark-mode");
     logo.classList.remove("logo-dark-mode");
     dark_btn.classList.remove("dark-mode");
-    searchInput.classList.remove("inp-dark-mode")
-    prevBtn.classList.remove("prev-dark-mode")
-    nextBtn.classList.remove("prev-dark-mode")
+    searchInput.classList.remove("inp-dark-mode");
+    prevBtn.classList.remove("prev-dark-mode");
+    nextBtn.classList.remove("prev-dark-mode");
 
     darkModeBtn.textContent = "Dark mode";
   } else {
     body.classList.add("dark-mode");
     logo.classList.add("logo-dark-mode");
     dark_btn.classList.add("dark-mode");
-    searchInput.classList.add("inp-dark-mode")
-    prevBtn.classList.add("prev-dark-mode")
-    nextBtn.classList.add("prev-dark-mode")
+    searchInput.classList.add("inp-dark-mode");
+    prevBtn.classList.add("prev-dark-mode");
+    nextBtn.classList.add("prev-dark-mode");
 
     darkModeBtn.textContent = "Light mode";
   }
