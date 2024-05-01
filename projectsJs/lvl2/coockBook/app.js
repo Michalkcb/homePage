@@ -4,13 +4,13 @@ let dishs = document.querySelectorAll(".dish");
 let dishName = document.querySelectorAll(".dishName");
 let nextBtn = document.getElementById("nextBtn");
 let prevBtn = document.getElementById("prevBtn");
-console.log(prevBtn);
+// console.log(prevBtn);
 
 
 
 let count = 0;
 
-console.log(dishs);
+// console.log(dishs);
 const getData = async (value) => {
   try {
     let data = await fetch(
@@ -19,10 +19,10 @@ const getData = async (value) => {
     let jsonData = await data.json();
 
     document.querySelector(".showMeal").innerHTML = "";
-    console.log(jsonData.meals);
+    // console.log(jsonData.meals);
 
     jsonData.meals.forEach(function (curData) {
-      console.log(curData);
+      // console.log(curData);
 
       let div = document.createElement("div");
       div.classList.add("card");
@@ -72,7 +72,7 @@ nextBtn.addEventListener("click", function () {
   }
   myMealFinder();
 });
-console.log(document.querySelector("#prevBtn").value);
+// console.log(document.querySelector("#prevBtn").value);
 
 prevBtn.addEventListener("click", function () {
   count--;
@@ -89,23 +89,25 @@ function init() {
 
 //dark mode
 let darkModeBtn = document.querySelector(".header_btn");
-let container = document.querySelector(".container");
 let body = document.querySelector("body");
-let card = document.querySelector(".card");
-console.log(card)
+let logo = document.querySelector(".logo_img");
+let dark_btn = document.querySelector(".header_btn")
+let cards = document.querySelectorAll(".card")
+console.log(cards)
 
 let isDarkMode = false;
 
 darkModeBtn.addEventListener("click", function () {
   if (isDarkMode) {
-    container.classList.remove("dark-mode");
     body.classList.remove("dark-mode");
-    card.classList.remove("dark-mode");
+    logo.classList.remove("logo-dark-mode");
+    dark_btn.classList.remove("dark-mode");
+
     darkModeBtn.textContent = "Dark mode";
   } else {
-    container.classList.add("dark-mode");
     body.classList.add("dark-mode");
-    card.classList.add("dark-mode");
+    logo.classList.add("logo-dark-mode");
+    dark_btn.classList.add("dark-mode");
     darkModeBtn.textContent = "Light mode";
   }
   isDarkMode = !isDarkMode;

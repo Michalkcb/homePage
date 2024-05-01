@@ -36,6 +36,9 @@ header {
   filter: invert(100%);
   width: 40px;
 }
+.logo-dark-mode{
+  filter: none;
+}
 .searchBar {
   display: flex;
   align-items: center;
@@ -72,7 +75,7 @@ header {
   width: 400px;
   height: 300px;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: transparent;
   text-align: center;
   margin-top: 32px;
   box-shadow: 1px 3px 3px 3px rgb(185, 184, 184);
@@ -178,7 +181,6 @@ border: none;
     width: 400px;
     height: 300px;
     border-radius: 4px;
-    background-color: #fff;
     text-align: center;
     margin-top: 32px;
     box-shadow: 1px 3px 3px 3px rgb(185, 184, 184);
