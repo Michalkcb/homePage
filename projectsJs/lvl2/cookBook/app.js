@@ -102,8 +102,9 @@ let body = document.querySelector("body");
 let logo = document.querySelector(".logo_img");
 let dark_btn = document.querySelector(".header_btn");
 let cards = document.getElementsByClassName("card");
-let cardArray = [...cards]
-console.log(cardArray)
+
+console.log(cards)
+
 
 let isDarkMode = false;
 
@@ -115,9 +116,10 @@ darkModeBtn.addEventListener("click", function () {
     searchInput.classList.remove("inp-dark-mode");
     prevBtn.classList.remove("prev-dark-mode");
     nextBtn.classList.remove("prev-dark-mode");
-    cardArray.forEach( (card)=>{
-      card.classList.remove("card-dark-mode")
-    })
+    for (let i = 0; i < cards.length; i++){
+      cards[i].classList.remove("card-dark-mode")
+      // cards[i].classList.add("card")
+    }
 
     darkModeBtn.textContent = "Dark mode";
   } else {
@@ -127,9 +129,11 @@ darkModeBtn.addEventListener("click", function () {
     searchInput.classList.add("inp-dark-mode");
     prevBtn.classList.add("prev-dark-mode");
     nextBtn.classList.add("prev-dark-mode");
-    cardArray.forEach( (card)=>{
-      card.classList.add("card-dark-mode")
-    })
+    for (let i = 0; i < cards.length; i++){
+      // cards[i].classList.remove("card")
+      cards[i].classList.add("card-dark-mode")
+    }
+ 
 
     darkModeBtn.textContent = "Light mode";
   }

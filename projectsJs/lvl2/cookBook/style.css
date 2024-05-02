@@ -29,7 +29,7 @@ header {
   font-weight: 700;
   font-size: larger;
   padding: 0 0.5rem;
-  cursor:alias
+  cursor:pointer
 }
 
 .logo_img {
@@ -75,11 +75,12 @@ header {
   width: 400px;
   height: 300px;
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, .1);
+  /* background-color: #fff; */
   text-align: center;
   margin-top: 32px;
   box-shadow: 1px 3px 3px 3px rgb(185, 184, 184);
   overflow: hidden;
+
 }
 .card_img {
   height: 80%;
@@ -159,8 +160,17 @@ border: none;
   color: #fff;
 }
 .card-dark-mode {
-  background-color: #f70000;
+  background-color: #222;
   color: #fff;
+  width: 400px;
+  height: 300px;
+  border-radius: 4px;
+  /* background-color: #fff; */
+  text-align: center;
+  margin-top: 32px;
+  box-shadow: 1px 3px 3px 3px #222;
+  overflow: hidden;
+
 }
 
 .inp-dark-mode{
