@@ -158,6 +158,10 @@ border: none;
   background-color: #333;
   color: #fff;
 }
+.card-dark-mode {
+  background-color: #f70000;
+  color: #fff;
+}
 
 .inp-dark-mode{
   background-color: #444;
