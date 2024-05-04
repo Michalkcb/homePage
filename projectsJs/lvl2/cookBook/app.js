@@ -119,11 +119,6 @@ darkModeBtn.addEventListener("click", function () {
       card.classList.remove("card-dark-mode");
     });
 
-    // for (let i = 0; i < cards.length; i++){
-    //   cards[i].classList.remove("card-dark-mode")
-    //   // cards[i].classList.add("card")
-    // }
-
     darkModeBtn.textContent = "Dark mode";
   } else {
     body.classList.add("dark-mode");
@@ -132,10 +127,9 @@ darkModeBtn.addEventListener("click", function () {
     searchInput.classList.add("inp-dark-mode");
     prevBtn.classList.add("prev-dark-mode");
     nextBtn.classList.add("prev-dark-mode");
-    for (let i = 0; i < cards.length; i++) {
-      // cards[i].classList.remove("card")
-      cards[i].classList.add("card-dark-mode");
-    }
+    cards.forEach((card)=>{
+      card.classList.add("card-dark-mode")
+    })
 
     darkModeBtn.textContent = "Light mode";
   }
