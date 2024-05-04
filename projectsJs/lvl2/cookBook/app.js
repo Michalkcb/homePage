@@ -101,7 +101,7 @@ let darkModeBtn = document.querySelector(".header_btn");
 let body = document.querySelector("body");
 let logo = document.querySelector(".logo_img");
 let dark_btn = document.querySelector(".header_btn");
-let cards = document.getElementsByClassName("card");
+let cards = document.querySelectorAll("card");
 
 console.log(cards)
 
