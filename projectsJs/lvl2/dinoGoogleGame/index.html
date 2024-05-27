@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<!-- <html lang="en" onclick="jump()"> -->
-    <html lang="en" >
-<head>
-    <meta charset="UTF-8">
-    <title>Jump Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="game">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MB Jump Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="header">
+        <img
+          src="https://michalkcb.github.io/homePage/assets/MB_logo.png"
+          alt="Logo"
+          id="logo"
+        />
+        <button id="toggle-theme">Toggle Theme</button>
+      </div>
+
+      <p id="pscore">Score: <span id="scoreSpan"></span></p>
+      <div class="game">
         <div id="character"></div>
         <div id="block"></div>
+      </div>
     </div>
-    <p>Score: <span id="scoreSpan"></span></p>
-</body>
-<script src="app.js"></script>
+  </body>
+
+  <script src="app.js"></script>
 </html>

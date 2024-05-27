@@ -1,41 +1,120 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box; /* Ustawienie box-sizing dla lepszej kontroli nad rozmiarami */
 }
 
-#game{
-    width: 500px;
+body {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie poziome */
+    align-items: center; /* Wyśrodkowanie pionowe */
+    background-color: #f8f9fa;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #333; /* Ciemne tło */
+}
+
+
+
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Rozkłada logo i przycisk na przeciwnych końcach */
+    align-items: center;
+    margin-bottom: 20px; /* Odstęp między nagłówkiem a resztą treści */
+    padding: .3rem;
+}
+#logo{
+    filter: invert(100%);
+    width: 50px;
+   }
+#toggle-theme {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Kolor przycisku */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animacja zmiany koloru tła */
+    right: 0;
+}
+
+#toggle-theme:hover {
+    background-color: #0056b3; /* Kolor przycisku po najechaniu */
+}
+
+#container {
+    max-width: 800px; /* Upewnij się, że kontener zajmuje całą szerokość */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    justify-content: center;
+}
+#pscore{
+    font-size: xx-large;
+
+}
+
+#scoreSpan{
+    font-size: 24px; /* Większa czcionka dla wyniku */
+    font-weight: 700; /* Pogrubiony tekst */
+    margin-bottom: 20px;
+    color: #333; /* Ciemnoszary kolor tekstu */
+}
+.game{
+    width: 500px; /* Zajmuje całą szerokość okna */
+    /* max-width: 500px; Maksymalna szerokość 500px */
     height: 200px;
-    border: 1px solid black;
+    border: 1px solid #ddd;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden; /* Zapewnia, że blok nie wychodzi poza granice */
+    background-color: #ffffff;
+    flex-grow: 1;
 }
 
 #character{
-    width: 20px;
-    height: 50px;
-    background-color: red;
-    position: relative;
-    top: 150px;
+    width: 70px;
+    height: 70px; /* Zmieniono wymiary do wielkości bloku */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0; /* Dostosowane pozycjonowanie */
+    left: 50px;
+    background-image: url('kamilla-runner-0-07.gif'); /* Ścieżka do obrazka postaci */
+    /* border: 1px solid black; */
 }
 #block{
-    width: 20px;
-    height: 20px;
-    background-color: blue;
-    position: relative;
-    top: 130px;
-    left: 480px;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0; /* Dostosowane pozycjonowanie */
+    left: 100%; /* Początkowa pozycja na końcu pola gry */
     animation: block 1s infinite linear;
 
+    background-image: url('shuriken.gif'); /* Ścieżka do obrazka postaci */
 }
 .animate{
-    animation: jump 1s;
+    animation: jump .5s;
 }
 @keyframes block {
-    0%{left: 480px;}
+    0%{left: 1024 px;}
     100%{left: -40px;}
 }
 @keyframes jump {
-    0%{top: 150px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
-    100%{top: 150px;}
+    0%{bottom: 0;}
+    30%{bottom: 80px;}
+    70%{bottom: 80px;}
+    100%{bottom: 0;}
 }
