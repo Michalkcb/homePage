@@ -108,7 +108,7 @@ body.dark-mode {
 .animate{
     animation: jump .5s;
 }
-@keyframes block {
+/* @keyframes block {
     0%{left: 1024 px;}
     100%{left: -40px;}
 }
@@ -117,32 +117,14 @@ body.dark-mode {
     30%{bottom: 80px;}
     70%{bottom: 80px;}
     100%{bottom: 0;}
-}
+} */
 
-@media (max-width: 800px) {
-    #header {
-        flex-direction: column;
+@media (pointer: coarse) and (hover: none) {
+    #container {
+        width: 100vw; /* Zajmuje całą szerokość ekranu mobilnego */
     }
-    #logo {
-        height: 40px;
-        margin-bottom: 10px;
-    }
-    #toggle-theme {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-    #scoreSpan {
-        font-size: 20px;
-    }
-    .game {
-        height: 150px;
-    }
-    #character {
-        width: 50px;
-        height: 50px;
-    }
-    #block {
-        width: 30px;
-        height: 30px;
+    .game{
+        width: 80vw; /* Zajmuje całą szerokość ekranu mobilnego */
+
     }
 }
