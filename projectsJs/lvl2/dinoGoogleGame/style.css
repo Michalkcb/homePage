@@ -108,7 +108,7 @@ body.dark-mode {
 .animate{
     animation: jump .5s;
 }
-/* @keyframes block {
+@keyframes block {
     0%{left: 1024 px;}
     100%{left: -40px;}
 }
@@ -117,14 +117,14 @@ body.dark-mode {
     30%{bottom: 80px;}
     70%{bottom: 80px;}
     100%{bottom: 0;}
-} */
+}
 
 @media (pointer: coarse) and (hover: none) {
     #container {
-        width: 100vw; /* Zajmuje całą szerokość ekranu mobilnego */
+        width: 100vw;  
     }
     .game{
-        width: 80vw; /* Zajmuje całą szerokość ekranu mobilnego */
+        width: 80vw; 
 
     }
 }
