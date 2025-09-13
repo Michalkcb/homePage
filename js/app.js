@@ -171,8 +171,8 @@ leftPanel.appendChild(contactHeading);
 const contactList = document.createElement("ul");
 const contactItems = [
   "E-mail: michalkcb@gmail.com",
-  "Mobile: 603 655 331",
-  "Birth date: 05.10.1982",
+  //"Mobile: 603 655 331",
+  //"Birth date: 05.10.1982",
   "Town: Warsaw",
 ];
 
@@ -439,3 +439,4 @@ burgerBtn.addEventListener("click", function () {
   mobNav.classList.toggle("active");
   portfolioList.classList.toggle("active");
 });
+
