@@ -1,4 +1,5 @@
 const certificatesData = [
+  { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/certyficate_Google_AI.jpeg', description: 'Certificate - AI in business development'},
   { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/spaceplaning.jpeg', description: 'JDA Space Planning'},
   { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/7nawykow.jpeg', description: '7 nawyków'},
   { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/czystaReka.jpeg', description: 'Czysta ręka'},
@@ -25,5 +26,6 @@ const certificatesData = [
     { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/wprowadzenieDoProgramowania.jpg', description: 'Wprowadzenie do programowania'},
     { certificateSrc: 'https://michalkcb.github.io/homePage/certificates/wstepDoInzynieriiOprogramowania.jpg', description: 'Wstęp do inżynierii oprogramowania'},
   ];
+
 
   export default certificatesData;
